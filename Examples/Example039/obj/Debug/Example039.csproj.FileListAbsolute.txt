@@ -1,0 +1,8 @@
+C:\Users\DevrimM\Desktop\302\DersNotlari\Example039\bin\Debug\Example039.exe.config
+C:\Users\DevrimM\Desktop\302\DersNotlari\Example039\bin\Debug\Example039.exe
+C:\Users\DevrimM\Desktop\302\DersNotlari\Example039\bin\Debug\Example039.pdb
+C:\Users\DevrimM\Desktop\302\DersNotlari\Example039\obj\Debug\Example039.csproj.AssemblyReference.cache
+C:\Users\DevrimM\Desktop\302\DersNotlari\Example039\obj\Debug\Example039.csproj.SuggestedBindingRedirects.cache
+C:\Users\DevrimM\Desktop\302\DersNotlari\Example039\obj\Debug\Example039.csproj.CoreCompileInputs.cache
+C:\Users\DevrimM\Desktop\302\DersNotlari\Example039\obj\Debug\Example039.exe
+C:\Users\DevrimM\Desktop\302\DersNotlari\Example039\obj\Debug\Example039.pdb
