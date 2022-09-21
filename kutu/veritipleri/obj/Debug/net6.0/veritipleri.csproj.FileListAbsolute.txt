@@ -1,0 +1,15 @@
+C:\Users\DevrimM\Desktop\302\kutu\veritipleri\bin\Debug\net6.0\veritipleri.exe
+C:\Users\DevrimM\Desktop\302\kutu\veritipleri\bin\Debug\net6.0\veritipleri.deps.json
+C:\Users\DevrimM\Desktop\302\kutu\veritipleri\bin\Debug\net6.0\veritipleri.runtimeconfig.json
+C:\Users\DevrimM\Desktop\302\kutu\veritipleri\bin\Debug\net6.0\veritipleri.dll
+C:\Users\DevrimM\Desktop\302\kutu\veritipleri\bin\Debug\net6.0\veritipleri.pdb
+C:\Users\DevrimM\Desktop\302\kutu\veritipleri\obj\Debug\net6.0\veritipleri.csproj.AssemblyReference.cache
+C:\Users\DevrimM\Desktop\302\kutu\veritipleri\obj\Debug\net6.0\veritipleri.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DevrimM\Desktop\302\kutu\veritipleri\obj\Debug\net6.0\veritipleri.AssemblyInfoInputs.cache
+C:\Users\DevrimM\Desktop\302\kutu\veritipleri\obj\Debug\net6.0\veritipleri.AssemblyInfo.cs
+C:\Users\DevrimM\Desktop\302\kutu\veritipleri\obj\Debug\net6.0\veritipleri.csproj.CoreCompileInputs.cache
+C:\Users\DevrimM\Desktop\302\kutu\veritipleri\obj\Debug\net6.0\veritipleri.dll
+C:\Users\DevrimM\Desktop\302\kutu\veritipleri\obj\Debug\net6.0\refint\veritipleri.dll
+C:\Users\DevrimM\Desktop\302\kutu\veritipleri\obj\Debug\net6.0\veritipleri.pdb
+C:\Users\DevrimM\Desktop\302\kutu\veritipleri\obj\Debug\net6.0\veritipleri.genruntimeconfig.cache
+C:\Users\DevrimM\Desktop\302\kutu\veritipleri\obj\Debug\net6.0\ref\veritipleri.dll
