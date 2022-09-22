@@ -1,0 +1,16 @@
+C:\Users\DevrimM\Desktop\302\odev1\odev1\bin\Debug\odev1.exe.config
+C:\Users\DevrimM\Desktop\302\odev1\odev1\bin\Debug\odev1.exe
+C:\Users\DevrimM\Desktop\302\odev1\odev1\bin\Debug\odev1.pdb
+C:\Users\DevrimM\Desktop\302\odev1\odev1\obj\Debug\odev1.csproj.AssemblyReference.cache
+C:\Users\DevrimM\Desktop\302\odev1\odev1\obj\Debug\odev1.csproj.SuggestedBindingRedirects.cache
+C:\Users\DevrimM\Desktop\302\odev1\odev1\obj\Debug\odev1.csproj.CoreCompileInputs.cache
+C:\Users\DevrimM\Desktop\302\odev1\odev1\obj\Debug\odev1.exe
+C:\Users\DevrimM\Desktop\302\odev1\odev1\obj\Debug\odev1.pdb
+C:\Users\DevrimM\Desktop\302\Odevler\odev1\odev1\bin\Debug\odev1.exe.config
+C:\Users\DevrimM\Desktop\302\Odevler\odev1\odev1\bin\Debug\odev1.exe
+C:\Users\DevrimM\Desktop\302\Odevler\odev1\odev1\bin\Debug\odev1.pdb
+C:\Users\DevrimM\Desktop\302\Odevler\odev1\odev1\obj\Debug\odev1.csproj.AssemblyReference.cache
+C:\Users\DevrimM\Desktop\302\Odevler\odev1\odev1\obj\Debug\odev1.csproj.SuggestedBindingRedirects.cache
+C:\Users\DevrimM\Desktop\302\Odevler\odev1\odev1\obj\Debug\odev1.csproj.CoreCompileInputs.cache
+C:\Users\DevrimM\Desktop\302\Odevler\odev1\odev1\obj\Debug\odev1.exe
+C:\Users\DevrimM\Desktop\302\Odevler\odev1\odev1\obj\Debug\odev1.pdb
