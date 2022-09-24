@@ -1,0 +1,14 @@
+C:\Users\DevrimM\Desktop\302\web-gelistirme\31-Net-Core-CSharp-Veri-Yapilari\403-DateTime-ile-calisma\ConsoleApp\ConsoleApp\bin\Debug\netcoreapp3.1\ConsoleApp.exe
+C:\Users\DevrimM\Desktop\302\web-gelistirme\31-Net-Core-CSharp-Veri-Yapilari\403-DateTime-ile-calisma\ConsoleApp\ConsoleApp\bin\Debug\netcoreapp3.1\ConsoleApp.deps.json
+C:\Users\DevrimM\Desktop\302\web-gelistirme\31-Net-Core-CSharp-Veri-Yapilari\403-DateTime-ile-calisma\ConsoleApp\ConsoleApp\bin\Debug\netcoreapp3.1\ConsoleApp.runtimeconfig.json
+C:\Users\DevrimM\Desktop\302\web-gelistirme\31-Net-Core-CSharp-Veri-Yapilari\403-DateTime-ile-calisma\ConsoleApp\ConsoleApp\bin\Debug\netcoreapp3.1\ConsoleApp.runtimeconfig.dev.json
+C:\Users\DevrimM\Desktop\302\web-gelistirme\31-Net-Core-CSharp-Veri-Yapilari\403-DateTime-ile-calisma\ConsoleApp\ConsoleApp\bin\Debug\netcoreapp3.1\ConsoleApp.dll
+C:\Users\DevrimM\Desktop\302\web-gelistirme\31-Net-Core-CSharp-Veri-Yapilari\403-DateTime-ile-calisma\ConsoleApp\ConsoleApp\bin\Debug\netcoreapp3.1\ConsoleApp.pdb
+C:\Users\DevrimM\Desktop\302\web-gelistirme\31-Net-Core-CSharp-Veri-Yapilari\403-DateTime-ile-calisma\ConsoleApp\ConsoleApp\obj\Debug\netcoreapp3.1\ConsoleApp.csproj.AssemblyReference.cache
+C:\Users\DevrimM\Desktop\302\web-gelistirme\31-Net-Core-CSharp-Veri-Yapilari\403-DateTime-ile-calisma\ConsoleApp\ConsoleApp\obj\Debug\netcoreapp3.1\ConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DevrimM\Desktop\302\web-gelistirme\31-Net-Core-CSharp-Veri-Yapilari\403-DateTime-ile-calisma\ConsoleApp\ConsoleApp\obj\Debug\netcoreapp3.1\ConsoleApp.AssemblyInfoInputs.cache
+C:\Users\DevrimM\Desktop\302\web-gelistirme\31-Net-Core-CSharp-Veri-Yapilari\403-DateTime-ile-calisma\ConsoleApp\ConsoleApp\obj\Debug\netcoreapp3.1\ConsoleApp.AssemblyInfo.cs
+C:\Users\DevrimM\Desktop\302\web-gelistirme\31-Net-Core-CSharp-Veri-Yapilari\403-DateTime-ile-calisma\ConsoleApp\ConsoleApp\obj\Debug\netcoreapp3.1\ConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\DevrimM\Desktop\302\web-gelistirme\31-Net-Core-CSharp-Veri-Yapilari\403-DateTime-ile-calisma\ConsoleApp\ConsoleApp\obj\Debug\netcoreapp3.1\ConsoleApp.dll
+C:\Users\DevrimM\Desktop\302\web-gelistirme\31-Net-Core-CSharp-Veri-Yapilari\403-DateTime-ile-calisma\ConsoleApp\ConsoleApp\obj\Debug\netcoreapp3.1\ConsoleApp.pdb
+C:\Users\DevrimM\Desktop\302\web-gelistirme\31-Net-Core-CSharp-Veri-Yapilari\403-DateTime-ile-calisma\ConsoleApp\ConsoleApp\obj\Debug\netcoreapp3.1\ConsoleApp.genruntimeconfig.cache
