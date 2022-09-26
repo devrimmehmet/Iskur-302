@@ -1,0 +1,8 @@
+C:\Users\DevrimM\Desktop\302\iskur302\ders1\ConsoleApp\deneme2\bin\Debug\deneme2.exe.config
+C:\Users\DevrimM\Desktop\302\iskur302\ders1\ConsoleApp\deneme2\bin\Debug\deneme2.exe
+C:\Users\DevrimM\Desktop\302\iskur302\ders1\ConsoleApp\deneme2\bin\Debug\deneme2.pdb
+C:\Users\DevrimM\Desktop\302\iskur302\ders1\ConsoleApp\deneme2\obj\Debug\deneme2.csproj.AssemblyReference.cache
+C:\Users\DevrimM\Desktop\302\iskur302\ders1\ConsoleApp\deneme2\obj\Debug\deneme2.csproj.SuggestedBindingRedirects.cache
+C:\Users\DevrimM\Desktop\302\iskur302\ders1\ConsoleApp\deneme2\obj\Debug\deneme2.csproj.CoreCompileInputs.cache
+C:\Users\DevrimM\Desktop\302\iskur302\ders1\ConsoleApp\deneme2\obj\Debug\deneme2.exe
+C:\Users\DevrimM\Desktop\302\iskur302\ders1\ConsoleApp\deneme2\obj\Debug\deneme2.pdb

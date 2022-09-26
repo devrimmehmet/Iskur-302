@@ -1,0 +1,8 @@
+C:\Users\DevrimM\Desktop\302\Odevler\odev3\odev3\odev3\bin\Debug\odev3.exe.config
+C:\Users\DevrimM\Desktop\302\Odevler\odev3\odev3\odev3\bin\Debug\odev3.exe
+C:\Users\DevrimM\Desktop\302\Odevler\odev3\odev3\odev3\bin\Debug\odev3.pdb
+C:\Users\DevrimM\Desktop\302\Odevler\odev3\odev3\odev3\obj\Debug\odev3.csproj.AssemblyReference.cache
+C:\Users\DevrimM\Desktop\302\Odevler\odev3\odev3\odev3\obj\Debug\odev3.csproj.SuggestedBindingRedirects.cache
+C:\Users\DevrimM\Desktop\302\Odevler\odev3\odev3\odev3\obj\Debug\odev3.csproj.CoreCompileInputs.cache
+C:\Users\DevrimM\Desktop\302\Odevler\odev3\odev3\odev3\obj\Debug\odev3.exe
+C:\Users\DevrimM\Desktop\302\Odevler\odev3\odev3\odev3\obj\Debug\odev3.pdb
