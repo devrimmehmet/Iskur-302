@@ -1,0 +1,8 @@
+C:\Users\DevrimM\Desktop\302\iskur302\CevreHesaplamasi\bin\Debug\CevreHesaplamasi.exe.config
+C:\Users\DevrimM\Desktop\302\iskur302\CevreHesaplamasi\bin\Debug\CevreHesaplamasi.exe
+C:\Users\DevrimM\Desktop\302\iskur302\CevreHesaplamasi\bin\Debug\CevreHesaplamasi.pdb
+C:\Users\DevrimM\Desktop\302\iskur302\CevreHesaplamasi\obj\Debug\CevreHesaplamasi.csproj.AssemblyReference.cache
+C:\Users\DevrimM\Desktop\302\iskur302\CevreHesaplamasi\obj\Debug\CevreHesaplamasi.csproj.SuggestedBindingRedirects.cache
+C:\Users\DevrimM\Desktop\302\iskur302\CevreHesaplamasi\obj\Debug\CevreHesaplamasi.csproj.CoreCompileInputs.cache
+C:\Users\DevrimM\Desktop\302\iskur302\CevreHesaplamasi\obj\Debug\CevreHesaplamasi.exe
+C:\Users\DevrimM\Desktop\302\iskur302\CevreHesaplamasi\obj\Debug\CevreHesaplamasi.pdb

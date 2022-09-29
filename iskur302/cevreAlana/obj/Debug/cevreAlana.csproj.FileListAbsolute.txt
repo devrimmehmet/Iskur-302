@@ -1,0 +1,8 @@
+C:\Users\DevrimM\Desktop\302\iskur302\cevreAlana\bin\Debug\cevreAlana.exe.config
+C:\Users\DevrimM\Desktop\302\iskur302\cevreAlana\bin\Debug\cevreAlana.exe
+C:\Users\DevrimM\Desktop\302\iskur302\cevreAlana\bin\Debug\cevreAlana.pdb
+C:\Users\DevrimM\Desktop\302\iskur302\cevreAlana\obj\Debug\cevreAlana.csproj.AssemblyReference.cache
+C:\Users\DevrimM\Desktop\302\iskur302\cevreAlana\obj\Debug\cevreAlana.csproj.SuggestedBindingRedirects.cache
+C:\Users\DevrimM\Desktop\302\iskur302\cevreAlana\obj\Debug\cevreAlana.csproj.CoreCompileInputs.cache
+C:\Users\DevrimM\Desktop\302\iskur302\cevreAlana\obj\Debug\cevreAlana.exe
+C:\Users\DevrimM\Desktop\302\iskur302\cevreAlana\obj\Debug\cevreAlana.pdb

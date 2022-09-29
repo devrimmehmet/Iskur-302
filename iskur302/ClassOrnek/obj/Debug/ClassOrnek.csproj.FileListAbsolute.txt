@@ -1,0 +1,8 @@
+C:\Users\DevrimM\Desktop\302\iskur302\ClassOrnek\bin\Debug\ClassOrnek.exe.config
+C:\Users\DevrimM\Desktop\302\iskur302\ClassOrnek\bin\Debug\ClassOrnek.exe
+C:\Users\DevrimM\Desktop\302\iskur302\ClassOrnek\bin\Debug\ClassOrnek.pdb
+C:\Users\DevrimM\Desktop\302\iskur302\ClassOrnek\obj\Debug\ClassOrnek.csproj.AssemblyReference.cache
+C:\Users\DevrimM\Desktop\302\iskur302\ClassOrnek\obj\Debug\ClassOrnek.csproj.SuggestedBindingRedirects.cache
+C:\Users\DevrimM\Desktop\302\iskur302\ClassOrnek\obj\Debug\ClassOrnek.csproj.CoreCompileInputs.cache
+C:\Users\DevrimM\Desktop\302\iskur302\ClassOrnek\obj\Debug\ClassOrnek.exe
+C:\Users\DevrimM\Desktop\302\iskur302\ClassOrnek\obj\Debug\ClassOrnek.pdb
