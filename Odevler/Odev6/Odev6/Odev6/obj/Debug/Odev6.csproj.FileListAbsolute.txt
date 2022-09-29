@@ -1,8 +1,0 @@
-C:\Users\DevrimM\Desktop\302\Odevler\Odev6\Odev6\Odev6\obj\Debug\Odev6.csproj.AssemblyReference.cache
-C:\Users\DevrimM\Desktop\302\Odevler\Odev6\Odev6\Odev6\obj\Debug\Odev6.csproj.SuggestedBindingRedirects.cache
-C:\Users\DevrimM\Desktop\302\Odevler\Odev6\Odev6\Odev6\obj\Debug\Odev6.csproj.CoreCompileInputs.cache
-C:\Users\DevrimM\Desktop\302\Odevler\Odev6\Odev6\Odev6\bin\Debug\Odev6.exe.config
-C:\Users\DevrimM\Desktop\302\Odevler\Odev6\Odev6\Odev6\bin\Debug\Odev6.exe
-C:\Users\DevrimM\Desktop\302\Odevler\Odev6\Odev6\Odev6\bin\Debug\Odev6.pdb
-C:\Users\DevrimM\Desktop\302\Odevler\Odev6\Odev6\Odev6\obj\Debug\Odev6.exe
-C:\Users\DevrimM\Desktop\302\Odevler\Odev6\Odev6\Odev6\obj\Debug\Odev6.pdb
