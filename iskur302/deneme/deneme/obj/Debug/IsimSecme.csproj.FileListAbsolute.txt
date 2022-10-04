@@ -1,0 +1,8 @@
+C:\Users\DevrimM\Desktop\302\iskur302\deneme\deneme\bin\Debug\deneme.exe.config
+C:\Users\DevrimM\Desktop\302\iskur302\deneme\deneme\bin\Debug\deneme.exe
+C:\Users\DevrimM\Desktop\302\iskur302\deneme\deneme\bin\Debug\deneme.pdb
+C:\Users\DevrimM\Desktop\302\iskur302\deneme\deneme\obj\Debug\IsimSecme.csproj.AssemblyReference.cache
+C:\Users\DevrimM\Desktop\302\iskur302\deneme\deneme\obj\Debug\IsimSecme.csproj.SuggestedBindingRedirects.cache
+C:\Users\DevrimM\Desktop\302\iskur302\deneme\deneme\obj\Debug\IsimSecme.csproj.CoreCompileInputs.cache
+C:\Users\DevrimM\Desktop\302\iskur302\deneme\deneme\obj\Debug\deneme.exe
+C:\Users\DevrimM\Desktop\302\iskur302\deneme\deneme\obj\Debug\deneme.pdb

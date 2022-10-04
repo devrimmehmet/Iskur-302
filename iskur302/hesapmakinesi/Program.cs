@@ -27,10 +27,39 @@ namespace hesapmakinesi
         {
             Program program = new Program();
             //geriye değer döndürmeyen parametreli
-            Console.WriteLine("Lütfen 1. Sayıyı Giriniz.");
-            double sayi1=double.Parse(Console.ReadLine());
-            Console.WriteLine("Lütfen 2. Sayıyı Giriniz.");
-            double sayi2 = double.Parse(Console.ReadLine());
+            double sayi1 = 0;
+            double sayi2 = 0;
+            bool state = true;
+            while (state)
+            {
+                try
+                {
+                    Console.WriteLine("Lütfen 1. Sayıyı Giriniz.");
+                     sayi1 = double.Parse(Console.ReadLine());
+                    state = false;
+                }
+                catch (Exception)
+                {
+
+                    Console.WriteLine("Lütfen int bir sayı giriniz.");
+                }
+            }
+            state = true;
+            while (state)
+            {
+                try
+                {
+                    Console.WriteLine("Lütfen 2. Sayıyı Giriniz.");
+                     sayi2 = double.Parse(Console.ReadLine());
+                    state = false;
+                }
+                catch (Exception)
+                {
+
+                    Console.WriteLine("Lütfen int bir sayı giriniz.");
+                }
+            }
+            start:
             Console.WriteLine("Lütfen yapmak istediğiniz işlemi seçiniz.(+,-,/,*)");
             string islem =Console.ReadLine();
             switch (islem)
@@ -46,7 +75,10 @@ namespace hesapmakinesi
                     break;
                 case "*":
                     program.Carpma(sayi1, sayi2);
-                    break;         
+                    break;
+                default:
+                    Console.WriteLine(  "Lütfen doğru seçim yapınız.");
+                    break;
             }    
             Console.ReadLine();
 

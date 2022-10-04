@@ -24,14 +24,37 @@ namespace CevreHesaplamasi
             Program program = new Program();
             
             int uzunluk=0, genislik=0;
-            Console.WriteLine("Lütfen Uzunluğu Yazınız: ");
-            uzunluk = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Lütfen Genişliği Yazınız: ");
-            genislik = Convert.ToInt32(Console.ReadLine());
+            bool durum = true;
+            while (durum)
+            { try
+            {
+                Console.WriteLine("Lütfen Uzunluğu Yazınız: ");
+                uzunluk = Convert.ToInt32(Console.ReadLine());
+                    durum = false;
+            }
+            catch (Exception)
+            {
+                    Console.WriteLine("Lütfen int Değer Giriniz."); 
+            }
+            }
+            durum = true;
+            while (durum)
+                try
+            {
+                Console.WriteLine("Lütfen Genişliği Yazınız: ");
+                genislik = Convert.ToInt32(Console.ReadLine());
+                    durum = false;
+            }
+            catch (Exception)
+            {
 
-            Console.ReadLine();
+                Console.WriteLine("Lütfen int Değer Giriniz.");
+            }
+            
+
+            Console.WriteLine();
             Console.WriteLine("Çevre: "+ program.CevreHesaplama(uzunluk, genislik));
-            Console.ReadLine();
+            Console.WriteLine();
             Console.WriteLine("Alan: " + program.AlanHesaplama(uzunluk, genislik));
             Console.ReadLine();
         }

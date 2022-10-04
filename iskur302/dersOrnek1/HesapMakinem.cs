@@ -22,50 +22,61 @@ namespace dersOrnek1
         }
         void Bolme(double number1, double number2)
         {
-            Console.WriteLine("Çarpma Sonucu: " + (number1 / number2));
+            Console.WriteLine("Bölme Sonucu: " + (number1 / number2));
         }
         public void HesapMakinesi()
         {
             bool state = true;
+            double number1 = 0;
             while (state)
             {
-
-
-                Console.WriteLine("Lütfen Bir Sayı Giriniz.");
-                double number1 = int.Parse(Console.ReadLine());
-                Random random = new Random();
-                double number2 = random.Next(1, 100);
-
-                HesapMakinem program = new HesapMakinem();
-
-                Console.WriteLine("Lütfen Yapmak istediğiniz işlemi giriniz. ( +,-,/,*)");
-                string durum = Console.ReadLine();
-                switch (durum)
+                try
                 {
-                    case "+":
-                        Console.WriteLine("Random Atanan Sayımız: {0}", number2);
-                        program.Toplama(number1, number2);
-                        break;
-                    case "-":
-                        Console.WriteLine("Random Atanan Sayımız: {0}", number2);
-                        program.Cikarma(number1, number2);
-                        break;
-                    case "*":
-                        Console.WriteLine("Random Atanan Sayımız: {0}", number2);
-                        program.Carpma(number1, number2);
-                        break;
-                    case "/":
-                        Console.WriteLine("Random Atanan Sayımız: {0}", number2);
-                        program.Bolme(number1, number2);
-                        break;
-
-                    default:
-                        state = false;
-                        break;
+                    Console.WriteLine("Lütfen Bir Sayı Giriniz.");
+                    number1 = int.Parse(Console.ReadLine());
+                    state = false;
                 }
+                catch (Exception)
+                {
 
-
+                    Console.WriteLine("Lütfen int bir sayı giriniz.");
+                }
             }
+            Random random = new Random();
+            double number2 = random.Next(1, 100);
+            string durum = "";
+            HesapMakinem program = new HesapMakinem();
+           
+          basla:
+            Console.WriteLine("Lütfen Yapmak istediğiniz işlemi giriniz. ( +,-,/,*)");
+            durum = Console.ReadLine();
+            switch (durum)
+            {
+                case "+":
+                    Console.WriteLine("Random Atanan Sayımız: {0}", number2);
+                    program.Toplama(number1, number2);
+                    break;
+                case "-":
+                    Console.WriteLine("Random Atanan Sayımız: {0}", number2);
+                    program.Cikarma(number1, number2);
+                    break;
+                case "*":
+                    Console.WriteLine("Random Atanan Sayımız: {0}", number2);
+                    program.Carpma(number1, number2);
+                    break;
+                case "/":
+                    Console.WriteLine("Random Atanan Sayımız: {0}", number2);
+                    program.Bolme(number1, number2);
+                    break;
+
+                default:
+                    Console.WriteLine("Lütfen uygun seçim yapınız. ( +,-,/,* )");
+                    goto basla;
+                    break;
+            }
+
+            Console.ReadLine();
         }
+
     }
 }

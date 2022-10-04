@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "deneme", "deneme\deneme.csproj", "{41D796BC-1B79-4A83-B50E-D84450A1B629}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsimSecme", "deneme\IsimSecme.csproj", "{41D796BC-1B79-4A83-B50E-D84450A1B629}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

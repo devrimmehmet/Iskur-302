@@ -36,7 +36,8 @@ namespace cevreAlana
         }
         public int DogumTarihi {
             get { return dogumtarihi; }
-            set { dogumtarihi =DateTime.Now.Year- value; } //value=1993   doğumtarihi=  2022-1993=29
+            set { dogumtarihi =DateTime.Now.Year- value; } 
+            //value=1993   doğumtarihi=  2022-1993=29
             // DateTime.Now.Year
         }
     }
