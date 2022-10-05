@@ -1,0 +1,8 @@
+C:\Users\DevrimM\Desktop\302\iskur302\Ornek22\bin\Debug\Ornek22.exe.config
+C:\Users\DevrimM\Desktop\302\iskur302\Ornek22\bin\Debug\Ornek22.exe
+C:\Users\DevrimM\Desktop\302\iskur302\Ornek22\bin\Debug\Ornek22.pdb
+C:\Users\DevrimM\Desktop\302\iskur302\Ornek22\obj\Debug\Ornek22.csproj.AssemblyReference.cache
+C:\Users\DevrimM\Desktop\302\iskur302\Ornek22\obj\Debug\Ornek22.csproj.SuggestedBindingRedirects.cache
+C:\Users\DevrimM\Desktop\302\iskur302\Ornek22\obj\Debug\Ornek22.csproj.CoreCompileInputs.cache
+C:\Users\DevrimM\Desktop\302\iskur302\Ornek22\obj\Debug\Ornek22.exe
+C:\Users\DevrimM\Desktop\302\iskur302\Ornek22\obj\Debug\Ornek22.pdb
