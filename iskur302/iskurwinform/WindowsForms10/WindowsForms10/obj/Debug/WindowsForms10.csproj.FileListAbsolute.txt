@@ -1,0 +1,11 @@
+C:\Users\DevrimM\Desktop\302\iskur302\iskurwinform\WindowsForms10\WindowsForms10\bin\Debug\WindowsForms10.exe.config
+C:\Users\DevrimM\Desktop\302\iskur302\iskurwinform\WindowsForms10\WindowsForms10\bin\Debug\WindowsForms10.exe
+C:\Users\DevrimM\Desktop\302\iskur302\iskurwinform\WindowsForms10\WindowsForms10\bin\Debug\WindowsForms10.pdb
+C:\Users\DevrimM\Desktop\302\iskur302\iskurwinform\WindowsForms10\WindowsForms10\obj\Debug\WindowsForms10.csproj.AssemblyReference.cache
+C:\Users\DevrimM\Desktop\302\iskur302\iskurwinform\WindowsForms10\WindowsForms10\obj\Debug\WindowsForms10.csproj.SuggestedBindingRedirects.cache
+C:\Users\DevrimM\Desktop\302\iskur302\iskurwinform\WindowsForms10\WindowsForms10\obj\Debug\WindowsForms10.Form1.resources
+C:\Users\DevrimM\Desktop\302\iskur302\iskurwinform\WindowsForms10\WindowsForms10\obj\Debug\WindowsForms10.Properties.Resources.resources
+C:\Users\DevrimM\Desktop\302\iskur302\iskurwinform\WindowsForms10\WindowsForms10\obj\Debug\WindowsForms10.csproj.GenerateResource.cache
+C:\Users\DevrimM\Desktop\302\iskur302\iskurwinform\WindowsForms10\WindowsForms10\obj\Debug\WindowsForms10.csproj.CoreCompileInputs.cache
+C:\Users\DevrimM\Desktop\302\iskur302\iskurwinform\WindowsForms10\WindowsForms10\obj\Debug\WindowsForms10.exe
+C:\Users\DevrimM\Desktop\302\iskur302\iskurwinform\WindowsForms10\WindowsForms10\obj\Debug\WindowsForms10.pdb

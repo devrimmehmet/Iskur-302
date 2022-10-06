@@ -1,0 +1,11 @@
+C:\Users\DevrimM\Desktop\302\iskur302\iskurwinform\iskur302\iskur302\bin\Debug\iskur302.exe.config
+C:\Users\DevrimM\Desktop\302\iskur302\iskurwinform\iskur302\iskur302\bin\Debug\iskur302.exe
+C:\Users\DevrimM\Desktop\302\iskur302\iskurwinform\iskur302\iskur302\bin\Debug\iskur302.pdb
+C:\Users\DevrimM\Desktop\302\iskur302\iskurwinform\iskur302\iskur302\obj\Debug\iskur302(winforms).csproj.AssemblyReference.cache
+C:\Users\DevrimM\Desktop\302\iskur302\iskurwinform\iskur302\iskur302\obj\Debug\iskur302(winforms).csproj.SuggestedBindingRedirects.cache
+C:\Users\DevrimM\Desktop\302\iskur302\iskurwinform\iskur302\iskur302\obj\Debug\iskur302.Form1.resources
+C:\Users\DevrimM\Desktop\302\iskur302\iskurwinform\iskur302\iskur302\obj\Debug\iskur302.Properties.Resources.resources
+C:\Users\DevrimM\Desktop\302\iskur302\iskurwinform\iskur302\iskur302\obj\Debug\iskur302(winforms).csproj.GenerateResource.cache
+C:\Users\DevrimM\Desktop\302\iskur302\iskurwinform\iskur302\iskur302\obj\Debug\iskur302(winforms).csproj.CoreCompileInputs.cache
+C:\Users\DevrimM\Desktop\302\iskur302\iskurwinform\iskur302\iskur302\obj\Debug\iskur302.exe
+C:\Users\DevrimM\Desktop\302\iskur302\iskurwinform\iskur302\iskur302\obj\Debug\iskur302.pdb

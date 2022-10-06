@@ -47,6 +47,10 @@ namespace Kalitim
             new Student { LastName="TORAMAN"},
             new Customer { FirstName="Cihat"},
         };
+           
+           Student ogrenci =new Student();
+            ogrenci.FirstName = "";
+            
             foreach (var item in user)
             {
                 Console.WriteLine($"{item.FirstName} {item.LastName}");
