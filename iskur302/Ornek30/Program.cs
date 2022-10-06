@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -21,7 +23,7 @@ namespace Ornek30
                     sayi = int.Parse(Console.ReadLine());
                     if (sayi >= 1000 & sayi < 10000)
                     {
-                       
+
                         durum = false;
                     }
                     else
@@ -29,7 +31,7 @@ namespace Ornek30
                         Console.WriteLine("4 basamaklı pozitif bir sayı giriniz.");
                         goto basadon;
                     }
-                   
+
 
                 }
                 catch (Exception)
@@ -43,47 +45,19 @@ namespace Ornek30
         }
         void sayiOku(int sayi)
         {
-            string binler = "bin";
-            string yuzler = "yüz";
-            string[] onlar = { "on", "yirmi", "otuz", "kırk", "elli", "altmış", "yetmiş", "seksen", "doksan" };
-            string[] rakamlar = {"bir","iki","üç","dört","beş","altı","yedi","sekiz","dokuz" };
-            string sonuc = " ";
-            int kalan = 0;
-            int binler1 = sayi / 1000;
-            kalan = sayi % 1000;
-            if (binler1 > 1)
-            {
-                sonuc = rakamlar[binler1 - 1] + " " + binler;
-            }else
-            {
-                sonuc = binler;
-            }
-           // sonuc = rakamlar[binler1-1]+" "+ binler;
-            sayi = kalan;
-            int yuzler1 = sayi / 100;
-            kalan = sayi % 100;
-            if (yuzler1 > 0)
-            {
-                sonuc = sonuc +" "+ rakamlar[yuzler1 - 1] + " " + yuzler;
-            }
-            sayi = kalan;
-            int onlar1 = sayi / 10;
-            kalan = sayi % 10;
-            if (onlar1 > 0)
-            {
-                sonuc = sonuc + " " + onlar[onlar1 - 1]  ;
-            }else
-            {
-                sonuc = sonuc + " " +onlar;
-            }
-            sayi = kalan;
-            int rakamlar1 = sayi % 10;
-            
-            if (rakamlar1 > 0)
-            {
-                sonuc = sonuc + " " + rakamlar[rakamlar1 - 1];
-            }
-            
+            string sonuc;
+
+            int birlerbas = (sayi % 10);
+            int onlarbas = (sayi / 10) % 10;
+            int yuzlerbas = (sayi / 100) % 10;
+            int binlerbas = (sayi / 1000) % 10;
+            string[] birlerb = { "", "Bir", "İki", "Üç", "Dört", "Beş", "Altı", "Yedi", "Sekiz", "Dokuz" };
+            string[] Onlarb = { "", "On", "Yirmi", "Otuz", "Kırk", "Elli", "Altmış", "Yetmiş", "Seksen", "Doksan" };
+            string[] Yuzlerb = { "", "Yüz", "İki Yüz", "Üç Yüz", "Dört Yüz", "Beş Yüz", "Altı Yüz", "Yedi Yüz", "Sekiz Yüz", "Dokuz Yüz" };
+            string[] binlerb = { "", "Bin", "İki Bin", "Üç Bin", "Dört Bin", "Beş Bin", "Altı Bin", "Yedi Bin", "Sekiz Bin", "Dokuz Bin" };
+
+            sonuc = binlerb[binlerbas] + " " + Yuzlerb[yuzlerbas] + " " + Onlarb[onlarbas] + " " +
+           birlerb[birlerbas];
 
             Console.WriteLine(sonuc);
         }
@@ -96,7 +70,7 @@ namespace Ornek30
                 Örnek: SayiOku(9853); > dokuz bin sekiz yüz elli üç*/
 
             Program program = new Program();
-           program. sayial();
+            program.sayial();
             Console.ReadLine();
 
         }
