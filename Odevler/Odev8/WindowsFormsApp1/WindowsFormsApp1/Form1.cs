@@ -133,7 +133,17 @@ namespace WindowsFormsApp1
 
         private void btn_hesapla_Click(object sender, EventArgs e)
         {
+            /* bir faktöryel   
+             * asal say
+             * toplama işlemi
+             * dizi // params   
+             * tek çift olayı
+             * // hepsi metotlu olacak 
+             * */
             
+
+
+
             switch (secim)
             {
                 case "Kare":

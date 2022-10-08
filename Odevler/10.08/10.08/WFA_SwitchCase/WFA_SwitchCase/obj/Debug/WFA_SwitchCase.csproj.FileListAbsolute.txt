@@ -1,0 +1,10 @@
+D:\Sınıflar\YMS3140\Introduction\10.08\WFA_SwitchCase\WFA_SwitchCase\bin\Debug\WFA_SwitchCase.exe.config
+D:\Sınıflar\YMS3140\Introduction\10.08\WFA_SwitchCase\WFA_SwitchCase\bin\Debug\WFA_SwitchCase.exe
+D:\Sınıflar\YMS3140\Introduction\10.08\WFA_SwitchCase\WFA_SwitchCase\bin\Debug\WFA_SwitchCase.pdb
+D:\Sınıflar\YMS3140\Introduction\10.08\WFA_SwitchCase\WFA_SwitchCase\obj\Debug\WFA_SwitchCase.csprojAssemblyReference.cache
+D:\Sınıflar\YMS3140\Introduction\10.08\WFA_SwitchCase\WFA_SwitchCase\obj\Debug\WFA_SwitchCase.Form1.resources
+D:\Sınıflar\YMS3140\Introduction\10.08\WFA_SwitchCase\WFA_SwitchCase\obj\Debug\WFA_SwitchCase.Properties.Resources.resources
+D:\Sınıflar\YMS3140\Introduction\10.08\WFA_SwitchCase\WFA_SwitchCase\obj\Debug\WFA_SwitchCase.csproj.GenerateResource.cache
+D:\Sınıflar\YMS3140\Introduction\10.08\WFA_SwitchCase\WFA_SwitchCase\obj\Debug\WFA_SwitchCase.csproj.CoreCompileInputs.cache
+D:\Sınıflar\YMS3140\Introduction\10.08\WFA_SwitchCase\WFA_SwitchCase\obj\Debug\WFA_SwitchCase.exe
+D:\Sınıflar\YMS3140\Introduction\10.08\WFA_SwitchCase\WFA_SwitchCase\obj\Debug\WFA_SwitchCase.pdb

@@ -1,0 +1,7 @@
+--uygulama açıldığında rastgele olarak 3 farklı zeminden (Yeşil,Sarı,Kahverengi) sadece birini zemin rengi olarak ayarlansın.
+
+--bahis kısmında bulunan numeric updown'lara bir değer girilmeden ve yatır isimli butona basılmadan oyun başlamayacak.
+
+--bahis yapmış olduğumuz at kazanırsa ortadaki para bakiyemize aktarılacak.
+
+deadline:11.08.2020 saat: 09:30

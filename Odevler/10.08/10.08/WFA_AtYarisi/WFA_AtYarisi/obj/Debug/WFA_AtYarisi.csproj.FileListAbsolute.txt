@@ -1,0 +1,32 @@
+D:\Sınıflar\YMS3140\Introduction\10.08\WFA_AtYarisi\WFA_AtYarisi\bin\Debug\WFA_AtYarisi.exe.config
+D:\Sınıflar\YMS3140\Introduction\10.08\WFA_AtYarisi\WFA_AtYarisi\bin\Debug\WFA_AtYarisi.exe
+D:\Sınıflar\YMS3140\Introduction\10.08\WFA_AtYarisi\WFA_AtYarisi\bin\Debug\WFA_AtYarisi.pdb
+D:\Sınıflar\YMS3140\Introduction\10.08\WFA_AtYarisi\WFA_AtYarisi\obj\Debug\WFA_AtYarisi.csprojAssemblyReference.cache
+D:\Sınıflar\YMS3140\Introduction\10.08\WFA_AtYarisi\WFA_AtYarisi\obj\Debug\WFA_AtYarisi.Form1.resources
+D:\Sınıflar\YMS3140\Introduction\10.08\WFA_AtYarisi\WFA_AtYarisi\obj\Debug\WFA_AtYarisi.Properties.Resources.resources
+D:\Sınıflar\YMS3140\Introduction\10.08\WFA_AtYarisi\WFA_AtYarisi\obj\Debug\WFA_AtYarisi.csproj.GenerateResource.cache
+D:\Sınıflar\YMS3140\Introduction\10.08\WFA_AtYarisi\WFA_AtYarisi\obj\Debug\WFA_AtYarisi.csproj.CoreCompileInputs.cache
+D:\Sınıflar\YMS3140\Introduction\10.08\WFA_AtYarisi\WFA_AtYarisi\obj\Debug\WFA_AtYarisi.exe
+D:\Sınıflar\YMS3140\Introduction\10.08\WFA_AtYarisi\WFA_AtYarisi\obj\Debug\WFA_AtYarisi.pdb
+C:\Users\toroman\Desktop\YAZILIM\Bilgeadamdaki Projeler\1-Introduction\10.08\WFA_AtYarisi\WFA_AtYarisi\bin\Debug\WFA_AtYarisi.exe.config
+C:\Users\toroman\Desktop\YAZILIM\Bilgeadamdaki Projeler\1-Introduction\10.08\WFA_AtYarisi\WFA_AtYarisi\bin\Debug\WFA_AtYarisi.exe
+C:\Users\toroman\Desktop\YAZILIM\Bilgeadamdaki Projeler\1-Introduction\10.08\WFA_AtYarisi\WFA_AtYarisi\bin\Debug\WFA_AtYarisi.pdb
+C:\Users\toroman\Desktop\YAZILIM\Bilgeadamdaki Projeler\1-Introduction\10.08\WFA_AtYarisi\WFA_AtYarisi\obj\Debug\WFA_AtYarisi.csproj.AssemblyReference.cache
+C:\Users\toroman\Desktop\YAZILIM\Bilgeadamdaki Projeler\1-Introduction\10.08\WFA_AtYarisi\WFA_AtYarisi\obj\Debug\WFA_AtYarisi.csproj.SuggestedBindingRedirects.cache
+C:\Users\toroman\Desktop\YAZILIM\Bilgeadamdaki Projeler\1-Introduction\10.08\WFA_AtYarisi\WFA_AtYarisi\obj\Debug\WFA_AtYarisi.Form1.resources
+C:\Users\toroman\Desktop\YAZILIM\Bilgeadamdaki Projeler\1-Introduction\10.08\WFA_AtYarisi\WFA_AtYarisi\obj\Debug\WFA_AtYarisi.Properties.Resources.resources
+C:\Users\toroman\Desktop\YAZILIM\Bilgeadamdaki Projeler\1-Introduction\10.08\WFA_AtYarisi\WFA_AtYarisi\obj\Debug\WFA_AtYarisi.csproj.GenerateResource.cache
+C:\Users\toroman\Desktop\YAZILIM\Bilgeadamdaki Projeler\1-Introduction\10.08\WFA_AtYarisi\WFA_AtYarisi\obj\Debug\WFA_AtYarisi.csproj.CoreCompileInputs.cache
+C:\Users\toroman\Desktop\YAZILIM\Bilgeadamdaki Projeler\1-Introduction\10.08\WFA_AtYarisi\WFA_AtYarisi\obj\Debug\WFA_AtYarisi.exe
+C:\Users\toroman\Desktop\YAZILIM\Bilgeadamdaki Projeler\1-Introduction\10.08\WFA_AtYarisi\WFA_AtYarisi\obj\Debug\WFA_AtYarisi.pdb
+C:\Users\DevrimM\Desktop\302\Odevler\10.08\10.08\WFA_AtYarisi\WFA_AtYarisi\bin\Debug\WFA_AtYarisi.exe.config
+C:\Users\DevrimM\Desktop\302\Odevler\10.08\10.08\WFA_AtYarisi\WFA_AtYarisi\bin\Debug\WFA_AtYarisi.exe
+C:\Users\DevrimM\Desktop\302\Odevler\10.08\10.08\WFA_AtYarisi\WFA_AtYarisi\bin\Debug\WFA_AtYarisi.pdb
+C:\Users\DevrimM\Desktop\302\Odevler\10.08\10.08\WFA_AtYarisi\WFA_AtYarisi\obj\Debug\WFA_AtYarisi.csproj.AssemblyReference.cache
+C:\Users\DevrimM\Desktop\302\Odevler\10.08\10.08\WFA_AtYarisi\WFA_AtYarisi\obj\Debug\WFA_AtYarisi.csproj.SuggestedBindingRedirects.cache
+C:\Users\DevrimM\Desktop\302\Odevler\10.08\10.08\WFA_AtYarisi\WFA_AtYarisi\obj\Debug\WFA_AtYarisi.Form1.resources
+C:\Users\DevrimM\Desktop\302\Odevler\10.08\10.08\WFA_AtYarisi\WFA_AtYarisi\obj\Debug\WFA_AtYarisi.Properties.Resources.resources
+C:\Users\DevrimM\Desktop\302\Odevler\10.08\10.08\WFA_AtYarisi\WFA_AtYarisi\obj\Debug\WFA_AtYarisi.csproj.GenerateResource.cache
+C:\Users\DevrimM\Desktop\302\Odevler\10.08\10.08\WFA_AtYarisi\WFA_AtYarisi\obj\Debug\WFA_AtYarisi.csproj.CoreCompileInputs.cache
+C:\Users\DevrimM\Desktop\302\Odevler\10.08\10.08\WFA_AtYarisi\WFA_AtYarisi\obj\Debug\WFA_AtYarisi.exe
+C:\Users\DevrimM\Desktop\302\Odevler\10.08\10.08\WFA_AtYarisi\WFA_AtYarisi\obj\Debug\WFA_AtYarisi.pdb
