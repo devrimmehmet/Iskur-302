@@ -1,0 +1,159 @@
+//*******************Asal Sayıların Çıktısı
+
+            int durum = 0; //bool durum= true;
+            Console.WriteLine("Sayı Girin");
+            try
+            {
+                int sayi = Convert.ToInt16(Console.ReadLine());
+            
+                for (int i = 2; i < sayi; i++)
+                {
+                    if (sayi % i == 0)
+                    {
+                        durum++; // bool durum = false;
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Yanlış giriş yapıldu");
+            }
+            if (durum != 0) // if(durum) ==> asaldır.
+                Console.WriteLine("Girdiğiniz sayı asal değildir.");
+            else
+                Console.WriteLine("Girdiğiniz sayı asaldır.");
+            Console.ReadLine();
+
+//********************** Faktöriyel
+
+   int sayi;
+            int fac = 1;
+            Console.WriteLine("Sayı girin");
+            try
+            {
+                sayi = Convert.ToInt16(Console.ReadLine());
+
+                while (sayi > 1)
+                {
+
+                    fac = fac * sayi;
+                    sayi--;
+                }
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Yanlıs harf girdiniz");
+               
+            }
+            Console.WriteLine(fac);
+            
+            Console.ReadLine();
+
+ {
+         **********************// Bir dizi tanımla int olarak. klavyeden sor kaç elemanlı olsun.sonra tekrar sorsun.
+
+            Console.WriteLine("Kaç elemanlı olsun");
+
+            try
+            {
+                int deger = Convert.ToInt32(Console.ReadLine()); // dizi boyutu belirliyoruz
+
+                int[] sayi = new int[deger]; //dizinin boyutunu belirliyoruz
+
+                for (int i = 0; i < deger; i++)
+                {
+                    Console.WriteLine(i + ".ci elemanı gir."); //dizi elemanlarını belirliyoruz.
+                    int eleman = Convert.ToInt16(Console.ReadLine());
+                    sayi[i] = eleman;
+                }
+                Console.WriteLine("dizi girme işlemi tamamlandı. \n dizi elemanları");
+
+                for (int j = 0; j < deger; j++)
+
+                {
+                    Console.WriteLine(sayi[j]);
+                }
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Hatalı Giriş");
+            }
+            Console.ReadLine();
+        }
+
+****//18,5 > zayıf 18,5 - 24,9 normal 24,9 ile 29,9 kilolu erkek-kadın için
+
+            bool durum = true;
+            while (durum)
+            {
+                double index;
+                double kilo;
+                double boy;
+                string cinsiyet;
+                try
+                {
+                    Console.WriteLine("Cinsiyetinizi girin");
+                    cinsiyet = (Console.ReadLine());
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("Hatali giriş");
+                }
+                try
+                {
+                    Console.WriteLine("Lütfen kilo giriniz :");
+                    kilo = Convert.ToDouble(Console.ReadLine());
+                }
+
+                catch (Exception)
+                {
+                    Console.WriteLine("Hatali giriş");
+                }
+                try
+                {
+                    Console.WriteLine("Lütfen boy giriniz :");
+                    boy = Convert.ToDouble(Console.ReadLine());
+                }
+
+                catch (Exception)
+                {
+                    Console.WriteLine("Hatali giriş");
+                }
+
+                Console.WriteLine(index = ((kilo) / (boy * boy)) * 10000);
+
+                if (index < 18.5)
+                {
+                    Console.WriteLine("Boy Kilo index'iniz: ");
+                    Console.WriteLine(index = ((kilo) / (boy * boy)) * 10000);
+                    Console.WriteLine("Zayıfsınız");
+                }
+                else if (18.5 < index && index < 24.9)
+                {
+                    Console.WriteLine("Boy Kilo index'iniz: ");
+                    Console.WriteLine(index = ((kilo) / (boy * boy)) * 10000);
+                    Console.WriteLine("Kilonuz Normal");
+                }
+                else if (24.9 < index)
+                {
+                    Console.WriteLine("Boy Kilo index'iniz: ");
+                    Console.WriteLine(index = ((kilo) / (boy * boy)) * 10000);
+                    Console.WriteLine("Aşırı Kilolu");
+                }
+//fonnksiyooooon
+{
+
+            double sayi;
+            try
+            {
+                Console.WriteLine("Lütfen sayi");
+                sayi = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("yuvarla" + Math.Floor(sayi));
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Hatali giriş");
+            }
+            
+            Console.ReadLine();
+        }

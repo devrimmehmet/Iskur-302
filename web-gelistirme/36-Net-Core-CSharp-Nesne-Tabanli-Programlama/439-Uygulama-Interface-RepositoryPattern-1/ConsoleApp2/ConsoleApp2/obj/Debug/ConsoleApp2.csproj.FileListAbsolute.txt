@@ -1,0 +1,8 @@
+C:\Users\DevrimM\Desktop\302\web-gelistirme\35-Net-Core-CSharp-Nesne-Tabanli-Programlama\439-Uygulama-Interface-RepositoryPattern-1\ConsoleApp2\ConsoleApp2\bin\Debug\ConsoleApp2.exe.config
+C:\Users\DevrimM\Desktop\302\web-gelistirme\35-Net-Core-CSharp-Nesne-Tabanli-Programlama\439-Uygulama-Interface-RepositoryPattern-1\ConsoleApp2\ConsoleApp2\bin\Debug\ConsoleApp2.exe
+C:\Users\DevrimM\Desktop\302\web-gelistirme\35-Net-Core-CSharp-Nesne-Tabanli-Programlama\439-Uygulama-Interface-RepositoryPattern-1\ConsoleApp2\ConsoleApp2\bin\Debug\ConsoleApp2.pdb
+C:\Users\DevrimM\Desktop\302\web-gelistirme\35-Net-Core-CSharp-Nesne-Tabanli-Programlama\439-Uygulama-Interface-RepositoryPattern-1\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.csproj.AssemblyReference.cache
+C:\Users\DevrimM\Desktop\302\web-gelistirme\35-Net-Core-CSharp-Nesne-Tabanli-Programlama\439-Uygulama-Interface-RepositoryPattern-1\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.csproj.SuggestedBindingRedirects.cache
+C:\Users\DevrimM\Desktop\302\web-gelistirme\35-Net-Core-CSharp-Nesne-Tabanli-Programlama\439-Uygulama-Interface-RepositoryPattern-1\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.csproj.CoreCompileInputs.cache
+C:\Users\DevrimM\Desktop\302\web-gelistirme\35-Net-Core-CSharp-Nesne-Tabanli-Programlama\439-Uygulama-Interface-RepositoryPattern-1\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.exe
+C:\Users\DevrimM\Desktop\302\web-gelistirme\35-Net-Core-CSharp-Nesne-Tabanli-Programlama\439-Uygulama-Interface-RepositoryPattern-1\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.pdb
