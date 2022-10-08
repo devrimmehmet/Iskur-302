@@ -33,18 +33,8 @@ namespace WindowsFormsApp1
 
         private void btn_kare_Click(object sender, EventArgs e)
         {
-            lbl_hosgeldiniz.Visible = false;
-            pnl_verigirisi.Visible = true;
-            pnl_sonuc.Visible = false;
-            tB_b.Visible = false;
-            lbl_b.Visible = false;
-            ///tB_c.Visible = false;
-          //  lbl_c.Visible = false;
-            tB_a.Text = "";
-            lbl_a.Text = "Karenin Bir Kenarının Uzunluğunu Giriniz";
-            lbl_baslik.Text = "Kare";
-            tB_a.Enabled = true;
-            secim = "Kare";
+           Form2 frm2 = new Form2();
+        frm2.Show();
             
         }
 
@@ -114,7 +104,46 @@ namespace WindowsFormsApp1
         {
             
         }
+        string tekCift(double sayi)
+        {
+            string sonuc = "Tek";
+            if (sayi%2==0)
+            {
+                sonuc = "Çift";
+            }
+            return sonuc;
+        }
+        string Asal(double sayi)
+        {
+            string sonuc = "Asal";
+            int sayac = 0;
+            for (int i = 1; i <= sayi; i++)
+            {
+               if(sayi % i == 0)
+                {
+                    sayac++;
+                }
+            }
+           if(sayac > 2)
+            {
+                 sonuc = "Değil";
+            }
 
+
+
+                return sonuc;
+
+        }
+
+        int Faktoryel(double sayi)
+        {
+            int sonuc = 1;
+            for (int i = 1; i <= sayi; i++)
+            {
+                sonuc *= i;
+            }
+            return sonuc;
+        }
         private void btn_hesapla_Click(object sender, EventArgs e)
         {
             /* bir faktöryel   
@@ -134,13 +163,10 @@ namespace WindowsFormsApp1
                     try
                     {
                         a = int.Parse(tB_a.Text);
-                       
-                      //  lbl_cevre_yazdir.Text = cevre.ToString();
-                      //  lbl_alan_yazdir.Text = alan.ToString();
                         pnl_sonuc.Visible = true;
                         tB_a.Enabled = false;
                         tB_b.Enabled = false;
-                        //tB_c.Enabled = false;
+                       
                     }
                     catch (Exception)
                     {
@@ -177,15 +203,15 @@ namespace WindowsFormsApp1
                     try
                     {
                         a = int.Parse(tB_a.Text);
-                    
                         pnl_sonuc.Visible = true;
                         lbl_sonuc3baslik.Text = "Tek - Çift";
-                        lbl_sonuc3.Text = "Tek";
                         lbl_cevre.Text = "Faktöryeli";
-                        lbl_cevre_yazdir.Text = "300";
                         lbl_alan.Text = "Asal Mı?";
-                        lbl_alan_yazdir.Text = "Asal";
                         
+
+                        lbl_alan_yazdir.Text = Asal(a);
+                        lbl_sonuc3.Text = tekCift(a);
+                        lbl_cevre_yazdir.Text = Faktoryel(a).ToString();
                         tB_a.Enabled = false;
                         tB_b.Enabled = false;
                        
