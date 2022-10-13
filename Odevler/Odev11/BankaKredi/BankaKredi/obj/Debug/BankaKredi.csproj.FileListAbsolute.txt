@@ -1,0 +1,8 @@
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev11\BankaKredi\BankaKredi\bin\Debug\BankaKredi.exe.config
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev11\BankaKredi\BankaKredi\bin\Debug\BankaKredi.exe
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev11\BankaKredi\BankaKredi\bin\Debug\BankaKredi.pdb
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev11\BankaKredi\BankaKredi\obj\Debug\BankaKredi.csproj.AssemblyReference.cache
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev11\BankaKredi\BankaKredi\obj\Debug\BankaKredi.csproj.SuggestedBindingRedirects.cache
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev11\BankaKredi\BankaKredi\obj\Debug\BankaKredi.csproj.CoreCompileInputs.cache
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev11\BankaKredi\BankaKredi\obj\Debug\BankaKredi.exe
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev11\BankaKredi\BankaKredi\obj\Debug\BankaKredi.pdb

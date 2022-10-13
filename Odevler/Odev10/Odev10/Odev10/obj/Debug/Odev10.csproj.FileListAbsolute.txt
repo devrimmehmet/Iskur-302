@@ -1,0 +1,12 @@
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev10\Odev10\Odev10\bin\Debug\Odev10.exe.config
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev10\Odev10\Odev10\bin\Debug\Odev10.exe
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev10\Odev10\Odev10\bin\Debug\Odev10.pdb
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev10\Odev10\Odev10\obj\Debug\Odev10.csproj.AssemblyReference.cache
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev10\Odev10\Odev10\obj\Debug\Odev10.csproj.SuggestedBindingRedirects.cache
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev10\Odev10\Odev10\obj\Debug\Odev10.Properties.Resources.resources
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev10\Odev10\Odev10\obj\Debug\Odev10.csproj.GenerateResource.cache
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev10\Odev10\Odev10\obj\Debug\Odev10.csproj.CoreCompileInputs.cache
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev10\Odev10\Odev10\obj\Debug\Odev10.exe
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev10\Odev10\Odev10\obj\Debug\Odev10.pdb
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev10\Odev10\Odev10\obj\Debug\Odev10.Form1.resources
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev10\Odev10\Odev10\obj\Debug\Odev10.GunSonuForm.resources
