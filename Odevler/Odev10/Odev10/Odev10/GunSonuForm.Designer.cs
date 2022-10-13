@@ -50,6 +50,7 @@
             this.lbl_total.Size = new System.Drawing.Size(131, 20);
             this.lbl_total.TabIndex = 14;
             this.lbl_total.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_total.Visible = false;
             // 
             // label2
             // 
@@ -61,6 +62,7 @@
             this.label2.TabIndex = 13;
             this.label2.Text = "Gün Sonu Kasa Toplam Ciro";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.Visible = false;
             // 
             // GunSonuForm
             // 
@@ -73,7 +75,8 @@
             this.Controls.Add(this.listBox1);
             this.Name = "GunSonuForm";
             this.ShowIcon = false;
-            this.Text = "GunSonuForm";
+            this.Text = "Sipariş Detayları";
+            this.Load += new System.EventHandler(this.GunSonuForm_Load);
             this.ResumeLayout(false);
 
         }

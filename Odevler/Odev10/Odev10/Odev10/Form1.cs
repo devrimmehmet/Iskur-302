@@ -149,11 +149,15 @@ namespace Odev10
         {
             if (kasa.siparisToplam!=0)
             {
-                gunSonuForm.listBox1.Items.Add($"{gunSonuForm.listBox1.Items.Count + 1} -- Sipariş Toplamı: {kasa.siparisToplam} TL -- {DateTime.Now}");
+                gunSonuForm.listBox1.Items.Add($"{gunSonuForm.listBox1.Items.Count + 1} - {DateTime.Now} - Sipariş Toplamı: {kasa.siparisToplam} TL - Kola {kasa.kolaAdet} adet - Limonata {kasa.limonataAdet} adet - Çay {kasa.cayAdet} adet - Su {kasa.suAdet} adet.");
             }
            
             kasa.kasaToplam += kasa.siparisToplam;
             kasa.siparisToplam = 0;
+            kasa.kolaAdet = 0;
+            kasa.limonataAdet = 0;
+            kasa.cayAdet = 0;
+            kasa.suAdet = 0;
             cB_cay.Checked = false;
             cB_kola.Checked = false;
             cB_Limonata.Checked = false;
@@ -167,8 +171,6 @@ namespace Odev10
         {
             MessageBox.Show($"Gün Sonu Kasa Toplam Ciro: {kasa.kasaToplam.ToString()} TL");
             gunSonuForm.lbl_total.Text=kasa.kasaToplam.ToString();
-            gunSonuForm.Show();
-            gunSonuForm.listBox1.Items.Clear();
             kasa.kasaToplam = 0;
         }
 
@@ -190,6 +192,12 @@ namespace Odev10
         private void coB_su_SelectedValueChanged(object sender, EventArgs e)
         {
             coB_su.Enabled = false;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            gunSonuForm.Show();
+          //  gunSonuForm.listBox1.Items.Clear();
         }
     }
 }

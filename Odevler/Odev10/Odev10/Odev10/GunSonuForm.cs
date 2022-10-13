@@ -16,5 +16,10 @@ namespace Odev10
         {
             InitializeComponent();
         }
+
+        private void GunSonuForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

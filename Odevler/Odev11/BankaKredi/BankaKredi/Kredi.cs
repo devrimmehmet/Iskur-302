@@ -38,8 +38,8 @@ namespace BankaKredi
             KrediKapatmaMiktari = CekilenKredi + FaizHesaplama;
             AylıkOdeme = KrediKapatmaMiktari / taksitSayisi;
 
-            Console.WriteLine($"Aylık Taksit Ücreti: {AylıkOdeme} TL\n" +
-                 $"Çekilen Kredi: {CekilenKredi} TL\nÖdenecek Toplam: {KrediKapatmaMiktari} TL");
+            Console.WriteLine($"Aylık Taksit Ücreti: {Math.Round(AylıkOdeme, 5)} TL\n" +
+                 $"Çekilen Kredi: {Math.Round(CekilenKredi,5)} TL\nÖdenecek Toplam: {Math.Round(KrediKapatmaMiktari,5)} TL");
             double[] aylikFaiz = new double[(int)taksitSayisi];
             anaPara = CekilenKredi;
             
@@ -48,12 +48,12 @@ namespace BankaKredi
         }
         public void BireyselKrediKapama()
         {
-            //Console.WriteLine("Kredi kapatma menüsüne hoşgeldiniz");
-            //Console.WriteLine("Kaç taksit ödediniz ?");
-            //OdenenTaksitSayisi = Convert.ToDouble(Console.ReadLine());
-            //KrediKapatmaMiktari = anaPara - (AylıkOdeme * OdenenTaksitSayisi*0.2);
-            //Console.WriteLine($"Kredi Kapatma Miktarı: {KrediKapatmaMiktari} TL");
-            for (int i = 0; i < taksitSayisi; i++)
+            Console.WriteLine("Kredi kapatma menüsüne hoşgeldiniz");
+            Console.WriteLine("Kaç taksit ödediniz ?");
+            OdenenTaksitSayisi = Convert.ToDouble(Console.ReadLine());
+            string[] krediKapatmaMesajı = new string[(int)taksitSayisi];
+            double faiz=0;
+            for (int i = 0; i < OdenenTaksitSayisi; i++)
             {
                 double usluSayi1 = Math.Pow((1 + FaizOranı), (taksitSayisi - i));
                 double usluSayi2 = Math.Pow((1 + FaizOranı), (taksitSayisi - i - 1));
@@ -61,10 +61,14 @@ namespace BankaKredi
                 double odenenFaiz2 = (CekilenKredi * usluSayi2) - CekilenKredi;
                 faizkapatma = odenenFaiz1 - odenenFaiz2;
                 anaPara -= (AylıkOdeme - faizkapatma);
-
-                Console.WriteLine($"{i + 1}.ay Ödenen Faiz {Math.Round(faizkapatma,5)} Ödenen Ana Para: {Math.Round((AylıkOdeme - faizkapatma), 5)} Kredi Kapatma Tutarı = {Math.Round(anaPara, 5)}");
-
+                faiz += faizkapatma;
+                Console.WriteLine($"{i + 1}.ay Ödenen Faiz {Math.Round(faizkapatma,5)} Ödenen Ana Para: {Math.Round((AylıkOdeme - faizkapatma), 5)}");
+                krediKapatmaMesajı[i] = $"{i + 1}.ay Ödenen Toplam Faiz {Math.Round(faiz, 5)} Toplam Ödenen Ana Para: {Math.Round((CekilenKredi - anaPara), 5)} Kredi Kapatma Tutarı = {Math.Round(anaPara, 5)}";
             }
+        
+            Console.WriteLine();
+            Console.WriteLine(krediKapatmaMesajı[(int)OdenenTaksitSayisi-1]);
+            Console.ReadLine();
         }
         public void KurumsalKredi()
         {
@@ -102,29 +106,45 @@ namespace BankaKredi
         }
         public void KurumsalKrediCekme()
         {
+            Console.WriteLine("Çekmek İstediğiniz Kredi Miktarını Giriniz");
+            CekilenKredi = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Kaç Taksitte ödemek istiyorsunuz");
+            taksitSayisi = Convert.ToDouble(Console.ReadLine());
+
             double usluSayi = Math.Pow((1 + FaizOranı), taksitSayisi);
             FaizHesaplama = (CekilenKredi * usluSayi) - CekilenKredi;
             KrediKapatmaMiktari = CekilenKredi + FaizHesaplama;
             AylıkOdeme = KrediKapatmaMiktari / taksitSayisi;
 
-            Console.WriteLine($"Aylık Taksit Ücreti: {AylıkOdeme} TL\n" +
-                $"Çekilen Kredi: {CekilenKredi} TL\nÖdenecek Toplam: {KrediKapatmaMiktari} TL");
+            Console.WriteLine($"Aylık Taksit Ücreti: {Math.Round(AylıkOdeme, 5)} TL\n" +
+                  $"Çekilen Kredi: {Math.Round(CekilenKredi, 5)} TL\nÖdenecek Toplam: {Math.Round(KrediKapatmaMiktari, 5)} TL");
             double[] aylikFaiz = new double[(int)taksitSayisi];
             anaPara = CekilenKredi;
-           
+            Console.ReadLine();
+            KurumsalKredi();
         }
         public void KurumsalKrediKapama()
         {
             Console.WriteLine("Kredi kapatma menüsüne hoşgeldiniz");
             Console.WriteLine("Kaç taksit ödediniz ?");
             OdenenTaksitSayisi = Convert.ToDouble(Console.ReadLine());
-            faizkapatma = FaizHesaplama;
+            string[] krediKapatmaMesajı = new string[(int)taksitSayisi];
+            double faiz = 0;
             for (int i = 0; i < OdenenTaksitSayisi; i++)
             {
-                faizkapatma = faizkapatma * 0.8;
+                double usluSayi1 = Math.Pow((1 + FaizOranı), (taksitSayisi - i));
+                double usluSayi2 = Math.Pow((1 + FaizOranı), (taksitSayisi - i - 1));
+                double odenenFaiz1 = (CekilenKredi * usluSayi1) - CekilenKredi;
+                double odenenFaiz2 = (CekilenKredi * usluSayi2) - CekilenKredi;
+                faizkapatma = odenenFaiz1 - odenenFaiz2;
+                anaPara -= (AylıkOdeme - faizkapatma);
+                faiz += faizkapatma;
+                Console.WriteLine($"{i + 1}.ay Ödenen Faiz {Math.Round(faizkapatma, 5)} Ödenen Ana Para: {Math.Round((AylıkOdeme - faizkapatma), 5)}");
+                krediKapatmaMesajı[i] = $"{i + 1}.ay Ödenen Toplam Faiz {Math.Round(faiz, 5)} Toplam Ödenen Ana Para: {Math.Round((CekilenKredi - anaPara), 5)} Kredi Kapatma Tutarı = {Math.Round(anaPara, 5)}";
             }
-            KrediKapatmaMiktari = anaPara + FaizHesaplama - (AylıkOdeme * OdenenTaksitSayisi) - faizkapatma;
-            Console.WriteLine($"Kredi Kapatma Miktarı: {KrediKapatmaMiktari} TL");
+
+            Console.WriteLine();
+            Console.WriteLine(krediKapatmaMesajı[(int)OdenenTaksitSayisi - 1]);
             Console.ReadLine();
         }
         public void Menu()
