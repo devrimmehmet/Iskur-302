@@ -1,0 +1,11 @@
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev13\Metrobus-Duraklama\Metrobus-Duraklama\bin\Debug\Metrobus-Duraklama.exe.config
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev13\Metrobus-Duraklama\Metrobus-Duraklama\bin\Debug\Metrobus-Duraklama.exe
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev13\Metrobus-Duraklama\Metrobus-Duraklama\bin\Debug\Metrobus-Duraklama.pdb
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev13\Metrobus-Duraklama\Metrobus-Duraklama\obj\Debug\Metrobus-Duraklama.csproj.AssemblyReference.cache
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev13\Metrobus-Duraklama\Metrobus-Duraklama\obj\Debug\Metrobus-Duraklama.csproj.SuggestedBindingRedirects.cache
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev13\Metrobus-Duraklama\Metrobus-Duraklama\obj\Debug\Metrobus_Duraklama.Properties.Resources.resources
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev13\Metrobus-Duraklama\Metrobus-Duraklama\obj\Debug\Metrobus-Duraklama.csproj.GenerateResource.cache
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev13\Metrobus-Duraklama\Metrobus-Duraklama\obj\Debug\Metrobus-Duraklama.csproj.CoreCompileInputs.cache
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev13\Metrobus-Duraklama\Metrobus-Duraklama\obj\Debug\Metrobus-Duraklama.exe
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev13\Metrobus-Duraklama\Metrobus-Duraklama\obj\Debug\Metrobus-Duraklama.pdb
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev13\Metrobus-Duraklama\Metrobus-Duraklama\obj\Debug\Metrobus_Duraklama.Form1.resources
