@@ -1,0 +1,14 @@
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev12\forms\forms\bin\Debug\forms.exe.config
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev12\forms\forms\bin\Debug\forms.exe
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev12\forms\forms\bin\Debug\forms.pdb
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev12\forms\forms\obj\Debug\forms.csproj.AssemblyReference.cache
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev12\forms\forms\obj\Debug\forms.csproj.SuggestedBindingRedirects.cache
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev12\forms\forms\obj\Debug\forms.Form1.resources
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev12\forms\forms\obj\Debug\forms.Properties.Resources.resources
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev12\forms\forms\obj\Debug\forms.csproj.GenerateResource.cache
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev12\forms\forms\obj\Debug\forms.csproj.CoreCompileInputs.cache
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev12\forms\forms\obj\Debug\forms.exe
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev12\forms\forms\obj\Debug\forms.pdb
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev12\forms\forms\obj\Debug\forms.CarpimTablosu.resources
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev12\forms\forms\obj\Debug\forms.Fibonacci.resources
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev12\forms\forms\obj\Debug\forms.Park.resources
