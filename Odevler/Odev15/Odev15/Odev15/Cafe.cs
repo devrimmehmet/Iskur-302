@@ -143,7 +143,7 @@ namespace Odev15
             Console.Write("Ürün Eklemek İçin Giriş Yapın: ");
             ConsoleKeyInfo KeyInfo = Console.ReadKey(true);
             //Console.WriteLine("\n" + KeyInfo.Key.ToString() + " tuşuna bastınız!..");
-            //Console.ReadLine();
+            //Console.ReadKey();
             if (KeyInfo.Key.ToString() == "D1")
             {
                 Console.Clear();
@@ -251,7 +251,7 @@ namespace Odev15
             else
             {
                 Console.WriteLine("Yanlış Seçim Yaptınız.");
-                Console.ReadLine();
+                Console.ReadKey();
                 MasaAc();
             }
         }
@@ -326,7 +326,7 @@ namespace Odev15
             else
             {
                 Console.WriteLine("Yanlış Seçim Yaptınız.");
-                Console.ReadLine();
+                Console.ReadKey();
                 MasaAc();
             }
 
@@ -338,7 +338,7 @@ namespace Odev15
         public void MasaIslemDetay()
         {
             Console.Clear();
-          
+
             Console.WriteLine("----------------------------------------------------------------");
             Console.WriteLine($"                            {aktifMasa}.Masa                       ");
             Console.WriteLine("----------------------------------------------------------------");
@@ -348,7 +348,7 @@ namespace Odev15
                 siparisListesiYedek = siparisListesi1;
                 foreach (var item in siparisListesi1)
                 {
-                    
+
                     Console.WriteLine(sayac + ". Ürün  " + item);
                     sayac++;
 
@@ -357,10 +357,10 @@ namespace Odev15
             }
             else if (aktifMasa == "2")
             {
-                
+
                 foreach (var item in siparisListesi2)
                 {
-                   
+
                     Console.WriteLine(sayac + ". Ürün  " + item);
                     sayac++;
 
@@ -368,10 +368,10 @@ namespace Odev15
             }
             else if (aktifMasa == "3")
             {
-               
+
                 foreach (var item in siparisListesi3)
                 {
-                    
+
                     Console.WriteLine(sayac + ". Ürün  " + item);
                     sayac++;
 
@@ -379,10 +379,10 @@ namespace Odev15
             }
             else if (aktifMasa == "4")
             {
-               
+
                 foreach (var item in siparisListesi4)
                 {
-                    
+
                     Console.WriteLine(sayac + ". Ürün  " + item);
                     sayac++;
 
@@ -390,10 +390,10 @@ namespace Odev15
             }
             else if (aktifMasa == "5")
             {
-             
+
                 foreach (var item in siparisListesi5)
                 {
-                   
+
                     Console.WriteLine(sayac + ". Ürün  " + item);
                     sayac++;
 
@@ -401,10 +401,10 @@ namespace Odev15
             }
             else if (aktifMasa == "6")
             {
-              
+
                 foreach (var item in siparisListesi6)
                 {
-                    
+
                     Console.WriteLine(sayac + ". Ürün  " + item);
                     sayac++;
 
@@ -412,10 +412,10 @@ namespace Odev15
             }
             else if (aktifMasa == "7")
             {
-               
+
                 foreach (var item in siparisListesi7)
                 {
-                    
+
                     Console.WriteLine(sayac + ". Ürün  " + item);
                     sayac++;
 
@@ -455,13 +455,16 @@ namespace Odev15
             else
             {
                 Console.Write("Seçiminiz Hatalı...");
+                Console.ReadKey();
+                MasaIslemDetay();
+
             }
 
         }
         public void siparisEkle()
         {
             Console.Clear();
-            
+
             Console.WriteLine("----------------------------------------------------------------");
             Console.WriteLine($"                 Masa  {aktifMasa} - Sipariş Ekle                 ");
             Console.WriteLine("----------------------------------------------------------------");
@@ -526,7 +529,7 @@ namespace Odev15
                     Console.WriteLine(item);
                 }
             }
-            Console.ForegroundColor = ConsoleColor.Red;
+            Console.ForegroundColor = ConsoleColor.Green;
             foreach (var item in siparisListesi)
             {
                 Console.WriteLine(item);
@@ -641,7 +644,7 @@ namespace Odev15
             else
             {
                 Console.WriteLine("Yanlış Seçim Yaptınız.");
-                Console.ReadLine();
+                Console.ReadKey();
                 MasaAc();
             }
         }
@@ -649,300 +652,1135 @@ namespace Odev15
         {
             Console.Clear();
             Console.WriteLine("----------------------------------------------------------------");
-            Console.WriteLine($"                {aktifMasa}.Masa - Sipariş Sil                 ");
+            Console.WriteLine($"                      {aktifMasa}.Masa - Sipariş Sil                 ");
             Console.WriteLine("----------------------------------------------------------------");
-            int sayac = 1;
+            Console.WriteLine($"                          SİPARİŞLER                           ");
+            Console.WriteLine("----------------------------------------------------------------");
+
+
             if (aktifMasa == "1")
             {
-                siparisListesi = siparisListesi1;
-                if (siparisListesi1.Count==siparisListesiYedek.Count)
+                int sayac = 1;
+                foreach (var item in siparisListesi1)
                 {
-                   
-                    foreach (var item in siparisListesi1)
-                    {
-                        Console.WriteLine(sayac + ". Ürün  " + item + $"    [{sayac}]");
-                        sayac++;
-                    }
+                    Console.WriteLine(sayac + ". Ürün  " + item + $" [{sayac}]");
+                    sayac++;
                 }
-                else
-                {
-                    Console.WriteLine("dedede");
-                    foreach (var item in siparisListesi)
-                    {
-                        Console.WriteLine(sayac + ". Ürün  " + item + $"    [{sayac}]");
-                        sayac++;
-                    }
-                }     
             }
             else if (aktifMasa == "2")
             {
-                if (siparisListesi2.Count == siparisListesiYedek.Count)
+                int sayac = 1;
+                foreach (var item in siparisListesi2)
                 {
-                    siparisListesi = siparisListesi2;
-                }
-                foreach (var item in siparisListesi)
-                {
-                    Console.WriteLine(sayac + ". Ürün  " + item + $"    [{sayac}]");
+                    Console.WriteLine(sayac + ". Ürün  " + item + $" [{sayac}]");
                     sayac++;
-
                 }
             }
             else if (aktifMasa == "3")
             {
-                if (siparisListesi3.Count == siparisListesiYedek.Count)
+                int sayac = 1;
+                foreach (var item in siparisListesi3)
                 {
-                    siparisListesi = siparisListesi3;
-                }
-                foreach (var item in siparisListesi)
-                {
-                    Console.WriteLine(sayac + ". Ürün  " + item + $"    [{sayac}]");
+                    Console.WriteLine(sayac + ". Ürün  " + item + $" [{sayac}]");
                     sayac++;
-
                 }
             }
             else if (aktifMasa == "4")
             {
-                if (siparisListesi4.Count == siparisListesiYedek.Count)
+                int sayac = 1;
+                foreach (var item in siparisListesi4)
                 {
-                    siparisListesi = siparisListesi4;
-                }
-                
-                foreach (var item in siparisListesi)
-                {
-                    Console.WriteLine(sayac + ". Ürün  " + item + $"    [{sayac}]");
+                    Console.WriteLine(sayac + ". Ürün  " + item + $" [{sayac}]");
                     sayac++;
-
                 }
             }
             else if (aktifMasa == "5")
             {
-                if (siparisListesi5.Count == siparisListesiYedek.Count)
+                int sayac = 1;
+                foreach (var item in siparisListesi5)
                 {
-                    siparisListesi = siparisListesi5;
-                }
-                foreach (var item in siparisListesi)
-                {
-                    Console.WriteLine(sayac + ". Ürün  " + item + $"    [{sayac}]");
+                    Console.WriteLine(sayac + ". Ürün  " + item + $" [{sayac}]");
                     sayac++;
-
                 }
             }
             else if (aktifMasa == "6")
             {
-                if (siparisListesi6.Count == siparisListesiYedek.Count)
+                int sayac = 1;
+                foreach (var item in siparisListesi6)
                 {
-                    siparisListesi = siparisListesi6;
-                }
-                foreach (var item in siparisListesi)
-                {
-                    Console.WriteLine(sayac + ". Ürün  " + item + $"    [{sayac}]");
+                    Console.WriteLine(sayac + ". Ürün  " + item + $" [{sayac}]");
                     sayac++;
-
                 }
             }
             else if (aktifMasa == "7")
             {
-                if (siparisListesi7.Count == siparisListesiYedek.Count)
+                int sayac = 1;
+                foreach (var item in siparisListesi7)
                 {
-                    siparisListesi = siparisListesi7;
-                }
-                foreach (var item in siparisListesi)
-                {
-                    Console.WriteLine(sayac + ". Ürün  " + item + $"    [{sayac}]");
+                    Console.WriteLine(sayac + ". Ürün  " + item + $" [{sayac}]");
                     sayac++;
-
                 }
             }
 
-            Console.WriteLine("----------------------------------------------------------------");
-            Console.WriteLine($"ONAYLA           [Space]");
-            Console.WriteLine($"GERİ GİT         [Sol Ok]");
-            Console.WriteLine("----------------------------------------------------------------");
-            Console.Write("Ürün Silmek İçin Seçim Yapınız : ");
-            ConsoleKeyInfo KeyInfo = Console.ReadKey(true);
-
-
-            if (KeyInfo.Key.ToString() == "D1")
+            Console.ForegroundColor = ConsoleColor.Red;
+            if (siparisListesi.Count >= 1)
             {
-                Console.WriteLine(siparisListesi.Count+"siparislistesi");
-                Console.WriteLine(siparisListesiYedek.Count + "siparislistesiyedek");
-                Console.WriteLine(siparisListesi1.Count + "siparislistesicount1");
-                Console.ReadLine();
-                if (siparisListesi.Count >= 1)
+                Console.WriteLine();
+                Console.WriteLine("----Onaylarsanız Silinecek Siparişler----");
+                Console.WriteLine();
+            }
+
+            foreach (var item in siparisListesi)
+            {
+                Console.WriteLine(item);
+
+            }
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("----------------------------------------------------------------");
+            Console.WriteLine("ONAYLA       [Space]");
+            Console.WriteLine("GERİ GİT     [Sok Ok]");
+            Console.WriteLine("----------------------------------------------------------------");
+            Console.Write("Ürün Silmek İçin İd Giriniz: ");
+
+            ConsoleKeyInfo KeyInfo = Console.ReadKey(true);
+            if (KeyInfo.Key.ToString() == "Spacebar")
+            {
+                AnaMenu();
+            }
+            else if (KeyInfo.Key.ToString() == "LeftArrow")
+            {
+
+
+
+                if (aktifMasa == "1")
                 {
-                    siparisListesi.RemoveAt(0);
-                    siparisListesiYedek.RemoveAt(0);
-                    siparisSil();
+                    siparisListesi1.AddRange(siparisListesi);
                 }
-                else
+                else if (aktifMasa == "2")
                 {
-                    Console.WriteLine("Seçiminiz Hatalı...");
+                    siparisListesi2.AddRange(siparisListesi);
                 }
-                
+                else if (aktifMasa == "3")
+                {
+                    siparisListesi3.AddRange(siparisListesi);
+                }
+                else if (aktifMasa == "4")
+                {
+                    siparisListesi4.AddRange(siparisListesi);
+                }
+                else if (aktifMasa == "5")
+                {
+                    siparisListesi5.AddRange(siparisListesi);
+                }
+                else if (aktifMasa == "6")
+                {
+                    siparisListesi6.AddRange(siparisListesi);
+                }
+                else if (aktifMasa == "7")
+                {
+                    siparisListesi7.AddRange(siparisListesi);
+                }
+                MasaIslemDetay();
+            }
+            else if (KeyInfo.Key.ToString() == "D1")
+            {
+                if (aktifMasa == "1")
+                {
+                    if (siparisListesi1.Count >= 1)
+                    {
+                        siparisListesi.Add(siparisListesi1[0]);
+                        siparisListesi1.RemoveAt(0);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+                else if (aktifMasa == "2")
+                {
+                    if (siparisListesi2.Count >= 1)
+                    {
+                        siparisListesi.Add(siparisListesi2[0]);
+                        siparisListesi1.RemoveAt(1);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+                else if (aktifMasa == "3")
+                {
+                    if (siparisListesi3.Count >= 1)
+                    {
+                        siparisListesi.Add(siparisListesi3[0]);
+                        siparisListesi3.RemoveAt(0);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+                else if (aktifMasa == "4")
+                {
+                    if (siparisListesi4.Count >= 1)
+                    {
+                        siparisListesi.Add(siparisListesi4[0]);
+                        siparisListesi4.RemoveAt(0);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+                else if (aktifMasa == "5")
+                {
+                    if (siparisListesi5.Count >= 1)
+                    {
+                        siparisListesi.Add(siparisListesi5[0]);
+                        siparisListesi5.RemoveAt(0);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+                else if (aktifMasa == "6")
+                {
+                    if (siparisListesi6.Count >= 1)
+                    {
+                        siparisListesi.Add(siparisListesi6[0]);
+                        siparisListesi6.RemoveAt(0);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+                else if (aktifMasa == "7")
+                {
+                    if (siparisListesi7.Count >= 1)
+                    {
+                        siparisListesi.Add(siparisListesi7[0]);
+                        siparisListesi7.RemoveAt(0);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+
+
 
             }
             else if (KeyInfo.Key.ToString() == "D2")
             {
-                if (siparisListesi.Count >= 2)
+
+                if (aktifMasa == "1")
                 {
-                    siparisListesi.RemoveAt(1);
-                    siparisListesiYedek = siparisListesi;
-                    siparisSil();
+                    if (siparisListesi1.Count >= 2)
+                    {
+                        siparisListesi.Add(siparisListesi1[1]);
+                        siparisListesi1.RemoveAt(1);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
                 }
-                else
+                else if (aktifMasa == "2")
                 {
-                    Console.WriteLine("Seçiminiz Hatalı...");
+                    if (siparisListesi2.Count >= 2)
+                    {
+                        siparisListesi.Add(siparisListesi2[1]);
+                        siparisListesi1.RemoveAt(1);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
                 }
+                else if (aktifMasa == "3")
+                {
+                    if (siparisListesi3.Count >= 2)
+                    {
+                        siparisListesi.Add(siparisListesi3[1]);
+                        siparisListesi3.RemoveAt(1);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+                else if (aktifMasa == "4")
+                {
+                    if (siparisListesi4.Count >= 2)
+                    {
+                        siparisListesi.Add(siparisListesi4[1]);
+                        siparisListesi4.RemoveAt(1);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+                else if (aktifMasa == "5")
+                {
+                    if (siparisListesi5.Count >= 2)
+                    {
+                        siparisListesi.Add(siparisListesi5[1]);
+                        siparisListesi5.RemoveAt(1);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+                else if (aktifMasa == "6")
+                {
+                    if (siparisListesi6.Count >= 2)
+                    {
+                        siparisListesi.Add(siparisListesi6[1]);
+                        siparisListesi6.RemoveAt(1);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+                else if (aktifMasa == "7")
+                {
+                    if (siparisListesi7.Count >= 2)
+                    {
+                        siparisListesi.Add(siparisListesi7[1]);
+                        siparisListesi7.RemoveAt(1);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+
 
             }
             else if (KeyInfo.Key.ToString() == "D3")
             {
-                if (siparisListesi.Count >= 3)
-                {
-                    siparisListesi.RemoveAt(2);
-                    siparisListesiYedek = siparisListesi;
-                    siparisSil();
-                }
-                else
-                {
-                    Console.WriteLine("Seçiminiz Hatalı...");
-                }
-            }
-            else if (KeyInfo.Key.ToString() == "D4")
-            {
-                if (siparisListesi.Count >= 4)
-                {
-                    siparisListesi.RemoveAt(3);
-                    siparisListesiYedek = siparisListesi;
-                    siparisSil();
-                }
-                else
-                {
-                    Console.WriteLine("Seçiminiz Hatalı...");
-                }
-            }
-            else if (KeyInfo.Key.ToString() == "D5")
-            {
-                if (siparisListesi.Count >= 5)
-                {
-                    siparisListesi.RemoveAt(4);
-                    siparisListesiYedek = siparisListesi;
-                    siparisSil();
-                }
-                else
-                {
-                    Console.WriteLine("Seçiminiz Hatalı...");
-                }
-            }
-            else if (KeyInfo.Key.ToString() == "D6")
-            {
-                if (siparisListesi.Count >= 6)
-                {
-                    siparisListesi.RemoveAt(5);
-                    siparisListesiYedek = siparisListesi;
-                    siparisSil();
-                }
-                else
-                {
-                    Console.WriteLine("Seçiminiz Hatalı...");
-                }
-            }
-            else if (KeyInfo.Key.ToString() == "D7")
-            {
-                if (siparisListesi.Count >= 7)
-                {
-                    siparisListesi.RemoveAt(6);
-                    siparisListesiYedek = siparisListesi;
-                    siparisSil();
-                }
-                else
-                {
-                    Console.WriteLine("Seçiminiz Hatalı...");
-                }
-            }
-            else if (KeyInfo.Key.ToString() == "D8")
-            {
-                if (siparisListesi.Count >= 8)
-                {
-                    siparisListesi.RemoveAt(7);
-                    siparisListesiYedek = siparisListesi;
-                    siparisSil();
-                }
-                else
-                {
-                    Console.WriteLine("Seçiminiz Hatalı...");
-                }
-            }
-            else if (KeyInfo.Key.ToString() == "D9")
-            {
-                if (siparisListesi.Count >= 9)
-                {
-                    siparisListesi.RemoveAt(8);
-                    siparisListesiYedek = siparisListesi;
-                    siparisSil();
-                }
-                else
-                {
-                    Console.WriteLine("Seçiminiz Hatalı...");
-                }
-            }
-            else if (KeyInfo.Key.ToString() == "Spacebar")
-            {
+
                 if (aktifMasa == "1")
                 {
-                    siparisListesi1 = siparisListesi;
-                   
-                    MasaIslemDetay();
+                    if (siparisListesi1.Count >= 3)
+                    {
+                        siparisListesi.Add(siparisListesi1[2]);
+                        siparisListesi1.RemoveAt(2);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
                 }
                 else if (aktifMasa == "2")
                 {
-                    siparisListesi2 = siparisListesi;
-                    
-                    MasaIslemDetay();
+                    if (siparisListesi2.Count >= 3)
+                    {
+                        siparisListesi.Add(siparisListesi2[2]);
+                        siparisListesi1.RemoveAt(2);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
                 }
                 else if (aktifMasa == "3")
                 {
-                    siparisListesi3 = siparisListesi;
-                   
-                    MasaIslemDetay();
+                    if (siparisListesi3.Count >= 3)
+                    {
+                        siparisListesi.Add(siparisListesi3[2]);
+                        siparisListesi3.RemoveAt(2);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
                 }
                 else if (aktifMasa == "4")
                 {
-                    siparisListesi4 = siparisListesi;
-                   
-                    MasaIslemDetay();
+                    if (siparisListesi4.Count >= 3)
+                    {
+                        siparisListesi.Add(siparisListesi4[2]);
+                        siparisListesi4.RemoveAt(2);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
                 }
                 else if (aktifMasa == "5")
                 {
-                    siparisListesi5 = siparisListesi;
-                    
-                    MasaIslemDetay();
+                    if (siparisListesi5.Count >= 3)
+                    {
+                        siparisListesi.Add(siparisListesi5[2]);
+                        siparisListesi5.RemoveAt(2);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
                 }
                 else if (aktifMasa == "6")
                 {
-                    siparisListesi6 = siparisListesi;
-                   
-                    MasaIslemDetay();
+                    if (siparisListesi6.Count >= 3)
+                    {
+                        siparisListesi.Add(siparisListesi6[2]);
+                        siparisListesi6.RemoveAt(2);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
                 }
                 else if (aktifMasa == "7")
                 {
-                    siparisListesi7 = siparisListesi;
-                   
-                    MasaIslemDetay();
+                    if (siparisListesi7.Count >= 3)
+                    {
+                        siparisListesi.Add(siparisListesi7[2]);
+                        siparisListesi7.RemoveAt(2);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
                 }
-            }
-            else if (KeyInfo.Key.ToString() == "LeftArrow")
-            {
-            
-                MasaIslemDetay();
-            }
-            else
-            {
-                Console.Write("Seçiminiz1 Hatalı...");
-                Console.ReadLine();
-          
-            }
 
+
+            }
+            else if (KeyInfo.Key.ToString() == "D4")
+            {
+
+                if (aktifMasa == "1")
+                {
+                    if (siparisListesi1.Count >= 4)
+                    {
+                        siparisListesi.Add(siparisListesi1[3]);
+                        siparisListesi1.RemoveAt(3);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+                else if (aktifMasa == "2")
+                {
+                    if (siparisListesi2.Count >= 4)
+                    {
+                        siparisListesi.Add(siparisListesi2[3]);
+                        siparisListesi1.RemoveAt(3);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+                else if (aktifMasa == "3")
+                {
+                    if (siparisListesi3.Count >= 4)
+                    {
+                        siparisListesi.Add(siparisListesi3[3]);
+                        siparisListesi3.RemoveAt(3);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+                else if (aktifMasa == "4")
+                {
+                    if (siparisListesi4.Count >= 4)
+                    {
+                        siparisListesi.Add(siparisListesi4[3]);
+                        siparisListesi4.RemoveAt(3);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+                else if (aktifMasa == "5")
+                {
+                    if (siparisListesi5.Count >= 4)
+                    {
+                        siparisListesi.Add(siparisListesi5[3]);
+                        siparisListesi5.RemoveAt(3);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+                else if (aktifMasa == "6")
+                {
+                    if (siparisListesi6.Count >= 4)
+                    {
+                        siparisListesi.Add(siparisListesi6[3]);
+                        siparisListesi6.RemoveAt(3);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+                else if (aktifMasa == "7")
+                {
+                    if (siparisListesi7.Count >= 4)
+                    {
+                        siparisListesi.Add(siparisListesi7[3]);
+                        siparisListesi7.RemoveAt(3);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+
+
+            }
+            else if (KeyInfo.Key.ToString() == "D5")
+            {
+
+                if (aktifMasa == "1")
+                {
+                    if (siparisListesi1.Count >= 5)
+                    {
+                        siparisListesi.Add(siparisListesi1[4]);
+                        siparisListesi1.RemoveAt(4);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+                else if (aktifMasa == "2")
+                {
+                    if (siparisListesi2.Count >= 5)
+                    {
+                        siparisListesi.Add(siparisListesi2[4]);
+                        siparisListesi1.RemoveAt(4);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+                else if (aktifMasa == "3")
+                {
+                    if (siparisListesi3.Count >= 5)
+                    {
+                        siparisListesi.Add(siparisListesi3[4]);
+                        siparisListesi3.RemoveAt(4);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+                else if (aktifMasa == "4")
+                {
+                    if (siparisListesi4.Count >= 5)
+                    {
+                        siparisListesi.Add(siparisListesi4[4]);
+                        siparisListesi4.RemoveAt(4);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+                else if (aktifMasa == "5")
+                {
+                    if (siparisListesi5.Count >= 5)
+                    {
+                        siparisListesi.Add(siparisListesi5[4]);
+                        siparisListesi5.RemoveAt(4);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+                else if (aktifMasa == "6")
+                {
+                    if (siparisListesi6.Count >= 5)
+                    {
+                        siparisListesi.Add(siparisListesi6[4]);
+                        siparisListesi6.RemoveAt(4);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+                else if (aktifMasa == "7")
+                {
+                    if (siparisListesi7.Count >= 5)
+                    {
+                        siparisListesi.Add(siparisListesi7[4]);
+                        siparisListesi7.RemoveAt(4);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+
+
+            }
+            else if (KeyInfo.Key.ToString() == "D6")
+            {
+
+                if (aktifMasa == "1")
+                {
+                    if (siparisListesi1.Count >= 6)
+                    {
+                        siparisListesi.Add(siparisListesi1[5]);
+                        siparisListesi1.RemoveAt(5);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+                else if (aktifMasa == "2")
+                {
+                    if (siparisListesi2.Count >= 6)
+                    {
+                        siparisListesi.Add(siparisListesi2[5]);
+                        siparisListesi1.RemoveAt(5);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+                else if (aktifMasa == "3")
+                {
+                    if (siparisListesi3.Count >= 6)
+                    {
+                        siparisListesi.Add(siparisListesi3[5]);
+                        siparisListesi3.RemoveAt(5);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+                else if (aktifMasa == "4")
+                {
+                    if (siparisListesi4.Count >= 6)
+                    {
+                        siparisListesi.Add(siparisListesi4[5]);
+                        siparisListesi4.RemoveAt(5);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+                else if (aktifMasa == "5")
+                {
+                    if (siparisListesi5.Count >= 6)
+                    {
+                        siparisListesi.Add(siparisListesi5[5]);
+                        siparisListesi5.RemoveAt(5);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+                else if (aktifMasa == "6")
+                {
+                    if (siparisListesi6.Count >= 6)
+                    {
+                        siparisListesi.Add(siparisListesi6[5]);
+                        siparisListesi6.RemoveAt(5);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+                else if (aktifMasa == "7")
+                {
+                    if (siparisListesi7.Count >= 6)
+                    {
+                        siparisListesi.Add(siparisListesi7[5]);
+                        siparisListesi7.RemoveAt(5);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+
+
+            }
+            else if (KeyInfo.Key.ToString() == "D7")
+            {
+
+                if (aktifMasa == "1")
+                {
+                    if (siparisListesi1.Count >= 7)
+                    {
+                        siparisListesi.Add(siparisListesi1[6]);
+                        siparisListesi1.RemoveAt(6);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+                else if (aktifMasa == "2")
+                {
+                    if (siparisListesi2.Count >= 7)
+                    {
+                        siparisListesi.Add(siparisListesi2[6]);
+                        siparisListesi1.RemoveAt(6);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+                else if (aktifMasa == "3")
+                {
+                    if (siparisListesi3.Count >= 7)
+                    {
+                        siparisListesi.Add(siparisListesi3[6]);
+                        siparisListesi3.RemoveAt(6);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+                else if (aktifMasa == "4")
+                {
+                    if (siparisListesi4.Count >= 7)
+                    {
+                        siparisListesi.Add(siparisListesi4[6]);
+                        siparisListesi4.RemoveAt(6);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+                else if (aktifMasa == "5")
+                {
+                    if (siparisListesi5.Count >= 7)
+                    {
+                        siparisListesi.Add(siparisListesi5[6]);
+                        siparisListesi5.RemoveAt(6);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+                else if (aktifMasa == "6")
+                {
+                    if (siparisListesi6.Count >= 7)
+                    {
+                        siparisListesi.Add(siparisListesi6[6]);
+                        siparisListesi6.RemoveAt(6);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+                else if (aktifMasa == "7")
+                {
+                    if (siparisListesi7.Count >= 7)
+                    {
+                        siparisListesi.Add(siparisListesi7[6]);
+                        siparisListesi7.RemoveAt(6);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+
+
+            }
+            else if (KeyInfo.Key.ToString() == "D8")
+            {
+
+                if (aktifMasa == "1")
+                {
+                    if (siparisListesi1.Count >= 8)
+                    {
+                        siparisListesi.Add(siparisListesi1[7]);
+                        siparisListesi1.RemoveAt(7);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+                else if (aktifMasa == "2")
+                {
+                    if (siparisListesi2.Count >= 8)
+                    {
+                        siparisListesi.Add(siparisListesi2[7]);
+                        siparisListesi1.RemoveAt(7);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+                else if (aktifMasa == "3")
+                {
+                    if (siparisListesi3.Count >= 8)
+                    {
+                        siparisListesi.Add(siparisListesi3[7]);
+                        siparisListesi3.RemoveAt(7);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+                else if (aktifMasa == "4")
+                {
+                    if (siparisListesi4.Count >= 8)
+                    {
+                        siparisListesi.Add(siparisListesi4[7]);
+                        siparisListesi4.RemoveAt(7);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+                else if (aktifMasa == "5")
+                {
+                    if (siparisListesi5.Count >= 8)
+                    {
+                        siparisListesi.Add(siparisListesi5[7]);
+                        siparisListesi5.RemoveAt(7);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+                else if (aktifMasa == "6")
+                {
+                    if (siparisListesi6.Count >= 8)
+                    {
+                        siparisListesi.Add(siparisListesi6[7]);
+                        siparisListesi6.RemoveAt(7);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+                else if (aktifMasa == "7")
+                {
+                    if (siparisListesi7.Count >= 8)
+                    {
+                        siparisListesi.Add(siparisListesi7[7]);
+                        siparisListesi7.RemoveAt(7);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+
+
+            }
+            else if (KeyInfo.Key.ToString() == "D9")
+            {
+
+                if (aktifMasa == "1")
+                {
+                    if (siparisListesi1.Count >= 9)
+                    {
+                        siparisListesi.Add(siparisListesi1[8]);
+                        siparisListesi1.RemoveAt(8);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+                else if (aktifMasa == "2")
+                {
+                    if (siparisListesi2.Count >= 9)
+                    {
+                        siparisListesi.Add(siparisListesi2[8]);
+                        siparisListesi1.RemoveAt(8);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+                else if (aktifMasa == "3")
+                {
+                    if (siparisListesi3.Count >= 9)
+                    {
+                        siparisListesi.Add(siparisListesi3[8]);
+                        siparisListesi3.RemoveAt(8);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+                else if (aktifMasa == "4")
+                {
+                    if (siparisListesi4.Count >= 9)
+                    {
+                        siparisListesi.Add(siparisListesi4[8]);
+                        siparisListesi4.RemoveAt(8);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+                else if (aktifMasa == "5")
+                {
+                    if (siparisListesi5.Count >= 9)
+                    {
+                        siparisListesi.Add(siparisListesi5[8]);
+                        siparisListesi5.RemoveAt(8);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+                else if (aktifMasa == "6")
+                {
+                    if (siparisListesi6.Count >= 9)
+                    {
+                        siparisListesi.Add(siparisListesi6[8]);
+                        siparisListesi6.RemoveAt(8);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+                else if (aktifMasa == "7")
+                {
+                    if (siparisListesi7.Count >= 9)
+                    {
+                        siparisListesi.Add(siparisListesi7[8]);
+                        siparisListesi7.RemoveAt(8);
+                        siparisSil();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Tuşa Bastınız");
+                        Console.ReadKey();
+                        siparisSil();
+                    }
+                }
+
+
+            }
 
         }
         public void MasaIslem()
@@ -966,19 +1804,19 @@ namespace Odev15
             }
             if (Masa4 == "Dolu")
             {
-                Console.WriteLine($"1.Masa [{Masa4}]");
+                Console.WriteLine($"4.Masa [{Masa4}]");
             }
             if (Masa5 == "Dolu")
             {
-                Console.WriteLine($"1.Masa [{Masa5}]");
+                Console.WriteLine($"5.Masa [{Masa5}]");
             }
             if (Masa6 == "Dolu")
             {
-                Console.WriteLine($"1.Masa [{Masa6}]");
+                Console.WriteLine($"6.Masa [{Masa6}]");
             }
             if (Masa7 == "Dolu")
             {
-                Console.WriteLine($"1.Masa [{Masa7}]");
+                Console.WriteLine($"7.Masa [{Masa7}]");
             }
             Console.WriteLine("----------------------------------------------------------------");
             Console.WriteLine("ANA MENÜ       [ESC]");
@@ -995,12 +1833,13 @@ namespace Odev15
             {
                 if (Masa1 == "Dolu")
                 {
+                    aktifMasa = "1";
                     MasaIslemDetay();
                 }
                 else
                 {
                     Console.WriteLine("Seçtiğiniz Masa Boş Önce Masayı Açınız.");
-                    Console.ReadLine();
+                    Console.ReadKey();
                     MasaIslem();
                 }
             }
@@ -1008,12 +1847,13 @@ namespace Odev15
             {
                 if (Masa2 == "Dolu")
                 {
+                    aktifMasa = "2";
                     MasaIslemDetay();
                 }
                 else
                 {
                     Console.WriteLine("Seçtiğiniz Masa Boş Önce Masayı Açınız.");
-                    Console.ReadLine();
+                    Console.ReadKey();
                     MasaIslem();
                 }
             }
@@ -1021,12 +1861,13 @@ namespace Odev15
             {
                 if (Masa3 == "Dolu")
                 {
+                    aktifMasa = "3";
                     MasaIslemDetay();
                 }
                 else
                 {
                     Console.WriteLine("Seçtiğiniz Masa Boş Önce Masayı Açınız.");
-                    Console.ReadLine();
+                    Console.ReadKey();
                     MasaIslem();
                 }
             }
@@ -1034,12 +1875,13 @@ namespace Odev15
             {
                 if (Masa4 == "Dolu")
                 {
+                    aktifMasa = "4";
                     MasaIslemDetay();
                 }
                 else
                 {
                     Console.WriteLine("Seçtiğiniz Masa Boş Önce Masayı Açınız.");
-                    Console.ReadLine();
+                    Console.ReadKey();
                     MasaIslem();
                 }
             }
@@ -1047,12 +1889,13 @@ namespace Odev15
             {
                 if (Masa5 == "Dolu")
                 {
+                    aktifMasa = "5";
                     MasaIslemDetay();
                 }
                 else
                 {
                     Console.WriteLine("Seçtiğiniz Masa Boş Önce Masayı Açınız.");
-                    Console.ReadLine();
+                    Console.ReadKey();
                     MasaIslem();
                 }
             }
@@ -1060,12 +1903,13 @@ namespace Odev15
             {
                 if (Masa6 == "Dolu")
                 {
+                    aktifMasa = "6";
                     MasaIslemDetay();
                 }
                 else
                 {
                     Console.WriteLine("Seçtiğiniz Masa Boş Önce Masayı Açınız.");
-                    Console.ReadLine();
+                    Console.ReadKey();
                     MasaIslem();
                 }
             }
@@ -1073,14 +1917,21 @@ namespace Odev15
             {
                 if (Masa7 == "Dolu")
                 {
+                    aktifMasa = "7";
                     MasaIslemDetay();
                 }
                 else
                 {
                     Console.WriteLine("Seçtiğiniz Masa Boş Önce Masayı Açınız.");
-                    Console.ReadLine();
+                    Console.ReadKey();
                     MasaIslem();
                 }
+            }
+            else
+            {
+                Console.WriteLine("Yanlış Seçim Yaptınız.");
+                Console.ReadKey();
+                MasaIslem();
             }
         }
     }

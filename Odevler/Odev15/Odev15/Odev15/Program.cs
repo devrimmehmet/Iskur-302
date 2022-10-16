@@ -13,7 +13,7 @@ namespace Odev15
         {
             Console.BackgroundColor = ConsoleColor.DarkYellow;
             Cafe cafe = new Cafe();
-           cafe.AnaMenu();
+            cafe.AnaMenu();
 
         }
         
