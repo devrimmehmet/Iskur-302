@@ -1,0 +1,8 @@
+C:\Users\DevrimM\Desktop\302\iskur302\veritabani\hesap\hesap\bin\Debug\hesap.exe.config
+C:\Users\DevrimM\Desktop\302\iskur302\veritabani\hesap\hesap\bin\Debug\hesap.exe
+C:\Users\DevrimM\Desktop\302\iskur302\veritabani\hesap\hesap\bin\Debug\hesap.pdb
+C:\Users\DevrimM\Desktop\302\iskur302\veritabani\hesap\hesap\obj\Debug\hesap.csproj.AssemblyReference.cache
+C:\Users\DevrimM\Desktop\302\iskur302\veritabani\hesap\hesap\obj\Debug\hesap.csproj.SuggestedBindingRedirects.cache
+C:\Users\DevrimM\Desktop\302\iskur302\veritabani\hesap\hesap\obj\Debug\hesap.csproj.CoreCompileInputs.cache
+C:\Users\DevrimM\Desktop\302\iskur302\veritabani\hesap\hesap\obj\Debug\hesap.exe
+C:\Users\DevrimM\Desktop\302\iskur302\veritabani\hesap\hesap\obj\Debug\hesap.pdb

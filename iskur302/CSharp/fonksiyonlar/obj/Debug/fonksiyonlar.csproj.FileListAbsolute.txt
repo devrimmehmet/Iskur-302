@@ -1,0 +1,8 @@
+C:\Users\DevrimM\Desktop\302\iskur302\fonksiyonlar\obj\Debug\fonksiyonlar.csproj.AssemblyReference.cache
+C:\Users\DevrimM\Desktop\302\iskur302\fonksiyonlar\obj\Debug\fonksiyonlar.csproj.SuggestedBindingRedirects.cache
+C:\Users\DevrimM\Desktop\302\iskur302\fonksiyonlar\obj\Debug\fonksiyonlar.csproj.CoreCompileInputs.cache
+C:\Users\DevrimM\Desktop\302\iskur302\fonksiyonlar\bin\Debug\fonksiyonlar.exe.config
+C:\Users\DevrimM\Desktop\302\iskur302\fonksiyonlar\bin\Debug\fonksiyonlar.exe
+C:\Users\DevrimM\Desktop\302\iskur302\fonksiyonlar\bin\Debug\fonksiyonlar.pdb
+C:\Users\DevrimM\Desktop\302\iskur302\fonksiyonlar\obj\Debug\fonksiyonlar.exe
+C:\Users\DevrimM\Desktop\302\iskur302\fonksiyonlar\obj\Debug\fonksiyonlar.pdb

@@ -1,0 +1,8 @@
+C:\Users\DevrimM\Desktop\302\iskur302\Muhasebe\bin\Debug\Muhasebe.exe.config
+C:\Users\DevrimM\Desktop\302\iskur302\Muhasebe\bin\Debug\Muhasebe.exe
+C:\Users\DevrimM\Desktop\302\iskur302\Muhasebe\bin\Debug\Muhasebe.pdb
+C:\Users\DevrimM\Desktop\302\iskur302\Muhasebe\obj\Debug\Muhasebe.csproj.AssemblyReference.cache
+C:\Users\DevrimM\Desktop\302\iskur302\Muhasebe\obj\Debug\Muhasebe.csproj.SuggestedBindingRedirects.cache
+C:\Users\DevrimM\Desktop\302\iskur302\Muhasebe\obj\Debug\Muhasebe.csproj.CoreCompileInputs.cache
+C:\Users\DevrimM\Desktop\302\iskur302\Muhasebe\obj\Debug\Muhasebe.exe
+C:\Users\DevrimM\Desktop\302\iskur302\Muhasebe\obj\Debug\Muhasebe.pdb

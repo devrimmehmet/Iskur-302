@@ -1,0 +1,8 @@
+C:\Users\DevrimM\Desktop\302\iskur302\CSharp\BankaIslemleri\bin\Debug\BankaIslemleri.exe.config
+C:\Users\DevrimM\Desktop\302\iskur302\CSharp\BankaIslemleri\bin\Debug\BankaIslemleri.exe
+C:\Users\DevrimM\Desktop\302\iskur302\CSharp\BankaIslemleri\bin\Debug\BankaIslemleri.pdb
+C:\Users\DevrimM\Desktop\302\iskur302\CSharp\BankaIslemleri\obj\Debug\BankaIslemleri.csproj.AssemblyReference.cache
+C:\Users\DevrimM\Desktop\302\iskur302\CSharp\BankaIslemleri\obj\Debug\BankaIslemleri.csproj.SuggestedBindingRedirects.cache
+C:\Users\DevrimM\Desktop\302\iskur302\CSharp\BankaIslemleri\obj\Debug\BankaIslemleri.csproj.CoreCompileInputs.cache
+C:\Users\DevrimM\Desktop\302\iskur302\CSharp\BankaIslemleri\obj\Debug\BankaIslemleri.exe
+C:\Users\DevrimM\Desktop\302\iskur302\CSharp\BankaIslemleri\obj\Debug\BankaIslemleri.pdb

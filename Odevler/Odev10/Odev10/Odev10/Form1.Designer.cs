@@ -91,7 +91,7 @@
             this.cB_cay.AutoSize = true;
             this.cB_cay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.cB_cay.ForeColor = System.Drawing.Color.Orange;
-            this.cB_cay.Location = new System.Drawing.Point(13, 119);
+            this.cB_cay.Location = new System.Drawing.Point(12, 119);
             this.cB_cay.Name = "cB_cay";
             this.cB_cay.Size = new System.Drawing.Size(58, 24);
             this.cB_cay.TabIndex = 3;

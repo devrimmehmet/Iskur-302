@@ -1,0 +1,8 @@
+C:\Users\DevrimM\Desktop\302\iskur302\Kalitim\bin\Debug\Kalitim.exe.config
+C:\Users\DevrimM\Desktop\302\iskur302\Kalitim\bin\Debug\Kalitim.exe
+C:\Users\DevrimM\Desktop\302\iskur302\Kalitim\bin\Debug\Kalitim.pdb
+C:\Users\DevrimM\Desktop\302\iskur302\Kalitim\obj\Debug\Kalitim.csproj.AssemblyReference.cache
+C:\Users\DevrimM\Desktop\302\iskur302\Kalitim\obj\Debug\Kalitim.csproj.SuggestedBindingRedirects.cache
+C:\Users\DevrimM\Desktop\302\iskur302\Kalitim\obj\Debug\Kalitim.csproj.CoreCompileInputs.cache
+C:\Users\DevrimM\Desktop\302\iskur302\Kalitim\obj\Debug\Kalitim.exe
+C:\Users\DevrimM\Desktop\302\iskur302\Kalitim\obj\Debug\Kalitim.pdb

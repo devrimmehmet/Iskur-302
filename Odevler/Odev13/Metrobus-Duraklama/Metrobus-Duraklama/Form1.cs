@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -22,9 +23,12 @@ namespace Metrobus_Duraklama
             timer2.Start();
 
         }
+        SoundPlayer sogutluCesme = new SoundPlayer(@"C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev13\Metrobus-Duraklama\Metrobus-Duraklama\sesler\sogutlucesme.wav");
+        SoundPlayer fikirTepe = new SoundPlayer(@"C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev13\Metrobus-Duraklama\Metrobus-Duraklama\sesler\fikirtepe.wav");
+        SoundPlayer uzunCayir = new SoundPlayer(@"C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev13\Metrobus-Duraklama\Metrobus-Duraklama\sesler\uzuncayir.wav");
+        SoundPlayer acibadem = new SoundPlayer(@"C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev13\Metrobus-Duraklama\Metrobus-Duraklama\sesler\acibadem.wav");
 
-        
-        
+
         private void timer2_Tick(object sender, EventArgs e)
         {
            
@@ -36,11 +40,17 @@ namespace Metrobus_Duraklama
             }
             if (sure >=60 && sure <= 80)
             {
+                if (sure==70)
+                {
+                    
+                    sogutluCesme.Play();
+                }
                 Random r = new Random();
                 lbl_sogutlucesme.BackColor = Color.FromArgb(r.Next(0, 256), r.Next(0, 256), r.Next(0, 256));
             }
             if (sure >= 80 && sure <= 140)
             {
+                
                 if (sure >= 90 && sure <= 120)
                 {
                     label1.Text = "-" + label1.Text;
@@ -51,6 +61,11 @@ namespace Metrobus_Duraklama
             }
             if (sure >= 140 && sure <= 160)
             {
+                if (sure == 150)
+                {
+
+                    fikirTepe.Play();
+                }
                 Random r = new Random();
                 lbl_fikirtepe.BackColor = Color.FromArgb(r.Next(0, 256), r.Next(0, 256), r.Next(0, 256));
             }
@@ -66,8 +81,12 @@ namespace Metrobus_Duraklama
             }
             if (sure >= 220 && sure <= 240)
             {
-               // MessageBox.Show(pictureBox1.Left.ToString());
+                // MessageBox.Show(pictureBox1.Left.ToString());
+                if (sure == 230)
+                {
 
+                    uzunCayir.Play();
+                }
                 Random r = new Random();
                 lbl_uzuncayir.BackColor = Color.FromArgb(r.Next(0, 256), r.Next(0, 256), r.Next(0, 256));
             }
@@ -82,12 +101,18 @@ namespace Metrobus_Duraklama
             }
             if (sure >= 300 && sure <= 320)
             {
-             //   MessageBox.Show(pictureBox1.Left.ToString());
+                if (sure == 310)
+                {
+
+                    acibadem.Play();
+                }
+                //   MessageBox.Show(pictureBox1.Left.ToString());
                 Random r = new Random();
                 lbl_acibadem.BackColor = Color.FromArgb(r.Next(0, 256), r.Next(0, 256), r.Next(0, 256));
             }
             if (sure==321)
             {
+                
                 lbl_acibadem.BackColor = Color.DarkGray;
                 timer2.Stop();
             }
@@ -127,6 +152,11 @@ namespace Metrobus_Duraklama
             }
             if (sure >= 60 && sure <= 80)
             {
+                if (sure == 70)
+                {
+
+                    sogutluCesme.Play();
+                }
                 Random r = new Random();
                 lbl_sogutlucesme.BackColor = Color.FromArgb(r.Next(0, 256), r.Next(0, 256), r.Next(0, 256));
             }
@@ -142,6 +172,11 @@ namespace Metrobus_Duraklama
             }
             if (sure >= 140 && sure <= 160)
             {
+                if (sure == 150)
+                {
+
+                    fikirTepe.Play();
+                }
                 Random r = new Random();
                 lbl_fikirtepe.BackColor = Color.FromArgb(r.Next(0, 256), r.Next(0, 256), r.Next(0, 256));
             }
@@ -157,7 +192,11 @@ namespace Metrobus_Duraklama
             if (sure >= 220 && sure <= 240)
             {
                 // MessageBox.Show(pictureBox1.Left.ToString());
+                if (sure == 230)
+                {
 
+                    uzunCayir.Play();
+                }
                 Random r = new Random();
                 lbl_uzuncayir.BackColor = Color.FromArgb(r.Next(0, 256), r.Next(0, 256), r.Next(0, 256));
             }
@@ -172,7 +211,11 @@ namespace Metrobus_Duraklama
             }
             if (sure >= 300 && sure <= 320)
             {
-                
+                if (sure == 310)
+                {
+
+                    acibadem.Play();
+                }
                 Random r = new Random();
                 lbl_acibadem.BackColor = Color.FromArgb(r.Next(0, 256), r.Next(0, 256), r.Next(0, 256));
             }

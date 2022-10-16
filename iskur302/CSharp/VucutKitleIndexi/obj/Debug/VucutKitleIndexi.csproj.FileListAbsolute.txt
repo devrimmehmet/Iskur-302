@@ -1,0 +1,8 @@
+C:\Users\DevrimM\Desktop\302\iskur302\VucutKitleIndexi\bin\Debug\VucutKitleIndexi.exe.config
+C:\Users\DevrimM\Desktop\302\iskur302\VucutKitleIndexi\bin\Debug\VucutKitleIndexi.exe
+C:\Users\DevrimM\Desktop\302\iskur302\VucutKitleIndexi\bin\Debug\VucutKitleIndexi.pdb
+C:\Users\DevrimM\Desktop\302\iskur302\VucutKitleIndexi\obj\Debug\VucutKitleIndexi.csproj.AssemblyReference.cache
+C:\Users\DevrimM\Desktop\302\iskur302\VucutKitleIndexi\obj\Debug\VucutKitleIndexi.csproj.SuggestedBindingRedirects.cache
+C:\Users\DevrimM\Desktop\302\iskur302\VucutKitleIndexi\obj\Debug\VucutKitleIndexi.csproj.CoreCompileInputs.cache
+C:\Users\DevrimM\Desktop\302\iskur302\VucutKitleIndexi\obj\Debug\VucutKitleIndexi.exe
+C:\Users\DevrimM\Desktop\302\iskur302\VucutKitleIndexi\obj\Debug\VucutKitleIndexi.pdb

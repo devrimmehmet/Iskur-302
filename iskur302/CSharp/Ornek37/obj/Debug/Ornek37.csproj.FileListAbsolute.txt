@@ -1,0 +1,12 @@
+C:\Users\DevrimM\Desktop\302\iskur302\Ornek37\bin\Debug\Ornek37.exe.config
+C:\Users\DevrimM\Desktop\302\iskur302\Ornek37\bin\Debug\Ornek37.exe
+C:\Users\DevrimM\Desktop\302\iskur302\Ornek37\bin\Debug\Ornek37.pdb
+C:\Users\DevrimM\Desktop\302\iskur302\Ornek37\obj\Debug\Ornek37.csproj.AssemblyReference.cache
+C:\Users\DevrimM\Desktop\302\iskur302\Ornek37\obj\Debug\Ornek37.csproj.SuggestedBindingRedirects.cache
+C:\Users\DevrimM\Desktop\302\iskur302\Ornek37\obj\Debug\Ornek37.Form1.resources
+C:\Users\DevrimM\Desktop\302\iskur302\Ornek37\obj\Debug\Ornek37.Form2.resources
+C:\Users\DevrimM\Desktop\302\iskur302\Ornek37\obj\Debug\Ornek37.Properties.Resources.resources
+C:\Users\DevrimM\Desktop\302\iskur302\Ornek37\obj\Debug\Ornek37.csproj.GenerateResource.cache
+C:\Users\DevrimM\Desktop\302\iskur302\Ornek37\obj\Debug\Ornek37.csproj.CoreCompileInputs.cache
+C:\Users\DevrimM\Desktop\302\iskur302\Ornek37\obj\Debug\Ornek37.exe
+C:\Users\DevrimM\Desktop\302\iskur302\Ornek37\obj\Debug\Ornek37.pdb

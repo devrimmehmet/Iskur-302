@@ -1,0 +1,8 @@
+C:\Users\DevrimM\Desktop\302\iskur302\metotFonksiyon\bin\Debug\metotFonksiyon.exe.config
+C:\Users\DevrimM\Desktop\302\iskur302\metotFonksiyon\bin\Debug\metotFonksiyon.exe
+C:\Users\DevrimM\Desktop\302\iskur302\metotFonksiyon\bin\Debug\metotFonksiyon.pdb
+C:\Users\DevrimM\Desktop\302\iskur302\metotFonksiyon\obj\Debug\metotFonksiyon.csproj.AssemblyReference.cache
+C:\Users\DevrimM\Desktop\302\iskur302\metotFonksiyon\obj\Debug\metotFonksiyon.csproj.SuggestedBindingRedirects.cache
+C:\Users\DevrimM\Desktop\302\iskur302\metotFonksiyon\obj\Debug\metotFonksiyon.csproj.CoreCompileInputs.cache
+C:\Users\DevrimM\Desktop\302\iskur302\metotFonksiyon\obj\Debug\metotFonksiyon.exe
+C:\Users\DevrimM\Desktop\302\iskur302\metotFonksiyon\obj\Debug\metotFonksiyon.pdb

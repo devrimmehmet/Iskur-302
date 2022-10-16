@@ -1,0 +1,8 @@
+C:\Users\DevrimM\Desktop\302\iskur302\Ornek24MukemmelSayilar\bin\Debug\Ornek24MukemmelSayilar.exe.config
+C:\Users\DevrimM\Desktop\302\iskur302\Ornek24MukemmelSayilar\bin\Debug\Ornek24MukemmelSayilar.exe
+C:\Users\DevrimM\Desktop\302\iskur302\Ornek24MukemmelSayilar\bin\Debug\Ornek24MukemmelSayilar.pdb
+C:\Users\DevrimM\Desktop\302\iskur302\Ornek24MukemmelSayilar\obj\Debug\Ornek24MukemmelSayilar.csproj.AssemblyReference.cache
+C:\Users\DevrimM\Desktop\302\iskur302\Ornek24MukemmelSayilar\obj\Debug\Ornek24MukemmelSayilar.csproj.SuggestedBindingRedirects.cache
+C:\Users\DevrimM\Desktop\302\iskur302\Ornek24MukemmelSayilar\obj\Debug\Ornek24MukemmelSayilar.csproj.CoreCompileInputs.cache
+C:\Users\DevrimM\Desktop\302\iskur302\Ornek24MukemmelSayilar\obj\Debug\Ornek24MukemmelSayilar.exe
+C:\Users\DevrimM\Desktop\302\iskur302\Ornek24MukemmelSayilar\obj\Debug\Ornek24MukemmelSayilar.pdb

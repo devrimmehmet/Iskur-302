@@ -1,0 +1,8 @@
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev15\Odev15\Odev15\bin\Debug\Odev15.exe.config
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev15\Odev15\Odev15\bin\Debug\Odev15.exe
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev15\Odev15\Odev15\bin\Debug\Odev15.pdb
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev15\Odev15\Odev15\obj\Debug\Odev15.csproj.AssemblyReference.cache
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev15\Odev15\Odev15\obj\Debug\Odev15.csproj.SuggestedBindingRedirects.cache
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev15\Odev15\Odev15\obj\Debug\Odev15.csproj.CoreCompileInputs.cache
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev15\Odev15\Odev15\obj\Debug\Odev15.exe
+C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev15\Odev15\Odev15\obj\Debug\Odev15.pdb
