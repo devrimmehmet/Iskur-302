@@ -10,8 +10,8 @@ namespace Odev15
     {
         public string Masa1 = "boş", Masa2 = "boş", Masa3 = "boş", Masa4 = "boş", Masa5 = "boş", Masa6 = "boş", Masa7 = "boş";
         public int yemek1 = 2, yemek2 = 3, yemek3 = 4, yemek4 = 5, icecek1 = 1, icecek2 = 2, icecek3 = 3, icecek4 = 4;
-        public string aktifMasa;
-        public double toplamKazanc = 0, toplamBahsis = 0, masa1ToplamKazanc = 0, masa1ToplamBahsis = 0, masa2ToplamKazanc = 0, masa2ToplamBahsis = 0, masa3ToplamKazanc = 0, masa3ToplamBahsis = 0, masa4ToplamKazanc = 0, masa4ToplamBahsis = 0, masa5ToplamKazanc = 0, masa5ToplamBahsis = 0, masa6ToplamKazanc = 0, masa6ToplamBahsis = 0, masa7ToplamKazanc = 0, masa7ToplamBahsis = 0, masa1Hesap = 0, masa2Hesap = 0, masa3Hesap = 0, masa4Hesap = 0, masa5Hesap = 0, masa6Hesap = 0, masa7Hesap = 0, indirimliHesap = 0, masa1Bahsis = 0, masa2Bahsis = 0, masa3Bahsis = 0, masa4Bahsis = 0, masa5Bahsis = 0, masa6Bahsis = 0, masa7Bahsis = 0, siparisToplam = 0, siparisBahsis = 0, bahsisEkle = 0, siparisEkleFiyat = 0;
+        public string aktifMasa,Urun;
+        public double toplamKazanc = 0, toplamBahsis = 0, masa1ToplamKazanc = 0, masa1ToplamBahsis = 0, masa2ToplamKazanc = 0, masa2ToplamBahsis = 0, masa3ToplamKazanc = 0, masa3ToplamBahsis = 0, masa4ToplamKazanc = 0, masa4ToplamBahsis = 0, masa5ToplamKazanc = 0, masa5ToplamBahsis = 0, masa6ToplamKazanc = 0, masa6ToplamBahsis = 0, masa7ToplamKazanc = 0, masa7ToplamBahsis = 0, masa1Hesap = 0, masa2Hesap = 0, masa3Hesap = 0, masa4Hesap = 0, masa5Hesap = 0, masa6Hesap = 0, masa7Hesap = 0, indirimliHesap = 0, masa1Bahsis = 0, masa2Bahsis = 0, masa3Bahsis = 0, masa4Bahsis = 0, masa5Bahsis = 0, masa6Bahsis = 0, masa7Bahsis = 0, siparisToplam = 0, siparisBahsis = 0, bahsisEkle = 0, siparisEkleFiyat = 0, siparisSilFiyat = 0, silinenUrun = 0;
         List<string> siparisListesi = new List<string>();
         List<string> siparisListesi1 = new List<string>();
         List<string> siparisListesi2 = new List<string>();
@@ -1070,13 +1070,35 @@ namespace Odev15
             Console.WriteLine("----------------------------------------------------------------");
             Console.WriteLine("                            Masa  Aç                            ");
             Console.WriteLine("----------------------------------------------------------------");
-            Console.WriteLine($"1.Masa         [{Masa1.ToString()}]");
-            Console.WriteLine($"2.Masa         [{Masa2.ToString()}]");
-            Console.WriteLine($"3.Masa         [{Masa3.ToString()}]");
-            Console.WriteLine($"4.Masa         [{Masa4.ToString()}]");
-            Console.WriteLine($"5.Masa         [{Masa5.ToString()}]");
-            Console.WriteLine($"6.Masa         [{Masa6.ToString()}]");
-            Console.WriteLine($"7.Masa         [{Masa7.ToString()}]");
+            if (Masa1=="boş")
+            {
+                Console.WriteLine($"1.Masa         [{Masa1.ToString()}]");
+            }
+            if (Masa2 == "boş")
+            {
+                Console.WriteLine($"2.Masa         [{Masa2.ToString()}]");
+            }
+            if (Masa3 == "boş")
+            {
+                Console.WriteLine($"3.Masa         [{Masa3.ToString()}]");
+            }
+            if (Masa4 == "boş")
+            {
+                Console.WriteLine($"4.Masa         [{Masa4.ToString()}]");
+            }
+            if (Masa5 == "boş")
+            {
+                Console.WriteLine($"5.Masa         [{Masa5.ToString()}]");
+            }
+            if (Masa6 == "boş")
+            {
+                Console.WriteLine($"6.Masa         [{Masa6.ToString()}]");
+            }
+            if (Masa7 == "boş")
+            {
+                Console.WriteLine($"7.Masa         [{Masa7.ToString()}]");
+            }
+ 
             Console.WriteLine("----------------------------------------------------------------");
             Console.WriteLine("ANA MENÜ       [ESC]");
             Console.WriteLine("----------------------------------------------------------------");
@@ -1087,45 +1109,114 @@ namespace Odev15
 
             if (KeyInfo.Key.ToString() == "D1")
             {
-                Console.Clear();
-                aktifMasa = "1";
-                Menu();
+                if (Masa1 == "boş")
+                {
+                    Console.Clear();
+                    aktifMasa = "1";
+                    Menu();
+                }else
+                {
+                    Console.WriteLine("Seçilen Masa Zaten Dolu.");
+                    Console.ReadKey();
+                    MasaAc();
+                }
+                
             }
             else if (KeyInfo.Key.ToString() == "D2")
             {
-                Console.Clear();
-                aktifMasa = "2";
-                Menu();
+                if (Masa2 == "boş")
+                {
+                    Console.Clear();
+                    aktifMasa = "2";
+                    Menu();
+                }
+                else
+                {
+                    Console.WriteLine("Seçilen Masa Zaten Dolu.");
+                    Console.ReadKey();
+                    MasaAc();
+                }
+                
             }
             else if (KeyInfo.Key.ToString() == "D3")
             {
-                Console.Clear();
-                aktifMasa = "3";
-                Menu();
+                if (Masa3 == "boş")
+                {
+                    Console.Clear();
+                    aktifMasa = "3";
+                    Menu();
+                }
+                else
+                {
+                    Console.WriteLine("Seçilen Masa Zaten Dolu.");
+                    Console.ReadKey();
+                    MasaAc();
+                }
+               
             }
             else if (KeyInfo.Key.ToString() == "D4")
             {
-                Console.Clear();
-                aktifMasa = "4";
-                Menu();
+                if (Masa4 == "boş")
+                {
+                    Console.Clear();
+                    aktifMasa = "4";
+                    Menu();
+                }
+                else
+                {
+                    Console.WriteLine("Seçilen Masa Zaten Dolu.");
+                    Console.ReadKey();
+                    MasaAc();
+                }
+               
             }
             else if (KeyInfo.Key.ToString() == "D5")
             {
-                Console.Clear();
-                aktifMasa = "5";
-                Menu();
+                if (Masa5 == "boş")
+                {
+                    Console.Clear();
+                    aktifMasa = "5";
+                    Menu();
+                }
+                else
+                {
+                    Console.WriteLine("Seçilen Masa Zaten Dolu.");
+                    Console.ReadKey();
+                    MasaAc();
+                }
+                
             }
             else if (KeyInfo.Key.ToString() == "D6")
             {
-                Console.Clear();
-                aktifMasa = "6";
-                Menu();
+                if (Masa6 == "boş")
+                {
+                    Console.Clear();
+                    aktifMasa = "6";
+                    Menu();
+                }
+                else
+                {
+                    Console.WriteLine("Seçilen Masa Zaten Dolu.");
+                    Console.ReadKey();
+                    MasaAc();
+                }
+                
             }
             else if (KeyInfo.Key.ToString() == "D7")
             {
-                Console.Clear();
-                aktifMasa = "7";
-                Menu();
+                if (Masa7 == "boş")
+                {
+                    Console.Clear();
+                    aktifMasa = "7";
+                    Menu();
+                }
+                else
+                {
+                    Console.WriteLine("Seçilen Masa Zaten Dolu.");
+                    Console.ReadKey();
+                    MasaAc();
+                }
+               
             }
             else if (KeyInfo.Key.ToString() == "Escape")
             {
@@ -1590,6 +1681,41 @@ namespace Odev15
             ConsoleKeyInfo KeyInfo = Console.ReadKey(true);
             if (KeyInfo.Key.ToString() == "Spacebar")
             {
+                if (aktifMasa == "1")
+                {
+                    masa1Hesap += siparisSilFiyat;
+                    siparisSilFiyat = 0;
+                }
+                else if (aktifMasa == "2")
+                {
+                    masa2Hesap += siparisSilFiyat;
+                    siparisSilFiyat = 0;
+                }
+                else if (aktifMasa == "3")
+                {
+                    masa3Hesap += siparisSilFiyat;
+                    siparisSilFiyat = 0;
+                }
+                else if (aktifMasa == "4")
+                {
+                    masa4Hesap += siparisSilFiyat;
+                    siparisSilFiyat = 0;
+                }
+                else if (aktifMasa == "5")
+                {
+                    masa5Hesap += siparisSilFiyat;
+                    siparisSilFiyat = 0;
+                }
+                else if (aktifMasa == "6")
+                {
+                    masa6Hesap += siparisSilFiyat;
+                    siparisSilFiyat = 0;
+                }
+                else if (aktifMasa == "7")
+                {
+                    masa7Hesap += siparisSilFiyat;
+                    siparisSilFiyat = 0;
+                }
                 AnaMenu();
             }
             else if (KeyInfo.Key.ToString() == "LeftArrow")
@@ -1599,30 +1725,38 @@ namespace Odev15
 
                 if (aktifMasa == "1")
                 {
+                    siparisSilFiyat = 0;
+                    
                     siparisListesi1.AddRange(siparisListesi);
                 }
                 else if (aktifMasa == "2")
                 {
+                    siparisSilFiyat = 0;
                     siparisListesi2.AddRange(siparisListesi);
                 }
                 else if (aktifMasa == "3")
                 {
+                    siparisSilFiyat = 0;
                     siparisListesi3.AddRange(siparisListesi);
                 }
                 else if (aktifMasa == "4")
                 {
+                    siparisSilFiyat = 0;
                     siparisListesi4.AddRange(siparisListesi);
                 }
                 else if (aktifMasa == "5")
                 {
+                    siparisSilFiyat = 0;
                     siparisListesi5.AddRange(siparisListesi);
                 }
                 else if (aktifMasa == "6")
                 {
+                    siparisSilFiyat = 0;
                     siparisListesi6.AddRange(siparisListesi);
                 }
                 else if (aktifMasa == "7")
                 {
+                    siparisSilFiyat = 0;
                     siparisListesi7.AddRange(siparisListesi);
                 }
                 MasaIslemDetay();
@@ -1634,6 +1768,14 @@ namespace Odev15
                     if (siparisListesi1.Count >= 1)
                     {
                         siparisListesi.Add(siparisListesi1[0]);
+                        Urun=siparisListesi1[0];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan)+2);
+                        Urun = Urun.Remove(1, Urun.Length-1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi1.RemoveAt(0);
                         siparisSil();
                     }
@@ -1649,6 +1791,14 @@ namespace Odev15
                     if (siparisListesi2.Count >= 1)
                     {
                         siparisListesi.Add(siparisListesi2[0]);
+                        Urun = siparisListesi2[0];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi1.RemoveAt(1);
                         siparisSil();
                     }
@@ -1664,6 +1814,14 @@ namespace Odev15
                     if (siparisListesi3.Count >= 1)
                     {
                         siparisListesi.Add(siparisListesi3[0]);
+                        Urun = siparisListesi3[0];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi3.RemoveAt(0);
                         siparisSil();
                     }
@@ -1679,6 +1837,14 @@ namespace Odev15
                     if (siparisListesi4.Count >= 1)
                     {
                         siparisListesi.Add(siparisListesi4[0]);
+                        Urun = siparisListesi4[0];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi4.RemoveAt(0);
                         siparisSil();
                     }
@@ -1694,6 +1860,14 @@ namespace Odev15
                     if (siparisListesi5.Count >= 1)
                     {
                         siparisListesi.Add(siparisListesi5[0]);
+                        Urun = siparisListesi5[0];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi5.RemoveAt(0);
                         siparisSil();
                     }
@@ -1709,6 +1883,14 @@ namespace Odev15
                     if (siparisListesi6.Count >= 1)
                     {
                         siparisListesi.Add(siparisListesi6[0]);
+                        Urun = siparisListesi6[0];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi6.RemoveAt(0);
                         siparisSil();
                     }
@@ -1724,6 +1906,14 @@ namespace Odev15
                     if (siparisListesi7.Count >= 1)
                     {
                         siparisListesi.Add(siparisListesi7[0]);
+                        Urun = siparisListesi7[0];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi7.RemoveAt(0);
                         siparisSil();
                     }
@@ -1746,6 +1936,14 @@ namespace Odev15
                     if (siparisListesi1.Count >= 2)
                     {
                         siparisListesi.Add(siparisListesi1[1]);
+                        Urun = siparisListesi1[1];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi1.RemoveAt(1);
                         siparisSil();
                     }
@@ -1761,6 +1959,14 @@ namespace Odev15
                     if (siparisListesi2.Count >= 2)
                     {
                         siparisListesi.Add(siparisListesi2[1]);
+                        Urun = siparisListesi2[1];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi1.RemoveAt(1);
                         siparisSil();
                     }
@@ -1776,6 +1982,14 @@ namespace Odev15
                     if (siparisListesi3.Count >= 2)
                     {
                         siparisListesi.Add(siparisListesi3[1]);
+                        Urun = siparisListesi3[1];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi3.RemoveAt(1);
                         siparisSil();
                     }
@@ -1791,6 +2005,14 @@ namespace Odev15
                     if (siparisListesi4.Count >= 2)
                     {
                         siparisListesi.Add(siparisListesi4[1]);
+                        Urun = siparisListesi4[1];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi4.RemoveAt(1);
                         siparisSil();
                     }
@@ -1806,6 +2028,14 @@ namespace Odev15
                     if (siparisListesi5.Count >= 2)
                     {
                         siparisListesi.Add(siparisListesi5[1]);
+                        Urun = siparisListesi5[1];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi5.RemoveAt(1);
                         siparisSil();
                     }
@@ -1821,6 +2051,14 @@ namespace Odev15
                     if (siparisListesi6.Count >= 2)
                     {
                         siparisListesi.Add(siparisListesi6[1]);
+                        Urun = siparisListesi6[1];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi6.RemoveAt(1);
                         siparisSil();
                     }
@@ -1836,6 +2074,14 @@ namespace Odev15
                     if (siparisListesi7.Count >= 2)
                     {
                         siparisListesi.Add(siparisListesi7[1]);
+                        Urun = siparisListesi7[1];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi7.RemoveAt(1);
                         siparisSil();
                     }
@@ -1857,6 +2103,14 @@ namespace Odev15
                     if (siparisListesi1.Count >= 3)
                     {
                         siparisListesi.Add(siparisListesi1[2]);
+                        Urun = siparisListesi1[2];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi1.RemoveAt(2);
                         siparisSil();
                     }
@@ -1872,6 +2126,14 @@ namespace Odev15
                     if (siparisListesi2.Count >= 3)
                     {
                         siparisListesi.Add(siparisListesi2[2]);
+                        Urun = siparisListesi2[2];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi1.RemoveAt(2);
                         siparisSil();
                     }
@@ -1887,6 +2149,14 @@ namespace Odev15
                     if (siparisListesi3.Count >= 3)
                     {
                         siparisListesi.Add(siparisListesi3[2]);
+                        Urun = siparisListesi3[2];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi3.RemoveAt(2);
                         siparisSil();
                     }
@@ -1902,6 +2172,14 @@ namespace Odev15
                     if (siparisListesi4.Count >= 3)
                     {
                         siparisListesi.Add(siparisListesi4[2]);
+                        Urun = siparisListesi4[2];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi4.RemoveAt(2);
                         siparisSil();
                     }
@@ -1917,6 +2195,14 @@ namespace Odev15
                     if (siparisListesi5.Count >= 3)
                     {
                         siparisListesi.Add(siparisListesi5[2]);
+                        Urun = siparisListesi5[2];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi5.RemoveAt(2);
                         siparisSil();
                     }
@@ -1932,6 +2218,14 @@ namespace Odev15
                     if (siparisListesi6.Count >= 3)
                     {
                         siparisListesi.Add(siparisListesi6[2]);
+                        Urun = siparisListesi6[2];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi6.RemoveAt(2);
                         siparisSil();
                     }
@@ -1947,6 +2241,14 @@ namespace Odev15
                     if (siparisListesi7.Count >= 3)
                     {
                         siparisListesi.Add(siparisListesi7[2]);
+                        Urun = siparisListesi7[2];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi7.RemoveAt(2);
                         siparisSil();
                     }
@@ -1968,6 +2270,14 @@ namespace Odev15
                     if (siparisListesi1.Count >= 4)
                     {
                         siparisListesi.Add(siparisListesi1[3]);
+                        Urun = siparisListesi1[3];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi1.RemoveAt(3);
                         siparisSil();
                     }
@@ -1983,6 +2293,14 @@ namespace Odev15
                     if (siparisListesi2.Count >= 4)
                     {
                         siparisListesi.Add(siparisListesi2[3]);
+                        Urun = siparisListesi2[3];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi1.RemoveAt(3);
                         siparisSil();
                     }
@@ -1998,6 +2316,14 @@ namespace Odev15
                     if (siparisListesi3.Count >= 4)
                     {
                         siparisListesi.Add(siparisListesi3[3]);
+                        Urun = siparisListesi3[3];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi3.RemoveAt(3);
                         siparisSil();
                     }
@@ -2013,6 +2339,14 @@ namespace Odev15
                     if (siparisListesi4.Count >= 4)
                     {
                         siparisListesi.Add(siparisListesi4[3]);
+                        Urun = siparisListesi4[3];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi4.RemoveAt(3);
                         siparisSil();
                     }
@@ -2028,6 +2362,14 @@ namespace Odev15
                     if (siparisListesi5.Count >= 4)
                     {
                         siparisListesi.Add(siparisListesi5[3]);
+                        Urun = siparisListesi5[3];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi5.RemoveAt(3);
                         siparisSil();
                     }
@@ -2043,6 +2385,14 @@ namespace Odev15
                     if (siparisListesi6.Count >= 4)
                     {
                         siparisListesi.Add(siparisListesi6[3]);
+                        Urun = siparisListesi6[3];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi6.RemoveAt(3);
                         siparisSil();
                     }
@@ -2058,6 +2408,14 @@ namespace Odev15
                     if (siparisListesi7.Count >= 4)
                     {
                         siparisListesi.Add(siparisListesi7[3]);
+                        Urun = siparisListesi7[3];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi7.RemoveAt(3);
                         siparisSil();
                     }
@@ -2079,6 +2437,14 @@ namespace Odev15
                     if (siparisListesi1.Count >= 5)
                     {
                         siparisListesi.Add(siparisListesi1[4]);
+                        Urun = siparisListesi1[4];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi1.RemoveAt(4);
                         siparisSil();
                     }
@@ -2094,6 +2460,14 @@ namespace Odev15
                     if (siparisListesi2.Count >= 5)
                     {
                         siparisListesi.Add(siparisListesi2[4]);
+                        Urun = siparisListesi2[4];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi1.RemoveAt(4);
                         siparisSil();
                     }
@@ -2109,6 +2483,14 @@ namespace Odev15
                     if (siparisListesi3.Count >= 5)
                     {
                         siparisListesi.Add(siparisListesi3[4]);
+                        Urun = siparisListesi3[4];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi3.RemoveAt(4);
                         siparisSil();
                     }
@@ -2124,6 +2506,14 @@ namespace Odev15
                     if (siparisListesi4.Count >= 5)
                     {
                         siparisListesi.Add(siparisListesi4[4]);
+                        Urun = siparisListesi4[4];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi4.RemoveAt(4);
                         siparisSil();
                     }
@@ -2139,6 +2529,14 @@ namespace Odev15
                     if (siparisListesi5.Count >= 5)
                     {
                         siparisListesi.Add(siparisListesi5[4]);
+                        Urun = siparisListesi5[4];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi5.RemoveAt(4);
                         siparisSil();
                     }
@@ -2154,6 +2552,14 @@ namespace Odev15
                     if (siparisListesi6.Count >= 5)
                     {
                         siparisListesi.Add(siparisListesi6[4]);
+                        Urun = siparisListesi6[4];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi6.RemoveAt(4);
                         siparisSil();
                     }
@@ -2169,6 +2575,14 @@ namespace Odev15
                     if (siparisListesi7.Count >= 5)
                     {
                         siparisListesi.Add(siparisListesi7[4]);
+                        Urun = siparisListesi7[4];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi7.RemoveAt(4);
                         siparisSil();
                     }
@@ -2190,6 +2604,14 @@ namespace Odev15
                     if (siparisListesi1.Count >= 6)
                     {
                         siparisListesi.Add(siparisListesi1[5]);
+                        Urun = siparisListesi1[5];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi1.RemoveAt(5);
                         siparisSil();
                     }
@@ -2205,6 +2627,14 @@ namespace Odev15
                     if (siparisListesi2.Count >= 6)
                     {
                         siparisListesi.Add(siparisListesi2[5]);
+                        Urun = siparisListesi2[5];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi1.RemoveAt(5);
                         siparisSil();
                     }
@@ -2220,6 +2650,14 @@ namespace Odev15
                     if (siparisListesi3.Count >= 6)
                     {
                         siparisListesi.Add(siparisListesi3[5]);
+                        Urun = siparisListesi3[5];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi3.RemoveAt(5);
                         siparisSil();
                     }
@@ -2235,6 +2673,14 @@ namespace Odev15
                     if (siparisListesi4.Count >= 6)
                     {
                         siparisListesi.Add(siparisListesi4[5]);
+                        Urun = siparisListesi4[5];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi4.RemoveAt(5);
                         siparisSil();
                     }
@@ -2250,6 +2696,14 @@ namespace Odev15
                     if (siparisListesi5.Count >= 6)
                     {
                         siparisListesi.Add(siparisListesi5[5]);
+                        Urun = siparisListesi5[5];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi5.RemoveAt(5);
                         siparisSil();
                     }
@@ -2265,6 +2719,14 @@ namespace Odev15
                     if (siparisListesi6.Count >= 6)
                     {
                         siparisListesi.Add(siparisListesi6[5]);
+                        Urun = siparisListesi6[5];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi6.RemoveAt(5);
                         siparisSil();
                     }
@@ -2280,6 +2742,14 @@ namespace Odev15
                     if (siparisListesi7.Count >= 6)
                     {
                         siparisListesi.Add(siparisListesi7[5]);
+                        Urun = siparisListesi7[5];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi7.RemoveAt(5);
                         siparisSil();
                     }
@@ -2301,6 +2771,14 @@ namespace Odev15
                     if (siparisListesi1.Count >= 7)
                     {
                         siparisListesi.Add(siparisListesi1[6]);
+                        Urun = siparisListesi1[6];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi1.RemoveAt(6);
                         siparisSil();
                     }
@@ -2316,6 +2794,14 @@ namespace Odev15
                     if (siparisListesi2.Count >= 7)
                     {
                         siparisListesi.Add(siparisListesi2[6]);
+                        Urun = siparisListesi2[6];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi1.RemoveAt(6);
                         siparisSil();
                     }
@@ -2331,6 +2817,14 @@ namespace Odev15
                     if (siparisListesi3.Count >= 7)
                     {
                         siparisListesi.Add(siparisListesi3[6]);
+                        Urun = siparisListesi3[6];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi3.RemoveAt(6);
                         siparisSil();
                     }
@@ -2346,6 +2840,14 @@ namespace Odev15
                     if (siparisListesi4.Count >= 7)
                     {
                         siparisListesi.Add(siparisListesi4[6]);
+                        Urun = siparisListesi4[6];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi4.RemoveAt(6);
                         siparisSil();
                     }
@@ -2361,6 +2863,14 @@ namespace Odev15
                     if (siparisListesi5.Count >= 7)
                     {
                         siparisListesi.Add(siparisListesi5[6]);
+                        Urun = siparisListesi5[6];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi5.RemoveAt(6);
                         siparisSil();
                     }
@@ -2376,6 +2886,14 @@ namespace Odev15
                     if (siparisListesi6.Count >= 7)
                     {
                         siparisListesi.Add(siparisListesi6[6]);
+                        Urun = siparisListesi6[6];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi6.RemoveAt(6);
                         siparisSil();
                     }
@@ -2391,6 +2909,14 @@ namespace Odev15
                     if (siparisListesi7.Count >= 7)
                     {
                         siparisListesi.Add(siparisListesi7[6]);
+                        Urun = siparisListesi7[6];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi7.RemoveAt(6);
                         siparisSil();
                     }
@@ -2412,6 +2938,14 @@ namespace Odev15
                     if (siparisListesi1.Count >= 8)
                     {
                         siparisListesi.Add(siparisListesi1[7]);
+                        Urun = siparisListesi1[7];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi1.RemoveAt(7);
                         siparisSil();
                     }
@@ -2427,6 +2961,14 @@ namespace Odev15
                     if (siparisListesi2.Count >= 8)
                     {
                         siparisListesi.Add(siparisListesi2[7]);
+                        Urun = siparisListesi2[7];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi1.RemoveAt(7);
                         siparisSil();
                     }
@@ -2442,6 +2984,14 @@ namespace Odev15
                     if (siparisListesi3.Count >= 8)
                     {
                         siparisListesi.Add(siparisListesi3[7]);
+                        Urun = siparisListesi3[7];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi3.RemoveAt(7);
                         siparisSil();
                     }
@@ -2457,6 +3007,14 @@ namespace Odev15
                     if (siparisListesi4.Count >= 8)
                     {
                         siparisListesi.Add(siparisListesi4[7]);
+                        Urun = siparisListesi4[7];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi4.RemoveAt(7);
                         siparisSil();
                     }
@@ -2472,6 +3030,14 @@ namespace Odev15
                     if (siparisListesi5.Count >= 8)
                     {
                         siparisListesi.Add(siparisListesi5[7]);
+                        Urun = siparisListesi5[7];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi5.RemoveAt(7);
                         siparisSil();
                     }
@@ -2487,6 +3053,14 @@ namespace Odev15
                     if (siparisListesi6.Count >= 8)
                     {
                         siparisListesi.Add(siparisListesi6[7]);
+                        Urun = siparisListesi6[7];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi6.RemoveAt(7);
                         siparisSil();
                     }
@@ -2502,6 +3076,14 @@ namespace Odev15
                     if (siparisListesi7.Count >= 8)
                     {
                         siparisListesi.Add(siparisListesi7[7]);
+                        Urun = siparisListesi7[7];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi7.RemoveAt(7);
                         siparisSil();
                     }
@@ -2523,6 +3105,14 @@ namespace Odev15
                     if (siparisListesi1.Count >= 9)
                     {
                         siparisListesi.Add(siparisListesi1[8]);
+                        Urun = siparisListesi1[8];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi1.RemoveAt(8);
                         siparisSil();
                     }
@@ -2538,6 +3128,14 @@ namespace Odev15
                     if (siparisListesi2.Count >= 9)
                     {
                         siparisListesi.Add(siparisListesi2[8]);
+                        Urun = siparisListesi2[8];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi1.RemoveAt(8);
                         siparisSil();
                     }
@@ -2553,6 +3151,14 @@ namespace Odev15
                     if (siparisListesi3.Count >= 9)
                     {
                         siparisListesi.Add(siparisListesi3[8]);
+                        Urun = siparisListesi3[8];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi3.RemoveAt(8);
                         siparisSil();
                     }
@@ -2568,6 +3174,14 @@ namespace Odev15
                     if (siparisListesi4.Count >= 9)
                     {
                         siparisListesi.Add(siparisListesi4[8]);
+                        Urun = siparisListesi4[8];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi4.RemoveAt(8);
                         siparisSil();
                     }
@@ -2583,6 +3197,14 @@ namespace Odev15
                     if (siparisListesi5.Count >= 9)
                     {
                         siparisListesi.Add(siparisListesi5[8]);
+                        Urun = siparisListesi5[8];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi5.RemoveAt(8);
                         siparisSil();
                     }
@@ -2598,6 +3220,14 @@ namespace Odev15
                     if (siparisListesi6.Count >= 9)
                     {
                         siparisListesi.Add(siparisListesi6[8]);
+                        Urun = siparisListesi6[8];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi6.RemoveAt(8);
                         siparisSil();
                     }
@@ -2613,6 +3243,14 @@ namespace Odev15
                     if (siparisListesi7.Count >= 9)
                     {
                         siparisListesi.Add(siparisListesi7[8]);
+                        Urun = siparisListesi7[8];
+                        string aranan = "-";
+                        Urun = Urun.Trim();
+                        Urun = Urun.Remove(0, Urun.IndexOf(aranan) + 2);
+                        Urun = Urun.Remove(1, Urun.Length - 1);
+                        silinenUrun = Convert.ToInt32(Urun);
+                        siparisSilFiyat -= silinenUrun;
+                        silinenUrun = 0;
                         siparisListesi7.RemoveAt(8);
                         siparisSil();
                     }
