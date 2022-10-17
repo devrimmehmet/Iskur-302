@@ -39,7 +39,7 @@
 -- 'CATU' 'DUMON' 'PERIC' idli müþteriler tarafýndan
 --istenmiþ 2 nolu kargo firmasý tarafýndan taþýnmamýþ kargo ücreti 20 ile 200 dolar arasý olan sipariþlere toplam ne kadarlýk kargo ödemesi yapýlmýþtýr
 
---select SUM(Freight) from orders where (CustomerID='PERIC' or CustomerID='DUMON' or CustomerID='CACTU') and ShipVia!=2 and  Freight BETWEEN 20 AND 200
+select SUM(Freight) from orders where (CustomerID='PERIC' or CustomerID='DUMON' or CustomerID='CACTU') and ShipVia!=2 and  Freight BETWEEN 20 AND 200
 
 -- sinema otomasyonu en az 10 tabloluk veri tabný oluþtur iliþkileri kur veri ekle 
 --bugün iþlediklerimizi ordan yap
