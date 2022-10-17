@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "uCs8Z79GrPW63tmEmmDgOxxXpu4T4bthIdDzScY3CNGV7QiD7RwLdLIEOipyJ4mJthNYRQU67E8bASjlkSfWdQ==",
+  "dgSpecHash": "uvsgzM4eyBaqGNT7IdiO42nWoDlJwk4p5HnhUdrHm3BGk29hwpFbKzZuj6kZk+meLwUoLr1bk3XTypa0Gw5p6g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\DevrimM\\Desktop\\302\\web-gelistirme\\34-Net-Core-CSharp-Donguler\\420-uygulama-sayi-tahmin-oyunu\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\DevrimMehmet\\Documents\\GitHub\\Iskur-302\\web-gelistirme\\35-Net-Core-CSharp-Donguler\\420-uygulama-sayi-tahmin-oyunu\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DevrimMehmet\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.30\\microsoft.netcore.app.host.win-x64.3.1.30.nupkg.sha512"
+  ],
   "logs": []
 }

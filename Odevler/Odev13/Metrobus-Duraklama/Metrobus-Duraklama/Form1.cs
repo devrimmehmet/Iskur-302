@@ -23,10 +23,10 @@ namespace Metrobus_Duraklama
             timer2.Start();
 
         }
-        SoundPlayer sogutluCesme = new SoundPlayer(@"C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev13\Metrobus-Duraklama\Metrobus-Duraklama\sesler\sogutlucesme.wav");
-        SoundPlayer fikirTepe = new SoundPlayer(@"C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev13\Metrobus-Duraklama\Metrobus-Duraklama\sesler\fikirtepe.wav");
-        SoundPlayer uzunCayir = new SoundPlayer(@"C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev13\Metrobus-Duraklama\Metrobus-Duraklama\sesler\uzuncayir.wav");
-        SoundPlayer acibadem = new SoundPlayer(@"C:\Users\DevrimMehmet\Desktop\302\Odevler\Odev13\Metrobus-Duraklama\Metrobus-Duraklama\sesler\acibadem.wav");
+        SoundPlayer sogutluCesme = new SoundPlayer(@"C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\Odevler\Odev13\Metrobus-Duraklama\Metrobus-Duraklama\sesler\sogutlucesme.wav");
+        SoundPlayer fikirTepe = new SoundPlayer(@"C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\Odevler\Odev13\Metrobus-Duraklama\Metrobus-Duraklama\sesler\fikirtepe.wav");
+        SoundPlayer uzunCayir = new SoundPlayer(@"C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\Odevler\Odev13\Metrobus-Duraklama\Metrobus-Duraklama\sesler\uzuncayir.wav");
+        SoundPlayer acibadem = new SoundPlayer(@"C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\Odevler\Odev13\Metrobus-Duraklama\Metrobus-Duraklama\sesler\acibadem.wav");
 
 
         private void timer2_Tick(object sender, EventArgs e)

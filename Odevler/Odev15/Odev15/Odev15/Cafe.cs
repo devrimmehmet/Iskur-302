@@ -11,7 +11,7 @@ namespace Odev15
         public string Masa1 = "boş", Masa2 = "boş", Masa3 = "boş", Masa4 = "boş", Masa5 = "boş", Masa6 = "boş", Masa7 = "boş";
         public int yemek1 = 2, yemek2 = 3, yemek3 = 4, yemek4 = 5, icecek1 = 1, icecek2 = 2, icecek3 = 3, icecek4 = 4;
         public string aktifMasa;
-        public double toplamKazanc = 0, toplamBahsis = 0, masa1ToplamKazanc = 0, masa1ToplamBahsis = 0, masa2ToplamKazanc = 0, masa2ToplamBahsis = 0, masa3ToplamKazanc = 0, masa3ToplamBahsis = 0, masa4ToplamKazanc = 0, masa4ToplamBahsis = 0, masa5ToplamKazanc = 0, masa5ToplamBahsis = 0, masa6ToplamKazanc = 0, masa6ToplamBahsis = 0, masa7ToplamKazanc = 0, masa7ToplamBahsis = 0, masa1Hesap = 0, masa2Hesap = 0, masa3Hesap = 0, masa4Hesap = 0, masa5Hesap = 0, masa6Hesap = 0, masa7Hesap = 0, indirimliHesap = 0, masa1Bahsis = 0, masa2Bahsis = 0, masa3Bahsis = 0, masa4Bahsis = 0, masa5Bahsis = 0, masa6Bahsis = 0, masa7Bahsis = 0, siparisToplam = 0, siparisBahsis = 0;
+        public double toplamKazanc = 0, toplamBahsis = 0, masa1ToplamKazanc = 0, masa1ToplamBahsis = 0, masa2ToplamKazanc = 0, masa2ToplamBahsis = 0, masa3ToplamKazanc = 0, masa3ToplamBahsis = 0, masa4ToplamKazanc = 0, masa4ToplamBahsis = 0, masa5ToplamKazanc = 0, masa5ToplamBahsis = 0, masa6ToplamKazanc = 0, masa6ToplamBahsis = 0, masa7ToplamKazanc = 0, masa7ToplamBahsis = 0, masa1Hesap = 0, masa2Hesap = 0, masa3Hesap = 0, masa4Hesap = 0, masa5Hesap = 0, masa6Hesap = 0, masa7Hesap = 0, indirimliHesap = 0, masa1Bahsis = 0, masa2Bahsis = 0, masa3Bahsis = 0, masa4Bahsis = 0, masa5Bahsis = 0, masa6Bahsis = 0, masa7Bahsis = 0, siparisToplam = 0, siparisBahsis = 0, bahsisEkle = 0, siparisEkleFiyat = 0;
         List<string> siparisListesi = new List<string>();
         List<string> siparisListesi1 = new List<string>();
         List<string> siparisListesi2 = new List<string>();
@@ -56,7 +56,7 @@ namespace Odev15
             else if (KeyInfo.Key.ToString() == "D4")
             {
                 Console.Clear();
-                Console.WriteLine("KASA İŞLEMLERİ");
+                KasaIslemleri();
             }
             else
             {
@@ -64,7 +64,7 @@ namespace Odev15
                 Console.ReadKey();
                 AnaMenu();
             }
-        }
+        }// 1.sayfa
         public void Menu()
         {
             Console.Clear();
@@ -213,7 +213,7 @@ namespace Odev15
                     Masa1 = "Dolu";
                     siparisListesi1.AddRange(siparisListesi);
                     masa1Hesap = siparisToplam;
-                    masa1ToplamKazanc += masa1Hesap;
+                    siparisToplam = 0;
                     siparisListesi.Clear();
                 }
                 else if (aktifMasa == "2")
@@ -221,7 +221,7 @@ namespace Odev15
                     Masa2 = "Dolu";
                     siparisListesi2.AddRange(siparisListesi);
                     masa2Hesap = siparisToplam;
-                    masa2ToplamKazanc += masa2Hesap;
+                    siparisToplam = 0;
                     siparisListesi.Clear();
                 }
                 else if (aktifMasa == "3")
@@ -229,14 +229,14 @@ namespace Odev15
                     Masa3 = "Dolu";
                     siparisListesi3.AddRange(siparisListesi);
                     masa3Hesap = siparisToplam;
-                    masa3ToplamKazanc += masa3Hesap;
+                    siparisToplam = 0;
                     siparisListesi.Clear();
                 }
                 else if (aktifMasa == "4")
                 {
                     siparisListesi4.AddRange(siparisListesi);
                     masa4Hesap = siparisToplam;
-                    masa4ToplamKazanc += masa4Hesap;
+                    siparisToplam = 0;
                     siparisListesi.Clear();
                     Masa4 = "Dolu";
                 }
@@ -244,7 +244,7 @@ namespace Odev15
                 {
                     siparisListesi5.AddRange(siparisListesi);
                     masa5Hesap = siparisToplam;
-                    masa5ToplamKazanc += masa5Hesap;
+                    siparisToplam = 0;
                     siparisListesi.Clear();
                     Masa5 = "Dolu";
                 }
@@ -252,7 +252,7 @@ namespace Odev15
                 {
                     siparisListesi6.AddRange(siparisListesi);
                     masa6Hesap = siparisToplam;
-                    masa6ToplamKazanc += masa6Hesap;
+                    siparisToplam = 0;
                     siparisListesi.Clear();
                     Masa6 = "Dolu";
                 }
@@ -260,7 +260,7 @@ namespace Odev15
                 {
                     siparisListesi7.AddRange(siparisListesi);
                     masa7Hesap = siparisToplam;
-                    masa7ToplamKazanc += masa7Hesap;
+                    siparisToplam = 0;
                     siparisListesi.Clear();
                     Masa7 = "Dolu";
                 }
@@ -280,7 +280,7 @@ namespace Odev15
                 Console.ReadKey();
                 MasaAc();
             }
-        }
+        } //3.sayfa ilk siparişi ekle
         public void MasaHesapOdeme()
         {
             Console.Clear();
@@ -291,7 +291,7 @@ namespace Odev15
             int sayac = 1;
             if (aktifMasa == "1")
             {
-
+                masa1Bahsis = 0;
                 foreach (var item in siparisListesi1)
                 {
 
@@ -303,7 +303,7 @@ namespace Odev15
             }
             else if (aktifMasa == "2")
             {
-
+                masa2Bahsis = 0;
                 foreach (var item in siparisListesi2)
                 {
 
@@ -314,7 +314,7 @@ namespace Odev15
             }
             else if (aktifMasa == "3")
             {
-
+                masa3Bahsis = 0;
                 foreach (var item in siparisListesi3)
                 {
 
@@ -325,7 +325,7 @@ namespace Odev15
             }
             else if (aktifMasa == "4")
             {
-
+                masa4Bahsis = 0;
                 foreach (var item in siparisListesi4)
                 {
 
@@ -336,7 +336,7 @@ namespace Odev15
             }
             else if (aktifMasa == "5")
             {
-
+                masa5Bahsis = 0;
                 foreach (var item in siparisListesi5)
                 {
 
@@ -347,7 +347,7 @@ namespace Odev15
             }
             else if (aktifMasa == "6")
             {
-
+                masa6Bahsis = 0;
                 foreach (var item in siparisListesi6)
                 {
 
@@ -358,7 +358,7 @@ namespace Odev15
             }
             else if (aktifMasa == "7")
             {
-
+                masa7Bahsis = 0;
                 foreach (var item in siparisListesi7)
                 {
 
@@ -414,24 +414,36 @@ namespace Odev15
 
             if (aktifMasa == "1")
             {
+                siparisBahsis = masa1Bahsis;
+
+                bahsisEkle = 0;
                 siparisToplam = masa1Hesap;
                 indirimliHesap = siparisToplam - (siparisToplam / 4);
 
             }
             else if (aktifMasa == "2")
             {
+                siparisBahsis = masa2Bahsis;
+
+                bahsisEkle = 0;
                 siparisToplam = masa2Hesap;
                 indirimliHesap = siparisToplam - (siparisToplam / 4);
 
             }
             else if (aktifMasa == "3")
             {
+                siparisBahsis = masa3Bahsis;
+
+                bahsisEkle = 0;
                 siparisToplam = masa3Hesap;
                 indirimliHesap = siparisToplam - (siparisToplam / 4);
 
             }
             else if (aktifMasa == "4")
             {
+                siparisBahsis = masa4Bahsis;
+
+                bahsisEkle = 0;
                 siparisToplam = masa4Hesap;
                 indirimliHesap = siparisToplam - (siparisToplam / 4);
 
@@ -439,6 +451,9 @@ namespace Odev15
             }
             else if (aktifMasa == "5")
             {
+                siparisBahsis = masa5Bahsis;
+
+                bahsisEkle = 0;
                 siparisToplam = masa5Hesap;
                 indirimliHesap = siparisToplam - (siparisToplam / 4);
 
@@ -449,11 +464,16 @@ namespace Odev15
                 siparisToplam = masa6Hesap;
 
                 indirimliHesap = siparisToplam - (siparisToplam / 4);
+                siparisBahsis = masa6Bahsis;
 
+                bahsisEkle = 0;
 
             }
             else if (aktifMasa == "7")
             {
+                siparisBahsis = masa7Bahsis;
+
+                bahsisEkle = 0;
                 siparisToplam = masa7Hesap;
                 indirimliHesap = siparisToplam - (siparisToplam / 4);
 
@@ -474,7 +494,46 @@ namespace Odev15
             {
                 Console.WriteLine();
                 Console.Write("Vermek istediğiniz Bahşiş Miktarını Giriniz: ");
-                siparisBahsis = Convert.ToInt32(Console.ReadLine());
+                bahsisEkle = Convert.ToInt32(Console.ReadLine());
+                if (aktifMasa == "1")
+                {
+                    masa1Bahsis += bahsisEkle;
+
+
+                }
+                else if (aktifMasa == "2")
+                {
+
+                    masa2Bahsis += bahsisEkle;
+                }
+                else if (aktifMasa == "3")
+                {
+                    masa3Bahsis += bahsisEkle;
+
+                }
+                else if (aktifMasa == "4")
+                {
+                    masa4Bahsis += bahsisEkle;
+
+
+                }
+                else if (aktifMasa == "5")
+                {
+                    masa5Bahsis += bahsisEkle;
+
+
+                }
+                else if (aktifMasa == "6")
+                {
+                    masa6Bahsis += bahsisEkle;
+
+
+                }
+                else if (aktifMasa == "7")
+                {
+                    masa7Bahsis += bahsisEkle;
+
+                }
                 MasaHesapIndirimliOdeme();
 
             }
@@ -482,11 +541,16 @@ namespace Odev15
             {
                 if (aktifMasa == "1")
                 {
-                    masa1ToplamKazanc += siparisToplam;
-                    masa1ToplamBahsis += siparisBahsis;
-                    toplamBahsis += siparisBahsis;
-                    toplamKazanc += siparisToplam;
+                    siparisListesi.Clear();
+                    siparisListesi1.Clear();
+                    Masa1 = "boş";
+                    masa1ToplamKazanc += indirimliHesap;
+                    masa1ToplamBahsis += masa1Bahsis;
+                    toplamBahsis += masa1Bahsis;
+                    toplamKazanc += indirimliHesap;
                     indirimliHesap = 0;
+                    masa1Bahsis = 0;
+                    masa1Hesap = 0;
                     siparisBahsis = 0;
                     siparisToplam = 0;
                     AnaMenu();
@@ -494,33 +558,48 @@ namespace Odev15
                 }
                 else if (aktifMasa == "2")
                 {
-                    masa2ToplamKazanc += siparisToplam;
-                    masa2ToplamBahsis += siparisBahsis;
-                    toplamBahsis += siparisBahsis;
-                    toplamKazanc += siparisToplam;
+                    siparisListesi.Clear();
+                    siparisListesi2.Clear();
+                    Masa2 = "boş";
+                    masa2ToplamKazanc += indirimliHesap;
+                    masa2ToplamBahsis += masa2Bahsis;
+                    toplamBahsis += masa2Bahsis;
+                    toplamKazanc += indirimliHesap;
                     indirimliHesap = 0;
+                    masa2Bahsis = 0;
+                    masa2Hesap = 0;
                     siparisBahsis = 0;
                     siparisToplam = 0;
                     AnaMenu();
                 }
                 else if (aktifMasa == "3")
                 {
-                    masa3ToplamKazanc += siparisToplam;
-                    masa3ToplamBahsis += siparisBahsis;
-                    toplamBahsis += siparisBahsis;
-                    toplamKazanc += siparisToplam;
+                    siparisListesi.Clear();
+                    siparisListesi3.Clear();
+                    Masa3 = "boş";
+                    masa3ToplamKazanc += indirimliHesap;
+                    masa3ToplamBahsis += masa3Bahsis;
+                    toplamBahsis += masa3Bahsis;
+                    toplamKazanc += indirimliHesap;
                     indirimliHesap = 0;
+                    masa3Bahsis = 0;
+                    masa3Hesap = 0;
                     siparisBahsis = 0;
                     siparisToplam = 0;
                     AnaMenu();
                 }
                 else if (aktifMasa == "4")
                 {
-                    masa4ToplamKazanc += siparisToplam;
-                    masa4ToplamBahsis += siparisBahsis;
-                    toplamBahsis += siparisBahsis;
-                    toplamKazanc += siparisToplam;
+                    siparisListesi.Clear();
+                    siparisListesi4.Clear();
+                    Masa4 = "boş";
+                    masa4ToplamKazanc += indirimliHesap;
+                    masa4ToplamBahsis += masa4Bahsis;
+                    toplamBahsis += masa4Bahsis;
+                    toplamKazanc += indirimliHesap;
                     indirimliHesap = 0;
+                    masa4Bahsis = 0;
+                    masa4Hesap = 0;
                     siparisBahsis = 0;
                     siparisToplam = 0;
                     AnaMenu();
@@ -528,11 +607,16 @@ namespace Odev15
                 }
                 else if (aktifMasa == "5")
                 {
-                    masa5ToplamKazanc += siparisToplam;
-                    masa5ToplamBahsis += siparisBahsis;
-                    toplamBahsis += siparisBahsis;
-                    toplamKazanc += siparisToplam;
+                    siparisListesi.Clear();
+                    siparisListesi5.Clear();
+                    Masa5 = "boş";
+                    masa5ToplamKazanc += indirimliHesap;
+                    masa5ToplamBahsis += masa5Bahsis;
+                    toplamBahsis += masa5Bahsis;
+                    toplamKazanc += indirimliHesap;
                     indirimliHesap = 0;
+                    masa5Bahsis = 0;
+                    masa5Hesap = 0;
                     siparisBahsis = 0;
                     siparisToplam = 0;
                     AnaMenu();
@@ -540,23 +624,33 @@ namespace Odev15
                 }
                 else if (aktifMasa == "6")
                 {
-                    masa6ToplamKazanc += siparisToplam;
-                    masa6ToplamBahsis += siparisBahsis;
-                    toplamBahsis += siparisBahsis;
-                    toplamKazanc += siparisToplam;
+                    siparisListesi.Clear();
+                    siparisListesi6.Clear();
+                    Masa6 = "boş";
+                    masa6ToplamKazanc += indirimliHesap;
+                    masa6ToplamBahsis += masa6Bahsis;
+                    toplamBahsis += masa6Bahsis;
+                    toplamKazanc += indirimliHesap;
                     indirimliHesap = 0;
+                    masa6Bahsis = 0;
+                    masa6Hesap = 0;
                     siparisBahsis = 0;
                     siparisToplam = 0;
-                    AnaMenu();
 
+                    AnaMenu();
                 }
                 else if (aktifMasa == "7")
                 {
-                    masa7ToplamKazanc += siparisToplam;
-                    masa7ToplamBahsis += siparisBahsis;
-                    toplamBahsis += siparisBahsis;
-                    toplamKazanc += siparisToplam;
+                    siparisListesi.Clear();
+                    siparisListesi7.Clear();
+                    Masa7 = "boş";
+                    masa7ToplamKazanc += indirimliHesap;
+                    masa7ToplamBahsis += masa7Bahsis;
+                    toplamBahsis += masa7Bahsis;
+                    toplamKazanc += indirimliHesap;
                     indirimliHesap = 0;
+                    masa7Bahsis = 0;
+                    masa7Hesap = 0;
                     siparisBahsis = 0;
                     siparisToplam = 0;
                     AnaMenu();
@@ -584,46 +678,54 @@ namespace Odev15
             Console.WriteLine("----------------------------------------------------------------");
             Console.WriteLine($"                  Masa {aktifMasa} - Normal Ödeme              ");
             Console.WriteLine("----------------------------------------------------------------");
-           
             if (aktifMasa == "1")
             {
+                siparisBahsis = masa1Bahsis;
                 siparisToplam = masa1Hesap;
-
+                bahsisEkle = 0;
 
             }
             else if (aktifMasa == "2")
             {
-                siparisToplam = masa2Hesap;
 
+                siparisBahsis = masa2Bahsis;
+                siparisToplam = masa2Hesap;
+                bahsisEkle = 0;
             }
             else if (aktifMasa == "3")
             {
+                siparisBahsis = masa3Bahsis;
                 siparisToplam = masa3Hesap;
-
+                bahsisEkle = 0;
             }
             else if (aktifMasa == "4")
             {
+                siparisBahsis = masa4Bahsis;
                 siparisToplam = masa4Hesap;
-
+                bahsisEkle = 0;
 
             }
             else if (aktifMasa == "5")
             {
+                siparisBahsis = masa5Bahsis;
                 siparisToplam = masa5Hesap;
-
+                bahsisEkle = 0;
 
             }
             else if (aktifMasa == "6")
             {
+                siparisBahsis = masa6Bahsis;
                 siparisToplam = masa6Hesap;
-
+                bahsisEkle = 0;
 
             }
             else if (aktifMasa == "7")
             {
+                siparisBahsis = masa7Bahsis;
                 siparisToplam = masa7Hesap;
-
+                bahsisEkle = 0;
             }
+
             Console.WriteLine("Toplam Tutar: " + siparisToplam + " TL");
             Console.WriteLine("Toplam Bahşiş: " + siparisBahsis + " TL");
             Console.WriteLine("----------------------------------------------------------------");
@@ -639,7 +741,46 @@ namespace Odev15
             {
                 Console.WriteLine();
                 Console.Write("Vermek istediğiniz Bahşiş Miktarını Giriniz: ");
-                siparisBahsis = Convert.ToInt32(Console.ReadLine());
+                bahsisEkle = Convert.ToInt32(Console.ReadLine());
+                if (aktifMasa == "1")
+                {
+                    masa1Bahsis += bahsisEkle;
+
+
+                }
+                else if (aktifMasa == "2")
+                {
+
+                    masa2Bahsis += bahsisEkle;
+                }
+                else if (aktifMasa == "3")
+                {
+                    masa3Bahsis += bahsisEkle;
+
+                }
+                else if (aktifMasa == "4")
+                {
+                    masa4Bahsis += bahsisEkle;
+
+
+                }
+                else if (aktifMasa == "5")
+                {
+                    masa5Bahsis += bahsisEkle;
+
+
+                }
+                else if (aktifMasa == "6")
+                {
+                    masa6Bahsis += bahsisEkle;
+
+
+                }
+                else if (aktifMasa == "7")
+                {
+                    masa7Bahsis += bahsisEkle;
+
+                }
                 MasaHesapNormalOdeme();
 
             }
@@ -647,10 +788,15 @@ namespace Odev15
             {
                 if (aktifMasa == "1")
                 {
-                    masa1ToplamKazanc += siparisToplam;
-                    masa1ToplamBahsis += siparisBahsis;
-                    toplamBahsis += siparisBahsis;
-                    toplamKazanc += siparisToplam;
+                    siparisListesi.Clear();
+                    siparisListesi1.Clear();
+                    Masa1 = "boş";
+                    masa1ToplamKazanc += masa1Hesap;
+                    masa1ToplamBahsis += masa1Bahsis;
+                    toplamBahsis += masa1Bahsis;
+                    toplamKazanc += masa1Hesap;
+                    masa1Bahsis = 0;
+                    masa1Hesap = 0;
                     siparisBahsis = 0;
                     siparisToplam = 0;
                     AnaMenu();
@@ -658,30 +804,45 @@ namespace Odev15
                 }
                 else if (aktifMasa == "2")
                 {
-                    masa2ToplamKazanc += siparisToplam;
-                    masa2ToplamBahsis += siparisBahsis;
-                    toplamBahsis += siparisBahsis;
-                    toplamKazanc += siparisToplam;
+                    siparisListesi.Clear();
+                    siparisListesi2.Clear();
+                    Masa2 = "boş";
+                    masa2ToplamKazanc += masa2Hesap;
+                    masa2ToplamBahsis += masa2Bahsis;
+                    toplamBahsis += masa2Bahsis;
+                    toplamKazanc += masa2Hesap;
+                    masa2Bahsis = 0;
+                    masa2Hesap = 0;
                     siparisBahsis = 0;
                     siparisToplam = 0;
                     AnaMenu();
                 }
                 else if (aktifMasa == "3")
                 {
-                    masa3ToplamKazanc += siparisToplam;
-                    masa3ToplamBahsis += siparisBahsis;
-                    toplamBahsis += siparisBahsis;
-                    toplamKazanc += siparisToplam;
+                    siparisListesi.Clear();
+                    siparisListesi3.Clear();
+                    Masa3 = "boş";
+                    masa3ToplamKazanc += masa3Hesap;
+                    masa3ToplamBahsis += masa3Bahsis;
+                    toplamBahsis += masa3Bahsis;
+                    toplamKazanc += masa3Hesap;
+                    masa3Bahsis = 0;
+                    masa3Hesap = 0;
                     siparisBahsis = 0;
                     siparisToplam = 0;
                     AnaMenu();
                 }
                 else if (aktifMasa == "4")
                 {
-                    masa4ToplamKazanc += siparisToplam;
-                    masa4ToplamBahsis += siparisBahsis;
-                    toplamBahsis += siparisBahsis;
-                    toplamKazanc += siparisToplam;
+                    siparisListesi.Clear();
+                    siparisListesi4.Clear();
+                    Masa4 = "boş";
+                    masa4ToplamKazanc += masa4Hesap;
+                    masa4ToplamBahsis += masa4Bahsis;
+                    toplamBahsis += masa4Bahsis;
+                    toplamKazanc += masa4Hesap;
+                    masa4Bahsis = 0;
+                    masa4Hesap = 0;
                     siparisBahsis = 0;
                     siparisToplam = 0;
                     AnaMenu();
@@ -689,10 +850,15 @@ namespace Odev15
                 }
                 else if (aktifMasa == "5")
                 {
-                    masa5ToplamKazanc += siparisToplam;
-                    masa5ToplamBahsis += siparisBahsis;
-                    toplamBahsis += siparisBahsis;
-                    toplamKazanc += siparisToplam;
+                    siparisListesi.Clear();
+                    siparisListesi5.Clear();
+                    Masa5 = "boş";
+                    masa5ToplamKazanc += masa5Hesap;
+                    masa5ToplamBahsis += masa5Bahsis;
+                    toplamBahsis += masa5Bahsis;
+                    toplamKazanc += masa5Hesap;
+                    masa5Bahsis = 0;
+                    masa5Hesap = 0;
                     siparisBahsis = 0;
                     siparisToplam = 0;
                     AnaMenu();
@@ -700,10 +866,15 @@ namespace Odev15
                 }
                 else if (aktifMasa == "6")
                 {
-                    masa6ToplamKazanc += siparisToplam;
-                    masa6ToplamBahsis += siparisBahsis;
-                    toplamBahsis += siparisBahsis;
-                    toplamKazanc += siparisToplam;
+                    siparisListesi.Clear();
+                    siparisListesi6.Clear();
+                    Masa6 = "boş";
+                    masa6ToplamKazanc += masa6Hesap;
+                    masa6ToplamBahsis += masa6Bahsis;
+                    toplamBahsis += masa6Bahsis;
+                    toplamKazanc += masa6Hesap;
+                    masa6Bahsis = 0;
+                    masa6Hesap = 0;
                     siparisBahsis = 0;
                     siparisToplam = 0;
 
@@ -711,10 +882,15 @@ namespace Odev15
                 }
                 else if (aktifMasa == "7")
                 {
-                    masa7ToplamKazanc += siparisToplam;
-                    masa7ToplamBahsis += siparisBahsis;
-                    toplamBahsis += siparisBahsis;
-                    toplamKazanc += siparisToplam;
+                    siparisListesi.Clear();
+                    siparisListesi7.Clear();
+                    Masa7 = "boş";
+                    masa7ToplamKazanc += masa7Hesap;
+                    masa7ToplamBahsis += masa7Bahsis;
+                    toplamBahsis += masa7Bahsis;
+                    toplamKazanc += masa7Hesap;
+                    masa7Bahsis = 0;
+                    masa7Hesap = 0;
                     siparisBahsis = 0;
                     siparisToplam = 0;
                     AnaMenu();
@@ -722,6 +898,7 @@ namespace Odev15
             }
             else if (KeyInfo.Key.ToString() == "LeftArrow")
             {
+
                 siparisBahsis = 0;
                 siparisToplam = 0;
                 MasaHesapOdeme();
@@ -736,6 +913,7 @@ namespace Odev15
         }
         public void MasaHesap()
         {
+
             Console.Clear();
             Console.WriteLine("----------------------------------------------------------------");
             Console.WriteLine("                           Masa Hesap                           ");
@@ -885,7 +1063,7 @@ namespace Odev15
                 MasaHesap();
             }
         }
-        public void MasaAc()
+        public void MasaAc() //2.sayfa masa aç
         {
             Console.Clear();
             Console.BackgroundColor = ConsoleColor.DarkGray;
@@ -964,7 +1142,7 @@ namespace Odev15
         public void Kapat()
         {
 
-        }
+        } // son kapat
         public void MasaIslemDetay()
         {
             Console.Clear();
@@ -1112,6 +1290,8 @@ namespace Odev15
             Console.ForegroundColor = ConsoleColor.White;
             if (aktifMasa == "1")
             {
+                siparisToplam = masa1Hesap;
+                
                 foreach (var item in siparisListesi1)
                 {
                     Console.WriteLine(item);
@@ -1119,6 +1299,7 @@ namespace Odev15
             }
             else if (aktifMasa == "2")
             {
+                siparisToplam = masa2Hesap;
                 foreach (var item in siparisListesi2)
                 {
                     Console.WriteLine(item);
@@ -1126,6 +1307,7 @@ namespace Odev15
             }
             else if (aktifMasa == "3")
             {
+                siparisToplam = masa3Hesap;
                 foreach (var item in siparisListesi3)
                 {
                     Console.WriteLine(item);
@@ -1133,6 +1315,7 @@ namespace Odev15
             }
             else if (aktifMasa == "4")
             {
+                siparisToplam = masa4Hesap;
                 foreach (var item in siparisListesi4)
                 {
                     Console.WriteLine(item);
@@ -1140,6 +1323,7 @@ namespace Odev15
             }
             else if (aktifMasa == "5")
             {
+                siparisToplam = masa5Hesap;
                 foreach (var item in siparisListesi5)
                 {
                     Console.WriteLine(item);
@@ -1147,6 +1331,7 @@ namespace Odev15
             }
             else if (aktifMasa == "6")
             {
+                siparisToplam = masa6Hesap;
                 foreach (var item in siparisListesi6)
                 {
                     Console.WriteLine(item);
@@ -1154,6 +1339,7 @@ namespace Odev15
             }
             else if (aktifMasa == "7")
             {
+                siparisToplam = masa7Hesap;
                 foreach (var item in siparisListesi7)
                 {
                     Console.WriteLine(item);
@@ -1174,36 +1360,43 @@ namespace Odev15
             {
                 Console.Clear();
                 siparisListesi.Add($"1.Yemek - {yemek1} TL");
+               
+                siparisEkleFiyat +=yemek1;
                 siparisEkle();
             }
             else if (KeyInfo.Key.ToString() == "D2")
             {
                 Console.Clear();
                 siparisListesi.Add($"2.Yemek - {yemek2} TL");
+                siparisEkleFiyat += yemek2;
                 siparisEkle();
             }
             else if (KeyInfo.Key.ToString() == "D3")
             {
                 Console.Clear();
                 siparisListesi.Add($"3.Yemek - {yemek3} TL");
+                siparisEkleFiyat += yemek3;
                 siparisEkle();
             }
             else if (KeyInfo.Key.ToString() == "D4")
             {
                 Console.Clear();
                 siparisListesi.Add($"4.Yemek - {yemek4} TL");
+                siparisEkleFiyat += yemek4;
                 siparisEkle();
             }
             else if (KeyInfo.Key.ToString() == "D5")
             {
                 Console.Clear();
                 siparisListesi.Add($"1.İçecek - {icecek1} TL");
+                siparisEkleFiyat += icecek1;
                 siparisEkle();
             }
             else if (KeyInfo.Key.ToString() == "D6")
             {
                 Console.Clear();
                 siparisListesi.Add($"2.İçecek - {icecek2} TL");
+                siparisEkleFiyat += icecek2;
 
                 siparisEkle();
             }
@@ -1211,54 +1404,68 @@ namespace Odev15
             {
                 Console.Clear();
                 siparisListesi.Add($"3.İçecek - {icecek3} TL");
+                siparisEkleFiyat += icecek3;
                 siparisEkle();
             }
             else if (KeyInfo.Key.ToString() == "D8")
             {
                 Console.Clear();
                 siparisListesi.Add($"4.İçecek - {icecek4} TL");
+                siparisEkleFiyat += icecek4;
                 siparisEkle();
             }
             else if (KeyInfo.Key.ToString() == "Spacebar")
             {
                 if (aktifMasa == "1")
                 {
-
+                    masa1Hesap += siparisEkleFiyat;
+                    siparisEkleFiyat = 0;
                     siparisListesi1.AddRange(siparisListesi);
                     siparisListesi.Clear();
                 }
                 else if (aktifMasa == "2")
                 {
+                    masa2Hesap += siparisEkleFiyat;
+                    siparisEkleFiyat = 0;
 
                     siparisListesi2.AddRange(siparisListesi);
                     siparisListesi.Clear();
                 }
                 else if (aktifMasa == "3")
                 {
-
+                    masa3Hesap += siparisEkleFiyat;
+                    siparisEkleFiyat = 0;
                     siparisListesi3.AddRange(siparisListesi);
                     siparisListesi.Clear();
                 }
                 else if (aktifMasa == "4")
                 {
+                    masa4Hesap += siparisEkleFiyat;
+                    siparisEkleFiyat = 0;
                     siparisListesi4.AddRange(siparisListesi);
                     siparisListesi.Clear();
 
                 }
                 else if (aktifMasa == "5")
                 {
+                    masa5Hesap += siparisEkleFiyat;
+                    siparisEkleFiyat = 0;
                     siparisListesi5.AddRange(siparisListesi);
                     siparisListesi.Clear();
 
                 }
                 else if (aktifMasa == "6")
                 {
+                    masa6Hesap += siparisEkleFiyat;
+                    siparisEkleFiyat = 0;
                     siparisListesi6.AddRange(siparisListesi);
                     siparisListesi.Clear();
 
                 }
                 else if (aktifMasa == "7")
                 {
+                    masa7Hesap += siparisEkleFiyat;
+                    siparisEkleFiyat = 0;
                     siparisListesi7.AddRange(siparisListesi);
                     siparisListesi.Clear();
 
@@ -1268,6 +1475,7 @@ namespace Odev15
             }
             else if (KeyInfo.Key.ToString() == "LeftArrow")
             {
+                siparisEkleFiyat = 0;
                 siparisListesi.Clear();
                 MasaIslemDetay();
             }
@@ -1290,6 +1498,7 @@ namespace Odev15
 
             if (aktifMasa == "1")
             {
+                siparisToplam = masa1Hesap;
                 int sayac = 1;
                 foreach (var item in siparisListesi1)
                 {
@@ -1299,6 +1508,7 @@ namespace Odev15
             }
             else if (aktifMasa == "2")
             {
+                siparisToplam = masa2Hesap;
                 int sayac = 1;
                 foreach (var item in siparisListesi2)
                 {
@@ -1308,6 +1518,7 @@ namespace Odev15
             }
             else if (aktifMasa == "3")
             {
+                siparisToplam = masa3Hesap;
                 int sayac = 1;
                 foreach (var item in siparisListesi3)
                 {
@@ -1317,6 +1528,7 @@ namespace Odev15
             }
             else if (aktifMasa == "4")
             {
+                siparisToplam = masa4Hesap;
                 int sayac = 1;
                 foreach (var item in siparisListesi4)
                 {
@@ -1326,6 +1538,7 @@ namespace Odev15
             }
             else if (aktifMasa == "5")
             {
+                siparisToplam = masa5Hesap;
                 int sayac = 1;
                 foreach (var item in siparisListesi5)
                 {
@@ -1335,6 +1548,7 @@ namespace Odev15
             }
             else if (aktifMasa == "6")
             {
+                siparisToplam = masa6Hesap;
                 int sayac = 1;
                 foreach (var item in siparisListesi6)
                 {
@@ -1344,6 +1558,7 @@ namespace Odev15
             }
             else if (aktifMasa == "7")
             {
+                siparisToplam = masa7Hesap;
                 int sayac = 1;
                 foreach (var item in siparisListesi7)
                 {
@@ -2417,14 +2632,14 @@ namespace Odev15
         {
             Console.Clear();
 
-           
+
             Console.WriteLine($"                           KASA İŞLEMLERİ                      ");
             Console.WriteLine("----------------------------------------------------------------");
-            Console.WriteLine("Toplam Kazanç: "+toplamKazanc +" TL");
+            Console.WriteLine("Toplam Kazanç: " + toplamKazanc + " TL");
             Console.WriteLine("Toplam Bahşiş: " + toplamBahsis + " TL");
             Console.WriteLine("----------------------------------------------------------------");
             Console.WriteLine($"                     MASALARA GÖRE KAZANÇ                      ");
-            Console.WriteLine("1. Masa Toplam Kazanç: " + masa1ToplamKazanc + " TL"+ " Toplam Bahşiş: "+masa1ToplamBahsis+" TL");
+            Console.WriteLine("1. Masa Toplam Kazanç: " + masa1ToplamKazanc + " TL" + " Toplam Bahşiş: " + masa1ToplamBahsis + " TL");
             Console.WriteLine("2. Masa Toplam Kazanç: " + masa2ToplamKazanc + " TL" + " Toplam Bahşiş: " + masa2ToplamBahsis + " TL");
             Console.WriteLine("3. Masa Toplam Kazanç: " + masa3ToplamKazanc + " TL" + " Toplam Bahşiş: " + masa3ToplamBahsis + " TL");
             Console.WriteLine("4. Masa Toplam Kazanç: " + masa4ToplamKazanc + " TL" + " Toplam Bahşiş: " + masa4ToplamBahsis + " TL");
@@ -2437,7 +2652,7 @@ namespace Odev15
             Console.Write("İşlem Seç : ");
             ConsoleKeyInfo KeyInfo = Console.ReadKey(true);
 
-          
+
             if (KeyInfo.Key.ToString() == "Escape")
             {
                 AnaMenu();

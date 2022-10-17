@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\DevrimM\\.nuget\\packages\\": {}
+    "C:\\Users\\DevrimMehmet\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DevrimM\\Desktop\\302\\web-gelistirme\\34-Net-Core-CSharp-Donguler\\419-uygulama-asal-sayi\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectUniqueName": "C:\\Users\\DevrimMehmet\\Documents\\GitHub\\Iskur-302\\web-gelistirme\\35-Net-Core-CSharp-Donguler\\419-uygulama-asal-sayi\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
       "projectName": "ConsoleApp1",
-      "projectPath": "C:\\Users\\DevrimM\\Desktop\\302\\web-gelistirme\\34-Net-Core-CSharp-Donguler\\419-uygulama-asal-sayi\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
-      "packagesPath": "C:\\Users\\DevrimM\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DevrimM\\Desktop\\302\\web-gelistirme\\34-Net-Core-CSharp-Donguler\\419-uygulama-asal-sayi\\ConsoleApp1\\ConsoleApp1\\obj\\",
+      "projectPath": "C:\\Users\\DevrimMehmet\\Documents\\GitHub\\Iskur-302\\web-gelistirme\\35-Net-Core-CSharp-Donguler\\419-uygulama-asal-sayi\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
+      "packagesPath": "C:\\Users\\DevrimMehmet\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\DevrimMehmet\\Documents\\GitHub\\Iskur-302\\web-gelistirme\\35-Net-Core-CSharp-Donguler\\419-uygulama-asal-sayi\\ConsoleApp1\\ConsoleApp1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\DevrimM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\DevrimMehmet\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -56,12 +56,18 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[3.1.30, 3.1.30]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
