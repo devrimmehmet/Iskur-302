@@ -186,3 +186,86 @@
 
 --hangi personel hangi ürünü toplam kaç dolarlýk satmýþtýr
 --employes order- order details
+
+--- HAVING YAPISI ---
+/* Agregate fonksiyonlar aracýlýðý ile alýnan sonuçlar bir where kriteri içerisinde kullanýlmamaktadýr.
+Bunun yerine (where yerine) kullandýðýmýz anahtar kelime 'having' anahtar kelimesidir... */
+/* Having group by'in fonksiyonudur. */
+-- toplam sipariþ miktarý 1200'ün üzerinde olan ürünlerin adlarýný ve sipariþ miktarlarýný gösteriniz.
+
+--select p.ProductName,SUM(od.Quantity) as 'Toplam' from Orders o inner join [Order Details] od on o.OrderID=od.OrderID inner join Products p on p.ProductID=od.ProductID  group by ProductName  having SUM(Quantity)>1200 order by Toplam desc
+
+-- hangi personel hangi ürünü toplam kaç dolarlýk satmýþtýr.
+
+--select * from [Order Details] od inner join 
+
+--SELECT e.FirstName+' '+e.LastName as 'Ad-Soyad', p.ProductName as 'Ürün', SUM(od.Quantity * od.UnitPrice * (1-Discount)) As 'Toplam' FROM Products p 
+--INNER JOIN [Order Details] od ON p.ProductID = od.ProductID 
+--INNER JOIN Orders o ON o.OrderID = od.OrderID  
+--inner join Employees e on e.EmployeeID=o.EmployeeID
+--GROUP BY e.FirstName,e.LastName , p.ProductName
+--having SUM(od.Quantity * od.UnitPrice * (1-Discount))>1000
+--order by Toplam desc
+
+-- 250den fazla kargo sipariþ taþýmýþ olan kargo firmalarýnýn adlarýný telefon nolarýný ve sipariþ miktarlarýný raporlayýnýz 
+
+--select s.CompanyName,s.Phone,Count(o.ShipVia) As 'Toplam'  from Shippers s 
+--inner join Orders o on o.ShipVia=s.ShipperID
+--group by s.CompanyName,s.Phone,o.ShipVia
+--having Count(o.ShipVia)>250
+
+
+-- insert iþlemleri var olan bir veri kaynaðýna yeni bir veri eklemek için kullanýlan yapýdýr
+-- eðer tablonuzdaki tüm kolonlara insert iþlemi gerçekleþtiriyorsanýz tek tek kolon adlarýný yazmak zorunda deðilsiniz. ancak dikkat edilmesi gereken nokta kolon sýralamalarýný iyi biliyor olmamýz gereklidir.
+-- insert into tabloISMI(kolon1,kolon2,kolon3,...) values (deger1,deger2,deger3)
+
+-- varolan bir veri kaynaðýndaki verilerinizin yeni deðerlerle güncellenmesini saðlayan yapýdýr eðer update iþleminde where kriterini unutursanýz bütün kayýtlarýnýz ayný deðerlerle güncellenir.
+
+--6 nolu kargo firmasýnýn telefon numarasýný (212 888 4447) olarak güncelleyiniz.
+
+
+--INSERT INTO Shippers
+--         (CompanyName,Phone)
+           
+--    VALUES
+----          ('302 Cemaat','5438887776')
+--	  select * from Shippers
+--update Shippers set Phone='0900 123 3456' where ShipperID=6
+
+-- çalýþanlar tablosundaki nancy adlý çalýþanýn doðum tarihini 01 01 1967 olarak güncelleyiniz þehiri erzincan olarak deðiþtiriniz
+
+--select * from Employees where EmployeeID=1
+
+--update Employees set BirthDate='01.01.1967' ,City='Kastamonu' where EmployeeID=1
+
+--stoðu 10dna küçük ürünlere %6 zam yapýn
+
+--select UnitPrice,UnitPrice*1.06 from Products
+--update Products set UnitPrice=UnitPrice*1.01 where UnitsInStock<10
+--select * from Products
+
+--select UnitPrice,UnitPrice*1.06 from Products where UnitsInStock<10
+--select UnitPrice,UnitPrice*1.06 from Products where UnitsInStock<10i
+
+--varolan bir veri kaynaðýndaki verilerimizin tamamiyle silinmesi için gerkeen yapýdýr. 
+--eðer delete iþleminde where kriterini unutursanýz bütün kayýtlar ayný anda silinir.
+
+--kargo tablosundaki 3ten büyük kayýtlarý silin
+--select * from Shippers 
+--delete from Shippers where ShipperID>3
+
+-- view içerisinde çok fazla iþlem gerçekleþtiriyorsanýz ve üstelik buna defalarca ihtiyacýnýz varsa view nesnesini kullanýrsýnýz sorgunuzun týpký bir sanal tabloymuþcasýna saklar ve her defasýnda artýk o tablodan sorgularýn çekilmesini ister örneðin 
+
+-- amerikalý müþterilerden alýnmýþ sipariþleri listeleyen bir sorgu tasarlayýnýz ve bir view içerisinde saklayýnýz
+
+--select * from Orders o inner join Customers c on o.CustomerID=c.CustomerID where Country='USA'
+
+--go 
+--create view  Amerikalýlar
+-- as
+--select c.CustomerID,CompanyName,OrderID,Country from Orders o 
+--inner join Customers c on o.CustomerID=c.CustomerID 
+--where c.Country='USA'
+--go
+
+--view ile sanal tablo oluþturulur bizzat veri tutmaz her çalýþacaðý zaman compiler edilmez hýz kazandýrýr güvenlik saðlar mesela personel tablosunda select yaparken sizin personel maaþýný görmeniz lazýmken baþka hiç kimse görmesin demektir. 

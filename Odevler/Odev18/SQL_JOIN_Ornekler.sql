@@ -1,4 +1,5 @@
 -- SQL SORGU ÖDEVLERÝ (Join) --
+
 --1-Hangi müþteri hangi üründen kaç dolarlýk satýþ almýþtýr (Products,[Order Details],Orders,Customers)
 
 --SELECT c.ContactName, p.ProductName, SUM(od.Quantity * od.UnitPrice * (1-Discount)) FROM Products p INNER JOIN [Order Details] od ON p.ProductID = od.ProductID INNER JOIN Orders o ON o.OrderID = od.OrderID INNER JOIN Customers c ON c.CustomerID = o.CustomerID GROUP BY C.ContactName , p.ProductName

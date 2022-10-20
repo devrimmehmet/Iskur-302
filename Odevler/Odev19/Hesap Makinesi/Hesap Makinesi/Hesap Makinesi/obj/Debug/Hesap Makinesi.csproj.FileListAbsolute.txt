@@ -1,0 +1,11 @@
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\Odevler\Odev19\Hesap Makinesi\Hesap Makinesi\Hesap Makinesi\bin\Debug\Hesap Makinesi.exe.config
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\Odevler\Odev19\Hesap Makinesi\Hesap Makinesi\Hesap Makinesi\bin\Debug\Hesap Makinesi.exe
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\Odevler\Odev19\Hesap Makinesi\Hesap Makinesi\Hesap Makinesi\bin\Debug\Hesap Makinesi.pdb
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\Odevler\Odev19\Hesap Makinesi\Hesap Makinesi\Hesap Makinesi\obj\Debug\Hesap Makinesi.csproj.AssemblyReference.cache
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\Odevler\Odev19\Hesap Makinesi\Hesap Makinesi\Hesap Makinesi\obj\Debug\Hesap Makinesi.csproj.SuggestedBindingRedirects.cache
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\Odevler\Odev19\Hesap Makinesi\Hesap Makinesi\Hesap Makinesi\obj\Debug\Hesap_Makinesi.Properties.Resources.resources
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\Odevler\Odev19\Hesap Makinesi\Hesap Makinesi\Hesap Makinesi\obj\Debug\Hesap Makinesi.csproj.GenerateResource.cache
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\Odevler\Odev19\Hesap Makinesi\Hesap Makinesi\Hesap Makinesi\obj\Debug\Hesap Makinesi.csproj.CoreCompileInputs.cache
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\Odevler\Odev19\Hesap Makinesi\Hesap Makinesi\Hesap Makinesi\obj\Debug\Hesap Makinesi.exe
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\Odevler\Odev19\Hesap Makinesi\Hesap Makinesi\Hesap Makinesi\obj\Debug\Hesap Makinesi.pdb
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\Odevler\Odev19\Hesap Makinesi\Hesap Makinesi\Hesap Makinesi\obj\Debug\Hesap_Makinesi.Form1.resources
