@@ -34,13 +34,46 @@ namespace Hesap_Makinesi
         }
         private void IslemSecimi()
         {
+            if (btn_Bolme.Enabled == true && btn_Carpma.Enabled == true && btn_Toplama.Enabled == true && btn_Cikarma.Enabled == true)
+            {
+
+            }
+            else
+            {
+                sonuc = Convert.ToDouble(txt_Sonuc.Text);
+                MessageBox.Show("girdim");
+            }
+
+            if (string_Islem == "+")
+            {
+                btn_Islem_Aktif();
+                btn_Toplama.Enabled = false;
+
+            }
+            if (string_Islem == "-")
+            {
+                btn_Islem_Aktif();
+                btn_Cikarma.Enabled = false;
+            }
+            if (string_Islem == "*")
+            {
+                btn_Islem_Aktif();
+                btn_Carpma.Enabled = false;
+
+            }
+            if (string_Islem == "/")
+            {
+                btn_Islem_Aktif();
+                btn_Bolme.Enabled = false;
+
+            }
             switch (string_Islem)
             {
                 case "+":
-                        txt_Sonuc.Text = (sonuc + double.Parse(txt_Sonuc.Text)).ToString();
+                    txt_Sonuc.Text = (sonuc + double.Parse(txt_Sonuc.Text)).ToString();
                     break;
                 case "-":
-                        txt_Sonuc.Text = (sonuc - double.Parse(txt_Sonuc.Text)).ToString();
+                    txt_Sonuc.Text = (sonuc - double.Parse(txt_Sonuc.Text)).ToString();
                     break;
                 case "*":
                     txt_Sonuc.Text = (sonuc * double.Parse(txt_Sonuc.Text)).ToString();
@@ -49,9 +82,11 @@ namespace Hesap_Makinesi
                     txt_Sonuc.Text = (sonuc / double.Parse(txt_Sonuc.Text)).ToString();
                     break;
             }
+          
 
             sonuc = Convert.ToDouble(txt_Sonuc.Text);
-            txt_Sonuc.Text = sonuc.ToString();
+            lbl_Sonuc.Text = sonuc.ToString();
+
             btn_Esittir.Select();
         }
         private void Salih(KeyPressEventArgs e)
@@ -67,90 +102,90 @@ namespace Hesap_Makinesi
                 if (e.KeyChar == '0')
                 {
                     Click_Rakam(btn_0, new EventArgs());
-               
+
                 }
                 if (e.KeyChar == '1')
                 {
                     Click_Rakam(btn_1, new EventArgs());
-                   
+
                 }
                 if (e.KeyChar == '2')
                 {
                     Click_Rakam(btn_2, new EventArgs());
-                  
+
                 }
                 if (e.KeyChar == '3')
                 {
                     Click_Rakam(btn_3, new EventArgs());
-                  
+
                 }
                 if (e.KeyChar == '4')
                 {
                     Click_Rakam(btn_4, new EventArgs());
-                   
+
                 }
                 if (e.KeyChar == '5')
                 {
                     Click_Rakam(btn_5, new EventArgs());
-                  
+
                 }
                 if (e.KeyChar == '6')
                 {
                     Click_Rakam(btn_6, new EventArgs());
-                 
+
                 }
                 if (e.KeyChar == '7')
                 {
                     Click_Rakam(btn_7, new EventArgs());
-                    
+
                 }
                 if (e.KeyChar == '8')
                 {
                     Click_Rakam(btn_8, new EventArgs());
-                    
+
                 }
                 if (e.KeyChar == '9')
                 {
                     Click_Rakam(btn_9, new EventArgs());
-                    
+
                 }
                 if (e.KeyChar == ',')
                 {
                     btn_Virgul_Click(btn_Virgul, new EventArgs());
-                   
+
                 }
                 if (e.KeyChar == '+')
                 {
                     Click_Islem(btn_Toplama, new EventArgs());
-                   
+
                 }
                 if (e.KeyChar == '-')
                 {
                     Click_Islem(btn_Cikarma, new EventArgs());
-                  
-                    
+
+
                 }
                 if (e.KeyChar == '*')
                 {
                     Click_Islem(btn_Carpma, new EventArgs());
-                    
+
 
                 }
                 if (e.KeyChar == '/')
                 {
                     Click_Islem(btn_Bolme, new EventArgs());
-                   
+
                 }
                 if (e.KeyChar == 13) //enter
                 {
                     btn_Esittir_Click(btn_Esittir, new EventArgs());
-                    
-                    
+
+
                 }
                 if (e.KeyChar == 8) //backspace
                 {
                     btn_Geri_Click(btn_Geri, new EventArgs());
-                  
+
 
                 }
 
@@ -161,34 +196,13 @@ namespace Hesap_Makinesi
             btn_Esittir.Select();
             bool_Islem = true;
             Button btn = (Button)sender;
-            if (btn.Text == "+")
-            {
-                btn_Islem_Aktif();
-                btn_Toplama.Enabled = false;
-
-            }
-            if (btn.Text == "-")
-            {
-                btn_Islem_Aktif();
-                btn_Cikarma.Enabled = false;
-            }
-            if (btn.Text == "*")
-            {
-                btn_Islem_Aktif();
-                btn_Carpma.Enabled = false;
-
-            }
-            if (btn.Text == "/")
-            {
-                btn_Islem_Aktif();
-                btn_Bolme.Enabled = false;
-
-            }
+            
             string yeni_String_Islem = btn.Text;
             //  lbl_Sonuc.Text = lbl_Sonuc.Text + " " + txt_Sonuc.Text + " "+yeni_String_Islem;
 
             IslemSecimi();
             lbl_Sonuc.Text = txt_Sonuc.Text + " " + yeni_String_Islem;
+            //txt_Sonuc.Text = lbl_Sonuc.Text + yeni_String_Islem;
             string_Islem = yeni_String_Islem;
         }
         private void btn_Islem_Aktif()
