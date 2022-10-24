@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdoNet-ProcedureOdev", "AdoNet-ProcedureOdev\AdoNet-ProcedureOdev.csproj", "{858E2216-AC6B-4DEB-BFF7-9E841C6051ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{858E2216-AC6B-4DEB-BFF7-9E841C6051ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{858E2216-AC6B-4DEB-BFF7-9E841C6051ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{858E2216-AC6B-4DEB-BFF7-9E841C6051ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{858E2216-AC6B-4DEB-BFF7-9E841C6051ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {487FC36E-97C6-43C0-ACC1-6E2289AF3492}
+	EndGlobalSection
+EndGlobal

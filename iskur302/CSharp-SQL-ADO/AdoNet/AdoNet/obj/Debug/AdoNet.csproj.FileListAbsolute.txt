@@ -1,0 +1,12 @@
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\iskur302\CSharp-SQL-ADO\AdoNet\AdoNet\bin\Debug\AdoNet.exe.config
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\iskur302\CSharp-SQL-ADO\AdoNet\AdoNet\bin\Debug\AdoNet.exe
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\iskur302\CSharp-SQL-ADO\AdoNet\AdoNet\bin\Debug\AdoNet.pdb
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\iskur302\CSharp-SQL-ADO\AdoNet\AdoNet\obj\Debug\AdoNet.csproj.AssemblyReference.cache
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\iskur302\CSharp-SQL-ADO\AdoNet\AdoNet\obj\Debug\AdoNet.csproj.SuggestedBindingRedirects.cache
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\iskur302\CSharp-SQL-ADO\AdoNet\AdoNet\obj\Debug\AdoNet.Form1.resources
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\iskur302\CSharp-SQL-ADO\AdoNet\AdoNet\obj\Debug\AdoNet.Properties.Resources.resources
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\iskur302\CSharp-SQL-ADO\AdoNet\AdoNet\obj\Debug\AdoNet.csproj.GenerateResource.cache
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\iskur302\CSharp-SQL-ADO\AdoNet\AdoNet\obj\Debug\AdoNet.csproj.CoreCompileInputs.cache
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\iskur302\CSharp-SQL-ADO\AdoNet\AdoNet\obj\Debug\AdoNet.exe
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\iskur302\CSharp-SQL-ADO\AdoNet\AdoNet\obj\Debug\AdoNet.pdb
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\iskur302\CSharp-SQL-ADO\AdoNet\AdoNet\obj\Debug\AdoNet.Form2.resources

@@ -1,0 +1,11 @@
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\Odevler\Odev21\AdoNet-ProcedureOdev\AdoNet-ProcedureOdev\bin\Debug\AdoNet-ProcedureOdev.exe.config
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\Odevler\Odev21\AdoNet-ProcedureOdev\AdoNet-ProcedureOdev\bin\Debug\AdoNet-ProcedureOdev.exe
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\Odevler\Odev21\AdoNet-ProcedureOdev\AdoNet-ProcedureOdev\bin\Debug\AdoNet-ProcedureOdev.pdb
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\Odevler\Odev21\AdoNet-ProcedureOdev\AdoNet-ProcedureOdev\obj\Debug\AdoNet-ProcedureOdev.csproj.AssemblyReference.cache
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\Odevler\Odev21\AdoNet-ProcedureOdev\AdoNet-ProcedureOdev\obj\Debug\AdoNet-ProcedureOdev.csproj.SuggestedBindingRedirects.cache
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\Odevler\Odev21\AdoNet-ProcedureOdev\AdoNet-ProcedureOdev\obj\Debug\AdoNet_ProcedureOdev.Form1.resources
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\Odevler\Odev21\AdoNet-ProcedureOdev\AdoNet-ProcedureOdev\obj\Debug\AdoNet_ProcedureOdev.Properties.Resources.resources
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\Odevler\Odev21\AdoNet-ProcedureOdev\AdoNet-ProcedureOdev\obj\Debug\AdoNet-ProcedureOdev.csproj.GenerateResource.cache
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\Odevler\Odev21\AdoNet-ProcedureOdev\AdoNet-ProcedureOdev\obj\Debug\AdoNet-ProcedureOdev.csproj.CoreCompileInputs.cache
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\Odevler\Odev21\AdoNet-ProcedureOdev\AdoNet-ProcedureOdev\obj\Debug\AdoNet-ProcedureOdev.exe
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\Odevler\Odev21\AdoNet-ProcedureOdev\AdoNet-ProcedureOdev\obj\Debug\AdoNet-ProcedureOdev.pdb
