@@ -44,7 +44,8 @@ create proc UrunSil
 as
 delete Products where ProductID=@ProductID 
         
-         
+                     
+
          */
         public Form1()
         {
@@ -141,12 +142,14 @@ delete Products where ProductID=@ProductID
            
             int ProductId = Convert.ToInt32(textBox1.Text);
             sqlConnection.Open();
-            SqlCommand Sil = new SqlCommand("UrunSil", sqlConnection);
-            Sil.CommandType = CommandType.StoredProcedure;
-            SqlParameter id = new SqlParameter("@ProductId", SqlDbType.Int);
-            id.Direction = ParameterDirection.Input;
-            id.Value = ProductId;
-            Sil.Parameters.Add(id);
+            SqlCommand Sil = new SqlCommand($"UrunSil {ProductId}");
+            Sil.Connection = sqlConnection;
+            //SqlCommand Sil = new SqlCommand("UrunSil", sqlConnection);
+            //Sil.CommandType = CommandType.StoredProcedure;
+            //SqlParameter id = new SqlParameter("@ProductId", SqlDbType.Int);
+            //id.Direction = ParameterDirection.Input;
+            //id.Value = ProductId;
+            //Sil.Parameters.Add(id);
             Sil.ExecuteNonQuery();
             sqlConnection.Close();
             MISRA();
