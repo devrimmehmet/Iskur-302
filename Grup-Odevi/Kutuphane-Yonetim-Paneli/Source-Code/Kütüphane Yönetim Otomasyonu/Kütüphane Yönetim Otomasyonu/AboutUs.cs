@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Kütüphane_Yönetim_Otomasyonu
 {
-    public partial class Form1 : Form
+    public partial class AboutUs : Form
     {
-        public Form1()
+        public AboutUs()
         {
             InitializeComponent();
         }

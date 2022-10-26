@@ -18,6 +18,10 @@ namespace Kütüphane_Yönetim_Otomasyonu
             
             
         }
+        public void Login()
+        {
+
+        }
         public void LoginConnection()
         {
 

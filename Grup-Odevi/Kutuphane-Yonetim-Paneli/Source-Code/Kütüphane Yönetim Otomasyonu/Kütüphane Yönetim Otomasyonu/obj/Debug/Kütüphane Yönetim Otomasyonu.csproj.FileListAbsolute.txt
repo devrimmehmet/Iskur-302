@@ -9,3 +9,5 @@ C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\Grup-Odevi\Kutuphane-Yonetim-Pa
 C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\Grup-Odevi\Kutuphane-Yonetim-Paneli\Source-Code\Kütüphane Yönetim Otomasyonu\Kütüphane Yönetim Otomasyonu\bin\Debug\Kütüphane Yönetim Otomasyonu.pdb
 C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\Grup-Odevi\Kutuphane-Yonetim-Paneli\Source-Code\Kütüphane Yönetim Otomasyonu\Kütüphane Yönetim Otomasyonu\obj\Debug\Kütüphane Yönetim Otomasyonu.exe
 C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\Grup-Odevi\Kutuphane-Yonetim-Paneli\Source-Code\Kütüphane Yönetim Otomasyonu\Kütüphane Yönetim Otomasyonu\obj\Debug\Kütüphane Yönetim Otomasyonu.pdb
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\Grup-Odevi\Kutuphane-Yonetim-Paneli\Source-Code\Kütüphane Yönetim Otomasyonu\Kütüphane Yönetim Otomasyonu\obj\Debug\Kütüphane_Yönetim_Otomasyonu.MainMenu.resources
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\Grup-Odevi\Kutuphane-Yonetim-Paneli\Source-Code\Kütüphane Yönetim Otomasyonu\Kütüphane Yönetim Otomasyonu\obj\Debug\Kütüphane_Yönetim_Otomasyonu.Members.resources

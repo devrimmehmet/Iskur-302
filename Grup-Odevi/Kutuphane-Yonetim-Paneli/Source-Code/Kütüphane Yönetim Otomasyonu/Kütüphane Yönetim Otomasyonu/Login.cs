@@ -20,39 +20,25 @@ namespace Kütüphane_Yönetim_Otomasyonu
         SqlConnection sqlConnection = new SqlConnection($"Data Source=.;Initial Catalog=Library;Integrated Security=True");
         private void button1_Click(object sender, EventArgs e)
         {
-            string sorgu = "SELECT * FROM Employees  where IdentityNumber=@user AND Password=@pass";
-            SqlCommand cmd;
-            SqlDataReader dr;
-            cmd = new SqlCommand(sorgu, sqlConnection);
-            cmd.Parameters.AddWithValue("@user", textBox1.Text);
-            cmd.Parameters.AddWithValue("@pass", textBox2.Text);
             sqlConnection.Open();
-            dr = cmd.ExecuteReader();
-      
+            SqlCommand Employee = new SqlCommand($"SELECT * FROM Employees where IdentityNumber='{textBox1.Text}' AND Password='{textBox2.Text}'", sqlConnection);
+            SqlDataReader  dr = Employee.ExecuteReader();
             if (dr.Read())
             {
-                MessageBox.Show("Tebrikler! Başarılı bir şekilde giriş yaptınız.");
+                sqlConnection.Close();
                 this.Hide();
                 MainMenu admin = new MainMenu();
                 admin.ShowDialog();
                 this.Close();
-                goto son;
             }
-            else
-            {
-               // MessageBox.Show("Kullanıcı adını ve şifrenizi kontrol ediniz.");
-            }
-            dr.Close();
-            string sorgu2 = "SELECT * FROM Members  where IdentityNumber=@user AND Password=@pass";
-            SqlCommand cmd2;
-            SqlDataReader dr2;
-            cmd2 = new SqlCommand(sorgu2, sqlConnection);
-            cmd2.Parameters.AddWithValue("@user", textBox1.Text);
-            cmd2.Parameters.AddWithValue("@pass", textBox2.Text);
-            dr2 = cmd2.ExecuteReader();
+            sqlConnection.Close();
+            sqlConnection.Open();
+            SqlCommand Member = new SqlCommand($"SELECT * FROM Members where IdentityNumber='{textBox1.Text}' AND Password='{textBox2.Text}'", sqlConnection);
+            SqlDataReader dr2 = Member.ExecuteReader();
             if (dr2.Read())
             {
                 MessageBox.Show("Tebrikler! Başarılı bir şekilde giriş yaptınız.");
+                sqlConnection.Close();
                 this.Hide();
                 UserMenu user = new UserMenu();
                 user.ShowDialog();
@@ -60,10 +46,8 @@ namespace Kütüphane_Yönetim_Otomasyonu
             }
             else
             {
-                MessageBox.Show("Kullanıcı adını ve şifrenizi kontrol ediniz.");
+                MessageBox.Show("Kullanıcı adınızı ve şifrenizi kontrol ediniz.", "Giriş Hatası", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            dr2.Close();
-             son:
             sqlConnection.Close();
         }
     }
