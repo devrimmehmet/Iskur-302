@@ -88,5 +88,75 @@ namespace Kütüphane_Yönetim_Otomasyonu
             //members.ShowDialog();
             //this.Close();
         }
+
+        private void MainMenu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            //this.Hide();
+            //Members members = new Members();
+            //members.ShowDialog();
+            //this.Close();
+            //Members form2 = new Members();//açılacak form
+            //form2.MdiParent = this;//bu formu parent olarak veriyoruz.
+            //form2.Show(); //form 2 açılıyor.
+          
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            //panel1.Controls.Clear(); // Panel'in içini temizliyoruz..
+            //Members frm2 = new Members();
+            //frm2.TopLevel = false;
+            //panel1.Controls.Add(frm2); // panel1 içerisinde formu ekledik
+
+            //frm2.Show(); // formu gösterdik. Ancak buraya dikakt. ShowDialog(); olarak değil Show(); olarak açıyoruz.
+            //frm2.Dock = DockStyle.Fill; // Açılan formun paneli doldurmasını sağladık.
+            //frm2.BringToFront(); // formu panel içinde en öne getirdik
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear(); // Panel'in içini temizliyoruz..
+            Employees frm2 = new Employees();
+            frm2.TopLevel = false;
+            panel1.Controls.Add(frm2); // panel1 içerisinde formu ekledik
+
+            frm2.Show(); // formu gösterdik. Ancak buraya dikakt. ShowDialog(); olarak değil Show(); olarak açıyoruz.
+            frm2.Dock = DockStyle.Fill; // Açılan formun paneli doldurmasını sağladık.
+            frm2.BringToFront(); // formu panel içinde en öne getirdik
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear(); // Panel'in içini temizliyoruz..
+            Members frm2 = new Members();
+            frm2.TopLevel = false;
+            panel1.Controls.Add(frm2); // panel1 içerisinde formu ekledik
+
+            frm2.Show(); // formu gösterdik. Ancak buraya dikakt. ShowDialog(); olarak değil Show(); olarak açıyoruz.
+            frm2.Dock = DockStyle.Fill; // Açılan formun paneli doldurmasını sağladık.
+            frm2.BringToFront(); // formu panel içinde en öne getirdik
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear(); // Panel'in içini temizliyoruz..
+            Employees frm2 = new Employees();
+            frm2.TopLevel = false;
+            panel1.Controls.Add(frm2); // panel1 içerisinde formu ekledik
+
+            frm2.Show(); // formu gösterdik. Ancak buraya dikakt. ShowDialog(); olarak değil Show(); olarak açıyoruz.
+            frm2.Dock = DockStyle.Fill; // Açılan formun paneli doldurmasını sağladık.
+            frm2.BringToFront(); // formu panel içinde en öne getirdik
+        }
     }
 }
