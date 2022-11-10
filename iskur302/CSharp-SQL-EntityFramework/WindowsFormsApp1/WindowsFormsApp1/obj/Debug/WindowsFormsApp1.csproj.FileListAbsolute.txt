@@ -1,0 +1,11 @@
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\iskur302\CSharp-SQL-EntityFramework\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\iskur302\CSharp-SQL-EntityFramework\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\iskur302\CSharp-SQL-EntityFramework\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\iskur302\CSharp-SQL-EntityFramework\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\iskur302\CSharp-SQL-EntityFramework\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\iskur302\CSharp-SQL-EntityFramework\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\iskur302\CSharp-SQL-EntityFramework\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\iskur302\CSharp-SQL-EntityFramework\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\iskur302\CSharp-SQL-EntityFramework\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\iskur302\CSharp-SQL-EntityFramework\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\iskur302\CSharp-SQL-EntityFramework\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

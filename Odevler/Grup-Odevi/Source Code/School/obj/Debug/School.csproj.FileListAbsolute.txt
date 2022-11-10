@@ -1,0 +1,68 @@
+C:\Users\DevrimMehmet\Documents\GitHub\Student\School\School\bin\Debug\School.exe.config
+C:\Users\DevrimMehmet\Documents\GitHub\Student\School\School\bin\Debug\School.exe
+C:\Users\DevrimMehmet\Documents\GitHub\Student\School\School\bin\Debug\School.pdb
+C:\Users\DevrimMehmet\Documents\GitHub\Student\School\School\bin\Debug\EntityFramework.dll
+C:\Users\DevrimMehmet\Documents\GitHub\Student\School\School\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DevrimMehmet\Documents\GitHub\Student\School\School\bin\Debug\EntityFramework.xml
+C:\Users\DevrimMehmet\Documents\GitHub\Student\School\School\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DevrimMehmet\Documents\GitHub\Student\School\School\obj\Debug\School.csproj.AssemblyReference.cache
+C:\Users\DevrimMehmet\Documents\GitHub\Student\School\School\obj\Debug\School.csproj.SuggestedBindingRedirects.cache
+C:\Users\DevrimMehmet\Documents\GitHub\Student\School\School\obj\Debug\School.Form1.resources
+C:\Users\DevrimMehmet\Documents\GitHub\Student\School\School\obj\Debug\School.Properties.Resources.resources
+C:\Users\DevrimMehmet\Documents\GitHub\Student\School\School\obj\Debug\School.csproj.GenerateResource.cache
+C:\Users\DevrimMehmet\Documents\GitHub\Student\School\School\obj\Debug\School.csproj.CoreCompileInputs.cache
+C:\Users\DevrimMehmet\Documents\GitHub\Student\School\School\obj\Debug\School.csproj.CopyComplete
+C:\Users\DevrimMehmet\Documents\GitHub\Student\School\School\obj\Debug\School.exe
+C:\Users\DevrimMehmet\Documents\GitHub\Student\School\School\obj\Debug\School.pdb
+C:\Users\DevrimMehmet\Documents\GitHub\Student\School\School\obj\Debug\School.Form2.resources
+C:\Users\Administrator\Desktop\OgrenciKayit\GitHub\Student\School\School\bin\Debug\School.exe.config
+C:\Users\Administrator\Desktop\OgrenciKayit\GitHub\Student\School\School\bin\Debug\School.exe
+C:\Users\Administrator\Desktop\OgrenciKayit\GitHub\Student\School\School\bin\Debug\School.pdb
+C:\Users\Administrator\Desktop\OgrenciKayit\GitHub\Student\School\School\bin\Debug\EntityFramework.dll
+C:\Users\Administrator\Desktop\OgrenciKayit\GitHub\Student\School\School\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Administrator\Desktop\OgrenciKayit\GitHub\Student\School\School\bin\Debug\EntityFramework.xml
+C:\Users\Administrator\Desktop\OgrenciKayit\GitHub\Student\School\School\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Administrator\Desktop\OgrenciKayit\GitHub\Student\School\School\obj\Debug\School.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\OgrenciKayit\GitHub\Student\School\School\obj\Debug\School.csproj.SuggestedBindingRedirects.cache
+C:\Users\Administrator\Desktop\OgrenciKayit\GitHub\Student\School\School\obj\Debug\School.Form2.resources
+C:\Users\Administrator\Desktop\OgrenciKayit\GitHub\Student\School\School\obj\Debug\School.Form1.resources
+C:\Users\Administrator\Desktop\OgrenciKayit\GitHub\Student\School\School\obj\Debug\School.Properties.Resources.resources
+C:\Users\Administrator\Desktop\OgrenciKayit\GitHub\Student\School\School\obj\Debug\School.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\OgrenciKayit\GitHub\Student\School\School\obj\Debug\School.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\OgrenciKayit\GitHub\Student\School\School\obj\Debug\School.csproj.CopyComplete
+C:\Users\Administrator\Desktop\OgrenciKayit\GitHub\Student\School\School\obj\Debug\School.exe
+C:\Users\Administrator\Desktop\OgrenciKayit\GitHub\Student\School\School\obj\Debug\School.pdb
+C:\Users\DevrimMehmet\Desktop\School\School\School\bin\Debug\School.exe.config
+C:\Users\DevrimMehmet\Desktop\School\School\School\bin\Debug\School.exe
+C:\Users\DevrimMehmet\Desktop\School\School\School\bin\Debug\School.pdb
+C:\Users\DevrimMehmet\Desktop\School\School\School\bin\Debug\EntityFramework.dll
+C:\Users\DevrimMehmet\Desktop\School\School\School\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DevrimMehmet\Desktop\School\School\School\bin\Debug\EntityFramework.xml
+C:\Users\DevrimMehmet\Desktop\School\School\School\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DevrimMehmet\Desktop\School\School\School\obj\Debug\School.csproj.AssemblyReference.cache
+C:\Users\DevrimMehmet\Desktop\School\School\School\obj\Debug\School.csproj.SuggestedBindingRedirects.cache
+C:\Users\DevrimMehmet\Desktop\School\School\School\obj\Debug\School.Form2.resources
+C:\Users\DevrimMehmet\Desktop\School\School\School\obj\Debug\School.Form1.resources
+C:\Users\DevrimMehmet\Desktop\School\School\School\obj\Debug\School.Properties.Resources.resources
+C:\Users\DevrimMehmet\Desktop\School\School\School\obj\Debug\School.csproj.GenerateResource.cache
+C:\Users\DevrimMehmet\Desktop\School\School\School\obj\Debug\School.csproj.CoreCompileInputs.cache
+C:\Users\DevrimMehmet\Desktop\School\School\School\obj\Debug\School.csproj.CopyComplete
+C:\Users\DevrimMehmet\Desktop\School\School\School\obj\Debug\School.exe
+C:\Users\DevrimMehmet\Desktop\School\School\School\obj\Debug\School.pdb
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\Odevler\Grup-Odevi\Source Code\School\bin\Debug\School.exe.config
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\Odevler\Grup-Odevi\Source Code\School\bin\Debug\School.exe
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\Odevler\Grup-Odevi\Source Code\School\bin\Debug\School.pdb
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\Odevler\Grup-Odevi\Source Code\School\bin\Debug\EntityFramework.dll
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\Odevler\Grup-Odevi\Source Code\School\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\Odevler\Grup-Odevi\Source Code\School\bin\Debug\EntityFramework.xml
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\Odevler\Grup-Odevi\Source Code\School\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\Odevler\Grup-Odevi\Source Code\School\obj\Debug\School.csproj.AssemblyReference.cache
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\Odevler\Grup-Odevi\Source Code\School\obj\Debug\School.csproj.SuggestedBindingRedirects.cache
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\Odevler\Grup-Odevi\Source Code\School\obj\Debug\School.Form2.resources
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\Odevler\Grup-Odevi\Source Code\School\obj\Debug\School.Form1.resources
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\Odevler\Grup-Odevi\Source Code\School\obj\Debug\School.Properties.Resources.resources
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\Odevler\Grup-Odevi\Source Code\School\obj\Debug\School.csproj.GenerateResource.cache
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\Odevler\Grup-Odevi\Source Code\School\obj\Debug\School.csproj.CoreCompileInputs.cache
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\Odevler\Grup-Odevi\Source Code\School\obj\Debug\School.csproj.CopyComplete
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\Odevler\Grup-Odevi\Source Code\School\obj\Debug\School.exe
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\Odevler\Grup-Odevi\Source Code\School\obj\Debug\School.pdb

@@ -1,0 +1,17 @@
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\iskur302\CSharp-SQL-EntityFramework\EntityFramework\EntityFramework\bin\Debug\EntityFramework.exe.config
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\iskur302\CSharp-SQL-EntityFramework\EntityFramework\EntityFramework\bin\Debug\EntityFramework.exe
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\iskur302\CSharp-SQL-EntityFramework\EntityFramework\EntityFramework\bin\Debug\EntityFramework.pdb
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\iskur302\CSharp-SQL-EntityFramework\EntityFramework\EntityFramework\bin\Debug\EntityFramework.dll
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\iskur302\CSharp-SQL-EntityFramework\EntityFramework\EntityFramework\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\iskur302\CSharp-SQL-EntityFramework\EntityFramework\EntityFramework\bin\Debug\EntityFramework.xml
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\iskur302\CSharp-SQL-EntityFramework\EntityFramework\EntityFramework\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\iskur302\CSharp-SQL-EntityFramework\EntityFramework\EntityFramework\obj\Debug\EntityFramework.csproj.AssemblyReference.cache
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\iskur302\CSharp-SQL-EntityFramework\EntityFramework\EntityFramework\obj\Debug\EntityFramework.csproj.SuggestedBindingRedirects.cache
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\iskur302\CSharp-SQL-EntityFramework\EntityFramework\EntityFramework\obj\Debug\EntityFramework.Form1.resources
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\iskur302\CSharp-SQL-EntityFramework\EntityFramework\EntityFramework\obj\Debug\EntityFramework.Properties.Resources.resources
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\iskur302\CSharp-SQL-EntityFramework\EntityFramework\EntityFramework\obj\Debug\EntityFramework.csproj.GenerateResource.cache
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\iskur302\CSharp-SQL-EntityFramework\EntityFramework\EntityFramework\obj\Debug\EntityFramework.csproj.CoreCompileInputs.cache
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\iskur302\CSharp-SQL-EntityFramework\EntityFramework\EntityFramework\obj\Debug\EntityFramework.csproj.CopyComplete
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\iskur302\CSharp-SQL-EntityFramework\EntityFramework\EntityFramework\obj\Debug\EntityFramework.exe
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\iskur302\CSharp-SQL-EntityFramework\EntityFramework\EntityFramework\obj\Debug\EntityFramework.pdb
+C:\Users\DevrimMehmet\Documents\GitHub\Iskur-302\iskur302\CSharp-SQL-EntityFramework\EntityFramework\EntityFramework\obj\Debug\EntityFramework.Form2.resources
