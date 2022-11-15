@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        background-color: brown;
+        padding: 20px;
+      }
+      .gezegenler {
+        width: 100px;
+        background-color: blue;
+        justify-content: center;
+        padding: 0px;
+      }
+      .samanyolu {
+        width: 100px;
+        background-color: aliceblue;
+        border: 2px white dashed;
+        position: absolute;
+        border-radius: 50%;
+        left: 50px;
+        height: 60px;
+      }
+      .neptun {
+        margin-top: 50px;
+        height: 200px;
+        width: 300px;
+        background-color: aliceblue;
+        border: 2px white dashed;
+        position: absolute;
+        border-radius: 50%;
+        left: 150px;
+        animation: neptun-a 10s linear infinite;
+      }
+      @keyframes neptun-a{
+        100%{transform: rotate(360deg);}
+      }
+      @keyframes uranüs-g{
+        100%{transform: rotate(360deg);}
+      }
+      .uranüs {
+        margin-top: 300px;
+        width: 200px;
+        height: 100px;
+        background-color: aliceblue;
+        border: 2px white dashed;
+        position: absolute;
+        border-radius: 50%;
+        left: 250px;
+        animation: uranüs-g 10s linear infinite;
+      }
+      .uranüs-g{
+        background-color: aqua;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        position: relative;
+      }
+      @keyframes neptun-a{
+        100%{transform: rotate(360deg);}
+      }
+      .venus {
+        margin-top: 450px;
+        width: 300px;
+        height: 100px;
+        background-color: aliceblue;
+        border: 2px white dashed;
+        position: absolute;
+        border-radius: 50%;
+        left: 350px;
+      }
+      .mars {
+        margin-top: 600px;
+        width: 400px;
+        height: 100px;
+        background-color: aliceblue;
+        border: 2px white dashed;
+        position: absolute;
+        border-radius: 50%;
+        left: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gezegenler">
+      <div class="samanyolu">
+        <div class="neptun">
+          <div class="neptun-a"></div>
+        </div>
+        <div class="venus"></div>
+        <div class="mars"></div>
+        <div class="uranüs">
+          <div class="uranüs-g"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
