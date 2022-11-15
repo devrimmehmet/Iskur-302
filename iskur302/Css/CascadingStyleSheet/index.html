@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css.css">
+    <title>Css Kullanımı</title>
+
+    <!-- İNTERNAL CSS KULLANIMI -->
+    
+    <style>
+        .css{
+            background-color: crimson;
+            color: darkgreen;
+        }
+      /* 
+        div b,div p{
+            background-color: crimson;
+            color: rgb(236, 236, 236);
+            text-align: right;
+        }
+      */
+       .benimdiv{
+            border: 1px black solid; /*  çerçeve kalınlığı   */
+            height: 100px;/* yükseklik    */
+            width: 100px;/* genişlik    */
+            margin: 50px;/*  dışardan boşluk   */
+            padding: 150px;/* içerden boşluk    */
+            text-align: left;
+           
+       }
+       .deneme{
+        text-align: left;
+       }
+       span{
+        text-align: right;
+       }
+       .benimdiv1{
+            height: 200px;
+            width: 100;
+            border: 3px blue double;
+            margin-left:50px ;
+            padding-top: 50px;
+            padding-left: 50px;
+       }
+       .benimdiv2{
+       
+        height: 100px;
+        width: 100px;
+        border: 3px blue dotted ;
+
+       }
+
+    </style>
+       <!-- İNTERNAL CSS KULLANIMI -->
+</head>
+<body>
+    Hello Css
+   Css web sayfalarında yazı tipi renk boyut, arka plan ve dokular gibi öğelerde arzu edilen değişiklikleri tanımlamanızı sağlar. Animasyonlar yaparak web sitelerine şık detaylar eklemek mümkündür. Css kullanarak sitenin cep telefonu masaüstü ve tablet gibi farklı cihazların ekranlarında nasıl gözükeceğini kontrol edebilirsiniz. Css htmlde kullanılan başlık paragraf gibi elementlerin(tagların) nasıl gözükeceğini bildirir. Web sayfalarının her bir öğesine ayrı bir stil vermek için css kullanılabilir. Css web sayfalarının üzerinde tümüyle kontrol sahibi olmanızı sağlar ve istediğiniz gibi değişiklik yapmanıza olanak verir. Body içerisinde belirtilen her bir tag için farklı still belirtilebilir. Bu yüzden 3 farklı yöntemle ilgili taga ulaşılır. 
+   1- Class adı ile : Tagların içine class etiketi ile benzersiz bir ad tanımı verilebilir. Css de class adının önüne nokta koyulur. iki id ile tagların içine class gibi id etiketi ile benzersiz tanım yapılabilir. Css'de # koyularak still belirtilebilir.İstenilen tagını yazarak düzen verilebilir. <br><br><br>
+
+   <p class="css" style="color: aliceblue;">deneme dünyası</p>
+   <p class="css" style="background-color:aqua ;">asdasdasdasd</p> <!--İnline CSS Kullanımı-->
+   <p class="css">denemasdasdaeeeeee</p>
+   <b>Mehmet</b>
+   <hr>
+<b class="baslik">Devrim Mehmet</b>
+<br>
+<div>
+    <b>sadsadasdasd</b>
+</div>
+
+<div class="benimdiv"><h1>BAŞLIK</h1></div>
+
+<div class="deneme">asdasd <span><b>denemeee</b></span></div>
+
+
+asd
+
+
+<br>
+<br>
+<br>
+
+<br>
+<div class="benimdiv1">asda</div>
+<br><br><br><br><br><br>
+<div><div class="benimdiv2"></div><div class="benimdiv2"></div>  </div>
+
+
+
+</body>
+</html>
