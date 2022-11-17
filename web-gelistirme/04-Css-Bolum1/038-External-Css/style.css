@@ -1,0 +1,17 @@
+section {
+  background-color: rgb(105, 180, 185);
+  text-align: center;
+}
+h1 {
+  color: #fff;
+}
+h2 {
+  color: black;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: blue;
+  text-decoration: none;
+}
