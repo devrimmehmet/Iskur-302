@@ -1,0 +1,55 @@
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 10px;
+    background-color: red;
+    width: 100%;
+}
+.menu-item{
+
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 110px;
+    color: white;
+
+}
+div ul li{
+    list-style: none;
+    text-decoration: gold;
+}
+.aside{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.div1, .div2, .div3, .div4{
+display: flex;
+margin: 10px;
+flex-direction: column;
+border: 1px solid red;
+bottom: 0px;
+padding: 10px;
+}
+footer{
+    height: 50px;
+    width: 100%;
+    background-color: aquamarine;
+    position: fixed;
+    bottom: 0;
+}
+body{
+    background-color: blue;
+}
+@media screen and (max-width:800px) {
+    body{
+        background-color: red;
+    }
+    .menu{
+        
+    }
+    
+}
