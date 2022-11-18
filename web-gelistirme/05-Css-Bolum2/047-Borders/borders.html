@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+    <style>
+      * {
+        margin: 0px;
+      }
+      #showcase {
+        background-color: #2e4c6d;
+        /*   margin: 20px;*/
+        margin: 20px 10px 30px 50px; /* top right bottom left */
+        /* margin: auto; */
+        padding: 100px;
+      }
+      h1 {
+        border: 5px solid black;
+      }
+      #how-it-works {
+        background-color: #fc997c;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-left: 33px;
+      }
+      a {
+        margin: 5px;
+        border: 3px solid pink;
+        border-radius: 10px;
+        padding: 5px; /* inline elemandır bu yüzden sadece sol sağ verir üst alt vermez.  */
+      }
+      nav {
+        padding-left: 33px;
+        margin-top: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        margin -> margin collapsing hem alttan hem üstten boşluk veirrsen fazla olanı alır 
+        padding
+        border
+    -->
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Movies</a>
+      <a href="#">Contact</a>
+    </nav>
+    <main>
+      <section id="showcase">
+        <h1>Welcome to MovieApp</h1>
+      </section>
+      <section id="how-it-works">
+        <h2>How it works?</h2>
+      </section>
+    </main>
+  </body>
+</html>
