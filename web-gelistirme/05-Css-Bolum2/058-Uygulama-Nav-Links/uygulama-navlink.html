@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uygulama Nav Bar</title>
+    <style>
+      body {
+        margin: 0px;
+      }
+      #header-main {
+        margin: 0px;
+        background-color: brown;
+      }
+      #header-main__section {
+        background-color: brown;
+
+        font-size: 20px;
+        display: inline-block;
+        margin-left: 30px;
+      }
+      #header-main__section2 {
+        background-color: brown;
+        display: inline-block;
+        width: calc(100% - 130px);
+      }
+      header section nav ul {
+        text-align: right;
+        margin-right: 40px;
+        list-style: none;
+      }
+      header section nav ul li {
+        padding: 5px;
+        display: inline-block;
+        box-sizing: border-box;
+      }
+      header section nav ul li:hover {
+        background-color: blue;
+      }
+      header section nav ul li:active {
+        background-color: brown;
+      }
+      header section nav ul li::before {
+        content: "\2B55";
+        margin-right: 3px;
+      }
+      a {
+        color: white;
+      }
+      main {
+        display: block;
+        background-color: blue;
+        height: 300px;
+        padding: 30px;
+        font-size: 30px;
+        text-align: left;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header-main">
+      <section id="header-main__section">
+        <a href="#" style="text-decoration: none">MovieApp</a>
+      </section>
+      <section id="header-main__section2">
+        <nav>
+          <ul>
+            <li><a href="#" style="text-decoration: none">Home</a></li>
+            <li><a href="#" style="text-decoration: none">Movies</a></li>
+            <li><a href="#" style="text-decoration: none">Contact</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <main>Welcome to MovieApp</main>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Elements</title>
+    <style>
+      p::first-line {
+        font-weight: bold;
+        color: brown;
+        word-spacing: 2px;
+        letter-spacing: 1px;
+      }
+      p.about::first-line {
+        color: green;
+      }
+      p::first-letter {
+        font-size: 48px;
+      }
+      ::selection {
+        background-color: coral;
+      }
+      p::after {
+        content: "\261D";
+        font-size: 30px;
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum sit fugiat nostrum ad ipsam
+      aperiam sint explicabo consequatur dolor provident enim sunt consequuntur repellendus unde
+      quibusdam id quaerat cum, mollitia obcaecati voluptas? Aspernatur architecto atque, sapiente
+      dolorem consectetur, dolores iusto odit qui laborum accusamus aliquam distinctio voluptatum
+      corporis modi impedit eaque voluptate ut fugiat aperiam maxime non dolor! Voluptates at
+      laudantium omnis aut explicabo, mollitia nemo commodi non temporibus unde illum accusantium
+      dolorem veniam ea soluta velit numquam quo dolor odit. Eveniet tenetur enim asperiores in
+      perferendis omnis non, optio, commodi, possimus est nihil numquam. Fugiat iusto non eos
+      assumenda.
+    </p>
+    <p class="about">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt magnam numquam, explicabo
+      suscipit debitis necessitatibus consequatur, minima blanditiis eligendi nobis fuga corporis
+      illo iure rerum atque voluptatum libero tempora dignissimos asperiores sit harum. Fugiat non
+      tenetur quia optio deleniti minus odio veritatis amet! Vitae excepturi cumque nesciunt illo at
+      esse.
+    </p>
+  </body>
+</html>
