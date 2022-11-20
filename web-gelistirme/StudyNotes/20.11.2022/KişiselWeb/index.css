@@ -1,0 +1,263 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+}
+
+header{
+    height: 100px;
+    background: gray;
+    width: 100%;
+    z-index: 10;
+position: fixed;
+
+}
+.logo{
+    width: 30%;
+    float: left;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    background-color: black;
+
+}
+.logo a{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: poppins;
+    
+    color:white;
+    letter-spacing: 5px;
+}
+.logo a:hover{
+   color: red;
+}
+nav{
+    float: right;
+    display: block;
+    width: 70%;
+    height: 70%;
+    line-height: 50px;
+    margin-top:20px;
+ 
+
+}
+.wrapper{
+    padding: 30px 250px;
+}
+nav a{
+    text-decoration: none;
+    font-family: poppins;
+    letter-spacing: 4px;
+    font-size: 25px;
+    padding: 20px;
+    margin:20 12px;
+    margin-left: 5px;
+    text-align: center;
+    color:black;
+}
+nav a:hover{
+ background-color: lightgray;
+ color: white;
+
+}
+.banner-area1{
+    width: 100%;
+    height:500px;
+    
+    background-image: url(fotograflar/manzara.jpg);
+    -webkit-background-size:cover ;
+    background-size:cover;
+    background-position: center center;
+
+}
+.row {
+    margin: 5px 0px;
+    width: 100%;
+    height: 400px;
+    display: inline-block;
+  }
+.banner-area1 h2{
+    padding: top 8%;
+    font-size:70px;
+    font-family:poppins;
+    text-transform:uppercase;
+    color:#fff;
+}
+.content-area{
+    width: 100%;
+    position: relative;
+    
+    background:#ebebeb;
+    height: auto;
+}
+.content-area h2{
+    font-family: poppins;
+    letter-spacing: 4px;
+    padding-top: 30px;
+    font-size: 40px;
+    margin: 0px;
+
+}
+.content area p{
+    padding: 2% 0px;
+    font-family: poppins;
+    line-height: 30px;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+.innerplan {
+    padding: 3px;
+    float: left;
+  
+    margin: 0 25%;
+    width: 50%;
+    background-color: #edf5f7;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
+      rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
+      rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: box-shadow 0.4s;
+  }
+  .plan {
+    margin-top: 50px;
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+    display: inline-block;
+  }
+  .misra3{
+    display: inline-block;
+    width: 25%;
+    height: 200px;
+    font-size: 25px;
+    padding-top: 35px;
+    float: left;
+    
+  }
+  .misra4{
+    display: inline-block;
+    float: right;
+    width: 25%;
+    height: 200px;
+    background: url(ben.jpeg);
+    background-size: cover;
+    background-position: center center ;
+  }
+ 
+  .innerplan:hover {
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 54px 55px, rgba(0, 0, 0, 0.24) 0px -12px 30px,
+      rgba(0, 0, 0, 0.24) 0px 4px 6px, rgba(0, 0, 0, 0.34) 0px 12px 13px,
+      rgba(0, 0, 0, 0.18) 0px -3px 5px;
+  }
+table{
+
+    font-family: poppins;
+    text-align: center;
+    font-size: 20px;
+    text-decoration:none;
+    margin-top: 50px;
+    margin-left: 300px;
+}
+footer{
+    background-color:gray;
+   
+    width: 100%;
+   
+    position: relative;
+}
+footer div #footer-container{
+    width: 1200px;
+    position: relative;
+    display: block;
+    margin: auto;
+    inset-block-end: 0;
+}
+.footer-box a i:hover{
+
+   background-color: lightgray;
+
+   
+}
+.maps{
+    display: block;
+    height: auto;
+    width: 100%;
+}
+* {box-sizing:border-box}
+
+.sayfa{
+    width: 1400px;
+    
+    margin: 0 auto;
+}
+.sliderKonum{
+    position: relative;
+    width: 1400px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.img-bir{left: 0px;
+    background-size: 100%;}
+.img-iki{left: 700px;
+    background-size: 100%;}
+.img-uc{left: 1400px;
+    background-size: 100%;}
+.sliderKonum > .slider{
+    position: absolute;
+    left:0px;
+    width: 2800px;
+    height: 400px;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-name: sliders;
+    -webkit-animation-iteration-count:infinite;
+    -moz-animation-duration: 10s;
+    -moz-animation-name: sliders;
+    -moz-animation-iteration-count:infinite;
+    -ms-animation-duration: 10s;
+    -ms-animation-name: sliders;
+    -ms-animation-iteration-count:infinite;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+  }
+  
+  @-webkit-keyframes sliders{
+    0% {left:0px;}
+    10% {left:0px;}
+    20% {left:-700px;}
+    30% {left:-700px;}
+    40% {left:-1400px;}
+    50% {left:-1400px;}
+  }
+  @-moz-keyframes sliders{
+    0% {left:0px;}
+    10% {left:0px;}
+    20% {left:-700px;}
+    30% {left:-700px;}
+    40% {left:-1400px;}
+    50% {left:-1400px;}
+  }
+  @-ms-keyframes sliders {
+    0% {left:0px;}
+    10% {left:0px;}
+    20% {left:-700px;}
+    30% {left:-700px;}
+    40% {left:-1400px;}
+    50% {left:-1400px;}
+  }
+  @keyframes sliders{
+    0% {left:0px;}
+    10% {left:0px;}
+    20% {left:-700px;}
+    30% {left:-700px;}
+    40% {left:-1400px;}
+    50% {left:-1400px;}
+  }
+  
