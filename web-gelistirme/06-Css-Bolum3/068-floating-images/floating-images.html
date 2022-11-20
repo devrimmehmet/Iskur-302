@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Floating Images</title>
+    <style>
+      p {
+        border: 2px solid red;
+        padding: 5px;
+      }
+      img {
+        width: 300px;
+        float: left;
+        margin-right: 20px;
+      }
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet maiores aut adipisci
+      laboriosam, a sunt? Optio voluptatum, nobis fuga sit tempora assumenda delectus neque deserunt
+      sapiente distinctio odit officiis unde, praesentium tempore at accusamus quia id eius corrupti
+      expedita odio blanditiis ratione! Reprehenderit, repudiandae praesentium tempora culpa illo
+      natus vitae.
+    </p>
+    <p class="clearfix">
+      <img src="img/1.jpg" alt="manzara" />
+      <span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ipsam illum corporis
+        minus voluptas, aliquid enim magnam officia magni odio fugit aspernatur. Dolor consequatur
+        provident aliquam optio veniam a pariatur!
+      </span>
+      <span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ipsam illum corporis
+        minus voluptas, aliquid enim magnam officia magni odio fugit aspernatur. Dolor consequatur
+        provident aliquam optio veniam a pariatur!
+      </span>
+      <span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ipsam illum corporis
+        minus voluptas, aliquid enim magnam officia magni odio fugit aspernatur. Dolor consequatur
+        provident aliquam optio veniam a pariatur!
+      </span>
+      <span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ipsam illum corporis
+        minus voluptas, aliquid enim magnam officia magni odio fugit aspernatur. Dolor consequatur
+        provident aliquam optio veniam a pariatur!
+      </span>
+      <span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ipsam illum corporis
+        minus voluptas, aliquid enim magnam officia magni odio fugit aspernatur. Dolor consequatur
+        provident aliquam optio veniam a pariatur!
+      </span>
+    </p>
+  </body>
+</html>

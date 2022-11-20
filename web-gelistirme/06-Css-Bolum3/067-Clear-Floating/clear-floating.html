@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Floating</title>
+    <style>
+      #container {
+        background-color: aqua;
+      }
+      .box {
+        width: 150px;
+        height: 150px;
+        background-color: brown;
+        float: right;
+        border: 2px solid red;
+      }
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container" class="clearfix">
+      <div class="box">kutu1</div>
+      <div class="box">kutu2</div>
+      <div class="box">kutu3</div>
+      <!-- <div style="clear: both"></div> -->
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita consequuntur odio alias
+      veniam id nisi tenetur adipisci officia, quo fugiat eius labore quae tempora quis eaque.
+      Accusantium assumenda tempore excepturi perspiciatis fuga ipsum rerum ad fugit odit, culpa,
+      aut libero cumque quos sed. Nisi porro, rerum reiciendis tenetur sit aperiam?
+    </p>
+  </body>
+</html>
