@@ -4,18 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Uygulama Features</title>
-    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/buttons.css" />
     <style>
-      *{
+      * {
         box-sizing: border-box;
       }
       body {
         margin: 0px;
+        font-family: "Roboto Mono", monospace;
       }
       #header-main {
         margin: 0px;
@@ -49,6 +56,7 @@
       header section nav ul li:active {
         background-color: brown;
       }
+
       header section nav ul li::before {
         content: "\2B55";
         margin-right: 2px;
@@ -90,9 +98,7 @@
       i {
         color: crimson;
       }
-      body {
-        font-family: "Roboto Mono", monospace;
-      }
+
       .row {
         margin: 5px 0px;
         width: 100%;
@@ -130,49 +136,56 @@
         color: white;
         border-radius: 30px;
       }
-      .plans-title{
+      .plans-title {
         text-align: center;
       }
-      .plan{
-     
+      .plan {
         text-align: center;
         padding: 5px;
         width: 33.333%;
         float: left;
       }
-      .clearfix::after{
+      .clearfix::after {
         content: "";
         display: block;
         clear: both;
       }
-      .container{
+      .container {
         margin: 0 auto;
       }
-      .innerplan{
+      .innerplan {
         padding: 3px;
-        background-color:  #edf5f7;
+        background-color: #edf5f7;
         border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
+          rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
+          rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        transition: box-shadow 0.4s;
       }
-      .plan__badge{
+      .innerplan:hover {
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 54px 55px, rgba(0, 0, 0, 0.24) 0px -12px 30px,
+          rgba(0, 0, 0, 0.24) 0px 4px 6px, rgba(0, 0, 0, 0.34) 0px 12px 13px,
+          rgba(0, 0, 0, 0.18) 0px -3px 5px;
+      }
+      .plan__badge {
         background-color: #fff;
-        color: #fc997C;
+        color: #fc997c;
         padding: 3px;
         border-radius: 8px;
       }
-      .recommend_plan{
+      .recommend_plan {
         color: #fff;
-        background-color: #396eb0!important;
+        background-color: #396eb0 !important;
       }
-      .plan__features{
-list-style-type: none;
-margin: 0px;
-padding: 0px;
+      .plan__features {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
       }
-      .plan__features li{
+      .plan__features li {
         margin: 3px;
       }
     </style>
- 
   </head>
   <body>
     <header id="header-main">
@@ -185,7 +198,7 @@ padding: 0px;
             <li><a href="#" style="text-decoration: none">Filmler</a></li>
             <li><a href="#" style="text-decoration: none">Diziler</a></li>
             <li class="main-nav__item main-nav__item--login">
-              <a href="#"  style="text-decoration: none">Login</a>
+              <a href="#" style="text-decoration: none">Login</a>
             </li>
           </ul>
         </nav>
@@ -239,59 +252,59 @@ padding: 0px;
           <a href="#" class="btn btn-outline-secondary">View Features</a>
         </div>
       </div>
-  
+    </section>
     <section class="plans">
       <div class="row">
-      <h2 class="plans-title">Become Premium Member</h2>
-      <div class="container clearfix">
-        <div class="plan">
-          <div class="innerplan">
-          <h2>Free</h2>
-          <h3>0/Months</h3>
-          <ul class="plan__features">
-            <li>HD available</li>
-            <li>Unlimited Movies and TV shows</li>
-            <li>Watch on your phone & tablet</li>
-            <li>Download and watch offline</li>
-            <li>Screens you can watch</li>
-            <li>First Month Free</li>
-          </ul>
-          <div><button class="btn btn-outline-primary">Choose Plan</button></div>
-        </div>
-        </div>
-        <div class="plan">
-          <div class="innerplan recommend_plan">
-            <h2 class="plan__badge">Recommended</h2>
-          <h2>Basic</h2>
-          <h3>$9.99/Months</h3>
-          <ul class="plan__features">
-            <li>HD available</li>
-            <li>Unlimited Movies and TV shows</li>
-            <li>Watch on your phone & tablet</li>
-            <li>Download and watch offline</li>
-            <li>Screens you can watch</li>
-            <li>First Month Free</li>
-          </ul>
-          <div><button class="btn btn-outline-primary">Choose Plan</button></div>
-        </div>
-        </div>
-        <div class="plan">
-          <div class="innerplan">
-          <h2>Premium</h2>
-          <h3>$19.99/Months</h3>
-          <ul class="plan__features">
-            <li>HD available</li>
-            <li>Unlimited Movies and TV shows</li>
-            <li>Watch on your phone & tablet</li>
-            <li>Download and watch offline</li>
-            <li>Screens you can watch</li>
-            <li>First Month Free</li>
-          </ul>
-          <div><button class="btn btn-outline-primary">Choose Plan</button></div>
-        </div>
+        <h2 class="plans-title">Become Premium Member</h2>
+        <div class="container clearfix">
+          <div class="plan">
+            <div class="innerplan">
+              <h2>Free</h2>
+              <h3>0/Months</h3>
+              <ul class="plan__features">
+                <li>HD available</li>
+                <li>Unlimited Movies and TV shows</li>
+                <li>Watch on your phone & tablet</li>
+                <li>Download and watch offline</li>
+                <li>Screens you can watch</li>
+                <li>First Month Free</li>
+              </ul>
+              <div><button class="btn btn-outline-primary">Choose Plan</button></div>
+            </div>
+          </div>
+          <div class="plan">
+            <div class="innerplan recommend_plan">
+              <h2 class="plan__badge">Recommended</h2>
+              <h2>Basic</h2>
+              <h3>$9.99/Months</h3>
+              <ul class="plan__features">
+                <li>HD available</li>
+                <li>Unlimited Movies and TV shows</li>
+                <li>Watch on your phone & tablet</li>
+                <li>Download and watch offline</li>
+                <li>Screens you can watch</li>
+                <li>First Month Free</li>
+              </ul>
+              <div><button class="btn btn-outline-primary">Choose Plan</button></div>
+            </div>
+          </div>
+          <div class="plan">
+            <div class="innerplan">
+              <h2>Premium</h2>
+              <h3>$19.99/Months</h3>
+              <ul class="plan__features">
+                <li>HD available</li>
+                <li>Unlimited Movies and TV shows</li>
+                <li>Watch on your phone & tablet</li>
+                <li>Download and watch offline</li>
+                <li>Screens you can watch</li>
+                <li>First Month Free</li>
+              </ul>
+              <div><button class="btn btn-outline-primary">Choose Plan</button></div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
     </section>
   </body>
 </html>
