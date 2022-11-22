@@ -30,6 +30,10 @@
         width: 100%;
         float: right;
         bottom: 0px;
+        transition: 0.6s;
+      }
+      html {
+        scroll-behavior: smooth;
       }
       body {
         margin: 0px;
@@ -239,7 +243,7 @@
       }
     </style>
   </head>
-  <body>
+  <body id="page-upscrool">
     <header id="header-main">
       <section id="header-main__section">
         <a href="#" style="text-decoration: none">MovieApp</a>
@@ -363,8 +367,11 @@
       </div>
     </section>
     <div class="arrow-up">
-      <a href="#showcase" style="font-size: 50px; float: right; padding-right: 20px"
-        ><i class="fa-solid fa-arrow-up"></i
+      <a href="#page-upscrool">
+        <i
+          class="fa-solid fa-arrow-up"
+          style="font-size: 50px; float: right; margin-right: 50px"
+        ></i
       ></a>
     </div>
   </body>
