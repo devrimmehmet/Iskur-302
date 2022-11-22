@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>background</title>
+    <style>
+      body {
+        margin: 0px;
+      }
+      #header {
+        background-image: url("image/bg.jpg");
+        background-size: cover;
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        background-position: 100px;
+        background-repeat: no-repeat;
+        background-position: center;
+        /* background-size: 800px 600px, cover; */
+      }
+      #header h1 {
+        margin: 0px;
+        position: absolute;
+        font-size: 80px;
+        color: red;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .logo {
+        position: absolute;
+        top: 300px;
+        left: 300px;
+        width: 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Background Text</h1>
+      <img class="logo" src="image/logo.png" alt="" />
+    </div>
+  </body>
+</html>
