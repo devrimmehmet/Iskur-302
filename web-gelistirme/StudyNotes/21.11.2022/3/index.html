@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uygulama Nav Bar</title>
+    <style>
+      header {
+        margin: 0px;
+        height: 70px;
+        background-color: brown;
+        display: block;
+      }
+      section {
+        margin: 0px;
+      }
+      .header-section-left {
+        width: 150px;
+        display: inline-block;
+        float: left;
+      }
+      .header-section-right {
+        display: inline-block;
+
+        width: calc(100% - 150px);
+      }
+      main {
+        height: 300px;
+        width: 100%;
+        background-color: blue;
+        float: left;
+      }
+      ul {
+        list-style-type: none;
+      }
+      li {
+        display: inline-block;
+
+        float: right;
+      }
+      li:hover {
+        background-color: red;
+      }
+      li:active {
+        background-color: yellow;
+      }
+      li::before {
+        font-size: 20px;
+        content: "\8491";
+      }
+      h1 {
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <section class="header-section-left">
+        <h1>MovieApp</h1>
+      </section>
+      <section class="header-section-right">
+        <ul>
+          <li><a href="#"></a>Home</li>
+          <li><a href="#"></a>Home</li>
+          <li><a href="#"></a>Home</li>
+        </ul>
+      </section>
+    </header>
+    <main>
+      <h1>Welcome to MovieApp</h1>
+    </main>
+  </body>
+</html>

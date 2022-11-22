@@ -14,17 +14,32 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
     <title>Uygulama Features</title>
     <link rel="stylesheet" href="css/buttons.css" />
     <style>
       * {
         box-sizing: border-box;
       }
+      .arrow-up {
+        color: #fc997c;
+        position: fixed;
+        width: 100%;
+        float: right;
+        bottom: 0px;
+      }
       body {
         margin: 0px;
         font-family: "Roboto Mono", monospace;
       }
       #header-main {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 3;
         margin: 0px;
         background-color: brown;
       }
@@ -347,5 +362,10 @@
         </div>
       </div>
     </section>
+    <div class="arrow-up">
+      <a href="#showcase" style="font-size: 50px; float: right; padding-right: 20px"
+        ><i class="fa-solid fa-arrow-up"></i
+      ></a>
+    </div>
   </body>
 </html>

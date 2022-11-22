@@ -13,22 +13,22 @@
         margin: 0px;
         background-color: brown;
       }
-      #header-main__section {
+      #header-main__section_left {
         background-color: brown;
 
         font-size: 20px;
         display: inline-block;
         margin-left: 30px;
       }
-      #header-main__section2 {
+      #header-main__section_right {
         background-color: brown;
         display: inline-block;
-        width: calc(100% - 130px);
+        width: calc(100% - 125px);
       }
       header section nav ul {
         text-align: right;
         margin-right: 40px;
-        list-style: none;
+        list-style-type: none;
       }
       header section nav ul li {
         padding: 5px;
@@ -39,10 +39,10 @@
         background-color: blue;
       }
       header section nav ul li:active {
-        background-color: brown;
+        background-color: yellow;
       }
       header section nav ul li::before {
-        content: "\2B55";
+        content: "\212B";
         margin-right: 3px;
       }
       a {
@@ -61,10 +61,10 @@
   </head>
   <body>
     <header id="header-main">
-      <section id="header-main__section">
+      <section id="header-main__section_left">
         <a href="#" style="text-decoration: none">MovieApp</a>
       </section>
-      <section id="header-main__section2">
+      <section id="header-main__section_right">
         <nav>
           <ul>
             <li><a href="#" style="text-decoration: none">Home</a></li>
