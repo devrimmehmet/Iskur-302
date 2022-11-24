@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uygulama</title>
+  </head>
+  <style>
+    * {
+      margin: 0px;
+    }
+    body {
+      margin: 0px;
+      box-sizing: border-box;
+    }
+    nav {
+      width: 100%;
+
+      background-color: #a0e4cb;
+      height: 60px;
+    }
+    .nav_left {
+      display: inline-block;
+      width: 140px;
+      height: 60px;
+      text-align: center;
+      color: #0d4c92;
+      font-size: 22px;
+      float: left;
+    }
+    .nav_left h1 {
+      margin: 0px;
+      padding: 0px;
+      padding: 15px 0px;
+    }
+
+    .nav_right {
+      display: inline-block;
+      width: calc(100% - 140px);
+      height: 60px;
+      text-align: right;
+    }
+    nav .nav_right ul {
+      margin: 0px;
+      padding: 10px;
+      padding-inline-start: 0px;
+      list-style-type: none;
+    }
+    nav .nav_right ul li {
+      display: inline-block;
+      font-size: 22px;
+      padding: 7px 3px;
+    }
+    nav .nav_right ul li a {
+      text-decoration: none;
+      padding: 5px;
+      color: #0d4c92;
+      transition-duration: 0.6s;
+    }
+    nav .nav_right ul li a:hover {
+      background-color: #e97777;
+      border-radius: 10px;
+      text-decoration: underline;
+      color: #fff;
+    }
+    .showcase {
+      background: linear-gradient(to bottom, rgba(252, 153, 124, 0.2), rgba(250, 81, 30, 0.2)),
+        url(images/bg.jpeg);
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center center;
+      height: 60vh;
+      width: 100%;
+      position: relative;
+    }
+    .showcase-features {
+      position: absolute;
+      text-align: center;
+      color: white;
+      background: rgba(46, 76, 108, 0.3);
+      left: 50%;
+      top: 50%;
+      padding: 10px;
+      transform: translate(-50%, -50%);
+    }
+    .how-it-works {
+      text-align: center;
+      padding: 20px;
+    }
+    .col-3 {
+      display: inline-block;
+      width: 30%;
+    }
+  </style>
+  <body>
+    <header>
+      <nav>
+        <section class="nav_left">
+          <h1>Movie<span style="color: #e97777">App</span></h1>
+        </section>
+        <section class="nav_right">
+          <ul>
+            <li><a href="#">Filmler</a></li>
+            <li><a href="#">Diziler</a></li>
+            <li style="padding-right: 30px">
+              <a href="#" class="btn-primary">Login</a>
+            </li>
+          </ul>
+        </section>
+      </nav>
+    </header>
+    <section class="showcase">
+      <div class="showcase-features">
+        <h1>Welcome</h1>
+        <br /><br /><br />
+        <h2>Millions of movies, TV shows and people to discover.Explore now.</h2>
+      </div>
+    </section>
+    <section class="how-it-works">
+      <br />
+      <h1>How it Works</h1>
+      <br />
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores modi tenetur cum, rerum
+        ipsam laudantium distinctio maxime suscipit veritatis sed fugit iusto possimus saepe placeat
+        nihil temporibus! Accusantium omnis soluta veritatis iste libero nobis ex modi. Animi magni
+        molestiae similique hic officiis laboriosam, perspiciatis voluptas placeat adipisci
+        expedita, corrupti distinctio.
+      </p>
+    </section>
+    <section>
+      <article class="how-it-works col-3">
+        <br />
+        <h1>Register</h1>
+        <br />
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores modi tenetur cum,
+          rerum ipsam laudantium distinctio maxime suscipit veritatis sed fugit iusto possimus saepe
+          placeat nihil temporibus! Accusantium omnis soluta veritatis iste libero nobis ex modi.
+          Animi magni molestiae similique hic officiis laboriosam, perspiciatis voluptas placeat
+          adipisci expedita, corrupti distinctio.
+        </p>
+      </article>
+      <article class="how-it-works col-3">
+        <br />
+        <h1>Choose a plan</h1>
+        <br />
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores modi tenetur cum,
+          rerum ipsam laudantium distinctio maxime suscipit veritatis sed fugit iusto possimus saepe
+          placeat nihil temporibus! Accusantium omnis soluta veritatis iste libero nobis ex modi.
+          Animi magni molestiae similique hic officiis laboriosam, perspiciatis voluptas placeat
+          adipisci expedita, corrupti distinctio.
+        </p>
+      </article>
+      <article class="how-it-works col-3">
+        <br />
+        <h1>Enjoy movify</h1>
+        <br />
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores modi tenetur cum,
+          rerum ipsam laudantium distinctio maxime suscipit veritatis sed fugit iusto possimus saepe
+          placeat nihil temporibus! Accusantium omnis soluta veritatis iste libero nobis ex modi.
+          Animi magni molestiae similique hic officiis laboriosam, perspiciatis voluptas placeat
+          adipisci expedita, corrupti distinctio.
+        </p>
+      </article>
+    </section>
+  </body>
+</html>
