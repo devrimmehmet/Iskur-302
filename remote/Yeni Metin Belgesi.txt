@@ -1,0 +1,3 @@
+Export Pdf
+
+https://github.com/shubhamgt2/bootstrap-4-responsive-datatable-and-export-to-pdf-csv/blob/master/index.html

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>örnek1</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0px;
+      }
+      header {
+        height: 70px;
+        background-color: blue;
+        color: white;
+      }
+      header nav section h1 {
+        font-size: 25px;
+        display: inline-block;
+        height: auto;
+      }
+      nav {
+        height: 70px;
+      }
+      .nav-left {
+        display: inline-block;
+        text-align: center;
+        float: left;
+        padding-top: 19.9px;
+        height: 70px;
+        width: 130px;
+      }
+      .nav-right {
+        display: inline-block;
+        float: right;
+        height: 70px;
+        width: calc(100% - 130px);
+      }
+      ul {
+        list-style-type: none;
+        height: 70px;
+        margin: 0px;
+        float: right;
+
+        padding: 0px;
+      }
+      ul li {
+        display: inline-block;
+        /* padding-top: 19.9px; */
+        font-size: 24px;
+        height: 70px;
+        padding: 15px 10px 10px 10px;
+      }
+      ul :hover {
+        background-color: red;
+        color: black;
+      }
+      ul li::before {
+        content: "\22E0";
+        margin-right: 5px;
+        font-size: 30px;
+      }
+      ul li a:hover {
+        color: black;
+      }
+      ul li a {
+        color: white;
+        text-decoration: none;
+      }
+      header nav section h1 {
+        margin: 0px;
+      }
+      .main-section {
+        text-align: center;
+      }
+      article {
+        padding-left: 5%;
+      }
+      .col3 {
+        width: 30%;
+        float: left;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <section class="nav-left">
+          <h1>Movie<span style="color: red">App</span></h1>
+        </section>
+        <section class="nav-right">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#" style="padding-right: 50px">Login</a></li>
+          </ul>
+        </section>
+      </nav>
+    </header>
+    <article>
+      <section class="main-section">
+        <h1>MovieApp</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione hic doloremque officiis,
+          in non pariatur voluptates sequi ducimus, molestias nisi atque dolorem eos quos saepe
+          officia vitae accusamus deleniti? Ducimus.
+        </p>
+      </section>
+    </article>
+    <article>
+      <section class="main-section col3">
+        <h1>MovieApp</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione hic doloremque officiis,
+          in non pariatur voluptates sequi ducimus, molestias nisi atque dolorem eos quos saepe
+          officia vitae accusamus deleniti? Ducimus.
+        </p>
+      </section>
+    </article>
+    <article>
+      <section class="main-section col3">
+        <h1>MovieApp</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione hic doloremque officiis,
+          in non pariatur voluptates sequi ducimus, molestias nisi atque dolorem eos quos saepe
+          officia vitae accusamus deleniti? Ducimus.
+        </p>
+      </section>
+    </article>
+    <article>
+      <section class="main-section col3">
+        <h1>MovieApp</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione hic doloremque officiis,
+          in non pariatur voluptates sequi ducimus, molestias nisi atque dolorem eos quos saepe
+          officia vitae accusamus deleniti? Ducimus.
+        </p>
+      </section>
+    </article>
+  </body>
+</html>
