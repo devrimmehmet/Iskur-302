@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"/>
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <h2>Date Kullanımı</h2>
+    <p id="zaman1">Ahmet</p>
+    <p id="zaman2">Mehmet</p>
+    <p id="zaman3"></p>
+    <p id="zaman4"></p>
+    <p id="zaman5"></p>
+    <p id="zaman6"></p>
+    <p id="zaman7"></p>
+    <p id="zaman8"></p>
+
+    <script>
+    var zaman = new Date();
+    document.getElementById("zaman1").innerHTML=zaman; // zamanı verir
+    document.getElementById("zaman2").innerHTML=Date(); // yukarıdakiyle aynı şeyi verir yani zamanı verir
+    document.getElementById("zaman3").innerHTML=zaman.getMonth() + 1; // 0 ile 11 arasında aldığı için 1 eklemen lazım
+    document.getElementById("zaman4").innerHTML=zaman.getFullYear(); // yılı verir
+    var aylar = new Date();
+    var ayisimleri = ["Ocak","Şubat","Mart","Nisan","Mayıs","Haziran","Temmuz","Ağustos","Eylül","Ekim","Kasım","Aralık"]; 
+ // var ayisimleri = Array("Ocak") diye de tanımlayabilirsin
+    document.getElementById("zaman5").innerHTML=ayisimleri[aylar.getMonth()];
+
+    var gun = new Date();
+    var gunisimleri=["Pazar","Pazartesi","Salı","Carsamba","Persembe","Cuma","Cumartesi"];
+    document.getElementById("zaman6").innerHTML=gunisimleri[gun.getDay()];
+
+    // Canlı olarak saati dakikayı saniyeyi verir
+    function saat()
+    {
+      var zaman=new Date();
+      document.getElementById("zaman7").innerHTML=zaman.getHours() + ":" + zaman.getMinutes() + ":" + zaman.getSeconds();
+    }
+    window.setInterval(saat,1000); // 1000 saniyenin artış hızını belirler.
+    
+    
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"></script>
+</body>
+</html>

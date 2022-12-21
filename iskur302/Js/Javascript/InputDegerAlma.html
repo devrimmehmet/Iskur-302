@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"/>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container"> 
+        <div>   
+            <p id="t"></p>
+        </div>
+        <div class="row"> 
+          <div class="col-md-4"> 
+            <h3>İnput Değer Alma</h3>
+            <input type="number" class="form-control" id="deger" placeholder="Değer Giriniz">
+            <input type="number" class="form-control" id="deger2" placeholder="Değer Giriniz">
+          </div>
+          <p id="deger3"></p> <!-- switch-case için tanımladık-->
+        </div>
+
+        <div class="row">   
+            <div class="col-md-1">   
+                <input type="text" class="btn btn-success form-control" onclick="dortislem('Topla')" value="Toplama"> <!--value butonun ismi için-->
+            </div>
+
+            <div class="col-md-1">   
+                <input type="text" class="btn btn-success form-control" onclick="dortislem('Çıkar')" value="Çıkarma"> <!--value butonun ismi için-->
+            </div>
+
+            <div class="col-md-1">   
+                <input type="text" class="btn btn-success form-control" onclick="dortislem('Çarpma')" value="Çarpma"> <!--value butonun ismi için-->
+            </div>
+
+            <div class="col-md-1">   
+                <input type="text" class="btn btn-success form-control" onclick="dortislem('Bolme')" value="Bölme"> <!--value butonun ismi için-->
+            </div>
+        </div>
+
+      </div>
+
+      <script src="javascript.js"></script> <!--javascript.js dosyası içerisindeki özellikleri çektik-->
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h1>Vize Final Hesaplama</h1>
+          <b id="name">Ad Soyad</b>
+          <input type="text" class="form-control" id="deger" placeholder="Değer Giriniz" />
+          <br />
+          <input type="button" class="btn btn-success form-control" onclick="öğrenciEkle()" value="İleri" />
+        </div>
+        <div class="col-md-8">
+          <table id="Öğrenciler" class="table table-hover"></table>
+          <button type="button" class="btn btn-primary" onclick="sınıf()">Sınıf Listesi</button>
+          <button type="button" class="btn btn-primary" onclick="öğrenciEkle()">
+            Öğrenci Ekleme
+          </button>
+          <script>
+            var nolar = new Array("1", "2", "3");
+            var adsoyad = new Array("Devrim Mehmet Pattabanoğlu","Salih Toraman","Büşra Söyünmez");
+            var vizeler = new Array("50", "60", "70");
+            var finaller = new Array("80", "70", "60");
+            var ortalamalar = new Array("80", "70", "60");
+            var Durum = new Array("Geçti", "Geçti", "Kaldı");
+            function sınıf() {
+              var liste = "";
+              liste ="<tr>" +"<th>" +"No" +"</th>" +"<th>" +"Öğrenci Ad Soyad" +"</th>" +"<th>" +"Vize" +"</th>" +"<th>" +"Final" +      "</th>" +"<th>" +"Ortalama" +"</th>" +"<th>" +"Durum" +"</th>" +"</tr>";
+              for (var i = 0; i < nolar.length; i++) 
+              {
+                liste +="<tr>" +"<td>" +nolar[i] +"</td>" +"<td>" +adsoyad[i] +"</td>" +"<td>" +vizeler[i] +"</td>" +"<td>" +finaller[i] +"</td>" +"<td>" +ortalamalar[i] +"</td>" +"<td>" +Durum[i] +"</td>" +"</tr>";
+              }
+              document.getElementById("Öğrenciler").innerHTML = liste;
+            }
+            function öğrenciEkle() {
+              var no = prompt("Öğrencinin Nosu");
+              var adisoyad = prompt("Öğrencinin Adı Soyadı");
+              var vize = prompt("Öğrencinin Vize Notu");
+              var final = prompt("Öğrencinin Final Notu");
+              var ortalama = (Number(vize) + Number(final)) / 2;
+              var durumu = "";
+              if (Number(ortalama) > 70) 
+              {
+                durumu = "Geçti";
+              } else 
+              {
+                durumu = "Kaldı";
+              }
+              nolar.push(no);
+              adsoyad.push(adisoyad);
+              vizeler.push(vize);
+              finaller.push(final);
+              ortalamalar.push(ortalama);
+              Durum.push(durumu);
+
+              sınıf();
+            }
+          </script>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/javas.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
