@@ -1,0 +1,46 @@
+﻿@using ETrade.Data.Models.Entites
+@model IEnumerable<Category>
+<ul class="list-group">
+    @if (ViewBag.Id == 0)
+    {
+        <a class="list-group-item active" href="/Home/List/">
+            <i class="fa-solid fa-angles-right"></i>
+            Tüm Kategoriler
+        </a>
+    }
+    else
+    {
+        <a class="list-group-item" href="/Home/List/">
+            <i class="fa-solid fa-angles-right"></i>
+            Tüm Kategoriler
+        </a>
+    }
+
+    @foreach (var category in Model)
+    {
+        if (ViewBag.Id != 0)
+        {
+            if (category.Id == ViewBag.Id)
+            {
+                <a class="list-group-item active" href="/Home/List/@category.Id">
+                    <i class="fa-solid fa-angles-right"></i>
+                    @category.Name
+                </a>
+            }
+            else
+            {
+                <a class="list-group-item" href="/Home/List/@category.Id">
+                    <i class="fa-solid fa-angles-right"></i>
+                    @category.Name
+                </a>
+            }
+        }
+        else
+        {
+            <a class="list-group-item" href="/Home/List/@category.Id">
+                <i class="fa-solid fa-angles-right"></i>
+                @category.Name
+            </a>
+        }
+    }
+</ul>

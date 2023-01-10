@@ -1,0 +1,58 @@
+﻿@model IEnumerable<ETrade.Data.Models.ViewModels.CardItem>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Sepet</h1>
+<hr />
+@if (Model == null)
+{
+    <div class="alert alert-danger" role="alert">
+        Sepetiniz Boş
+    </div>
+}
+else
+{
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Product Price</th>
+                <th>Quantity</th>
+                <th>Total </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model == null)
+            {
+                <div class="alert alert-danger" role="alert">
+                    Kullanıcı Bulunamadı
+                </div>
+            }
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Product.Name</td>
+                    <td>@item.Product.Price.ToString("c")</td>
+                    <td>@item.Quantity</td>
+                    <td>@((item.Product.Price * item.Quantity).ToString("Fiyat"))</td>
+                    <td>
+                        <a class="btn btn-danger" asp-action="Remove" asp-route-id="@item.Product.Id">Remove</a>
+                    </td>
+                </tr>
+            }
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total Price</td>
+                <td>@ViewBag.Total</td>
+            </tr>
+        </tfoot>
+    </table>
+}
+<div class="w-75">
+    <a asp-action="List" asp-controller="Home" class="float-start">Alışverişe devam et</a>
+    <a asp-action="CheckOut" asp-controller="Card" class="float-end">Alışverişe Tamamla</a>
+</div>

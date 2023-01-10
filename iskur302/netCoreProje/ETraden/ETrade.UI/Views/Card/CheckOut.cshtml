@@ -1,0 +1,94 @@
+﻿@using ETrade.Data.Models.ViewModels
+@model ShippingDetailst
+@{
+    ViewData["Title"] = "CheckOut";
+}
+
+<h1>CheckOut</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Sipariş Bilgileriniz</h2>
+            <p>Lütfen sipariş bilgilerinizi doldurunuz.</p>
+            <hr />
+
+            @using (Html.BeginForm())
+            {
+                @Html.ValidationSummary()
+
+                <div class="row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Username</label>
+                    <div class="col-sm-6">
+                        <span class="badge-danger">
+                            @if (User.Identity.Name != null)
+                            {
+                                <input type="text" class="form-control" aria-label="Username" value=" @User.Identity.Name" asp-for="Name">
+                            }
+                            else
+                            {
+                                <input type="text" class="form-control" placeholder="Username" aria-label="Username" asp-for="Name">
+                            }
+
+                        </span>
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Adres Tanımı</label>
+                    <div class="col-sm-6">
+                        @Html.TextBoxFor(x => x.AddressTitle, new { @class = "form-control" })
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Adres</label>
+                    <div class="col-sm-6">
+                        @Html.TextBoxFor(x => x.Address, new { @class = "form-control" })
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Şehir</label>
+                    <div class="col-sm-6">
+                        @Html.TextBoxFor(x => x.City, new { @class = "form-control" })
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Semt</label>
+                    <div class="col-sm-6">
+                        @Html.TextBoxFor(x => x.District, new { @class = "form-control" })
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Mahalle</label>
+                    <div class="col-sm-6">
+                        @Html.TextBoxFor(x => x.Mahalle, new { @class = "form-control" })
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Posta Kodu</label>
+                    <div class="col-sm-6">
+                        @Html.TextBoxFor(x => x.PostalCode, new { @class = "form-control" })
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label"></label>
+                    <div class="col-sm-6">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+
+            }
+
+        </div>
+    </div>
+</div>
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>

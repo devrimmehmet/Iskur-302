@@ -1,0 +1,29 @@
+﻿@using ETrade.Data.Models.ViewModels
+@model ListViewModels
+@{
+    ViewData["Title"] = "List";
+}
+
+<div class="row">
+    <div class="col-md-3">
+        @Html.Partial("_GetCategoryList",Model.Categories)
+    </div>
+    <div class="col-md-9">
+        @if (Model.products.Count == 0)
+        {
+            <div class="alert alert-danger" role="alert">
+                <i class="fa-solid fa-circle-exclamation"></i> Bu kategoride bir ürün bulunamadı.
+            </div>
+        }
+        else
+        {
+            <div class="alert alert-info" role="alert">
+                <i class="fa-solid fa-circle-exclamation"></i> <strong>@Model.products.Count</strong> adet ürün bulundu.
+            </div>
+        }
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            @Html.Partial("_ProductList",Model.products)
+        </div>
+    </div>
+</div>
+
